@@ -1,0 +1,10 @@
+<pedidos>
+   <pedido id_usuario="0" create_at="2023-03-24T11:00:52.491358100" total="450.6842">
+      <linea_pedido id_producto="0" precio_und="5.470389" cantidad="2"/>
+      <linea_pedido id_producto="1" precio_und="2.8486376" cantidad="2"/>
+      <linea_pedido id_producto="2" precio_und="27.115673" cantidad="8"/>
+      <linea_pedido id_producto="3" precio_und="10.652065" cantidad="10"/>
+      <linea_pedido id_producto="0" precio_und="12.766312" cantidad="7"/>
+      <linea_pedido id_producto="1" precio_und="4.247183" cantidad="5"/>
+   </pedido>
+</pedidos>

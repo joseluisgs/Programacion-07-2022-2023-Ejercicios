@@ -1,0 +1,57 @@
+[
+	{
+		"id": "0",
+		"nombre": "Fanta",
+		"precio": "12,77 €",
+		"tipo": "Bebida",
+		"capacidad": "337"
+	},
+	{
+		"id": "1",
+		"nombre": "CocaCola",
+		"precio": "4,25 €",
+		"tipo": "Bebida",
+		"capacidad": "863"
+	},
+	{
+		"id": "2",
+		"nombre": "Pequeña",
+		"precio": "27,11 €",
+		"tipo": "Hamburguesa",
+		"ingredientes": [
+			{
+				"id": "4",
+				"nombre": "Lechuga",
+				"precio": "1,28 €"
+			},
+			{
+				"id": "5",
+				"nombre": "Lechuga",
+				"precio": "4,99 €"
+			},
+			{
+				"id": "6",
+				"nombre": "Cebolla",
+				"precio": "10,20 €"
+			},
+			{
+				"id": "7",
+				"nombre": "Tomate",
+				"precio": "10,64 €"
+			}
+		]
+	},
+	{
+		"id": "3",
+		"nombre": "Pequeña",
+		"precio": "10,65 €",
+		"tipo": "Hamburguesa",
+		"ingredientes": [
+			{
+				"id": "8",
+				"nombre": "Cebolla",
+				"precio": "10,65 €"
+			}
+		]
+	}
+]

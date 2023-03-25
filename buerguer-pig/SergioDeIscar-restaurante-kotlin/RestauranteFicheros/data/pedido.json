@@ -1,0 +1,39 @@
+[
+	{
+		"userId": 0,
+		"productos": [
+			{
+				"productoId": 0,
+				"precioUnd": 5.470389,
+				"cantidad": 2
+			},
+			{
+				"productoId": 1,
+				"precioUnd": 2.8486376,
+				"cantidad": 2
+			},
+			{
+				"productoId": 2,
+				"precioUnd": 27.115673,
+				"cantidad": 8
+			},
+			{
+				"productoId": 3,
+				"precioUnd": 10.652065,
+				"cantidad": 10
+			},
+			{
+				"productoId": 0,
+				"precioUnd": 12.766312,
+				"cantidad": 7
+			},
+			{
+				"productoId": 1,
+				"precioUnd": 4.247183,
+				"cantidad": 5
+			}
+		],
+		"createAt": "2023-03-24T11:00:52.491358100",
+		"total": 450.6842
+	}
+]
