@@ -5,7 +5,11 @@
 3. Realizar las siguientes consultas:
 - Temperatura máxima por día y lugar
 - Temperatura mínima por día y lugar
+- Temperatura máxima por provincia (día, lugar, valor y momento)
+- Temperatura mínima por provincia (día, lugar, valor y valor)
+- Temperatura media por provincia (día, lugar y valor)
 - Listado de precipitación media por día y provincia
+- Numero de lugares en el que llovío por día y provincia
 - Temperatura média de la provincia de Madrid
 - Media de temperatura máxima total
 - Media de temprratura minima total
@@ -15,6 +19,6 @@
 4.- Para la privincia de Madid exportar en JSON y XML el siguiente informe
 - Por cada día:
   - Temperatura media
-  - Temperatura máxima
-  - Temperatura mínima
-  - Si hubo precipitación (sí/no) y medía de la misma.   
+  - Temperatura máxima (Lugar y momento)
+  - Temperatura mínima (Lugar y momento
+  - Si hubo precipitación (sí/no) y valor de la misma.   
