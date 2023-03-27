@@ -21,7 +21,7 @@ import services.storage.productos.ProductoFileJson
 fun main(args: Array<String>){
     println("APP_NAME: ${AppConfig.APP_NAME}")
     hamburguesasTest()
-    //pedidosTest()
+    pedidosTest()
 }
 
 @OptIn(ExperimentalStdlibApi::class)
@@ -137,9 +137,9 @@ private fun hamburguesasTest(){
     println("Hamburguesa mas cara:")
     hamburguesaControllerSeria.getHamburguesaMasCara()?.let { println(it) }
     println("Hamburguesa con mas ingredientes:")
-    hamburguesaControllerSeria.getHamburguesaConMasIngredientes()?.let { println(it) }
+    hamburguesaControllerCsv.getHamburguesaConMasIngredientes()?.let { println(it) }
     println("Precio medio:")
-    println(hamburguesaControllerSeria.getPrecioMedio().toLocalMoney())
+    println(hamburguesaControllerJson.getPrecioMedio().toLocalMoney())
     println("Precio medio de ingredientes:")
-    hamburguesaControllerSeria.getPrecioMedioIngredientes().mapValues { it.value.toLocalMoney() }.let { println(it) }
+    hamburguesaControllerAleatorio.getPrecioMedioIngredientes().mapValues { it.value.toLocalMoney() }.let { println(it) }
 }

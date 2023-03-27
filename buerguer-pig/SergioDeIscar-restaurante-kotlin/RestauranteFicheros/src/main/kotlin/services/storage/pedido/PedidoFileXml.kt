@@ -17,7 +17,7 @@ object PedidoFileXml: PedidoStorageService {
         val pedidosDto = PedidosDto(listDto)
 
         val serializer = Persister()
-        serializer.write(pedidosDto, File(localFile));
+        serializer.write(pedidosDto, File(localFile))
 
         return elements
     }

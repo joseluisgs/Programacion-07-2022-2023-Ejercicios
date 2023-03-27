@@ -1,0 +1,160 @@
+[
+	{
+		"id": 0,
+		"nombre": "Mediana",
+		"ingredientes": [
+			{
+				"id": 0,
+				"nombre": "Lechuga",
+				"precio": 7.4807563
+			},
+			{
+				"id": 1,
+				"nombre": "Tomate",
+				"precio": 1.1217983
+			},
+			{
+				"id": 2,
+				"nombre": "Cebolla",
+				"precio": 9.716396
+			},
+			{
+				"id": 3,
+				"nombre": "Cebolla",
+				"precio": 10.275814
+			},
+			{
+				"id": 4,
+				"nombre": "Cebolla",
+				"precio": 4.596184
+			}
+		]
+	},
+	{
+		"id": 1,
+		"nombre": "Grande",
+		"ingredientes": [
+			{
+				"id": 5,
+				"nombre": "Cebolla",
+				"precio": 8.839227
+			},
+			{
+				"id": 6,
+				"nombre": "Cebolla",
+				"precio": 8.507171
+			},
+			{
+				"id": 7,
+				"nombre": "Tomate",
+				"precio": 4.557696
+			},
+			{
+				"id": 8,
+				"nombre": "Lechuga",
+				"precio": 9.033202
+			},
+			{
+				"id": 9,
+				"nombre": "Tomate",
+				"precio": 4.3369226
+			}
+		]
+	},
+	{
+		"id": 2,
+		"nombre": "Grande",
+		"ingredientes": [
+			{
+				"id": 10,
+				"nombre": "Tomate",
+				"precio": 2.4320538
+			}
+		]
+	},
+	{
+		"id": 3,
+		"nombre": "Grande",
+		"ingredientes": [
+			{
+				"id": 11,
+				"nombre": "Lechuga",
+				"precio": 8.77841
+			}
+		]
+	},
+	{
+		"id": 4,
+		"nombre": "Pequeña",
+		"ingredientes": [
+			{
+				"id": 12,
+				"nombre": "Cebolla",
+				"precio": 2.2214181
+			},
+			{
+				"id": 13,
+				"nombre": "Cebolla",
+				"precio": 4.0681047
+			}
+		]
+	},
+	{
+		"id": 5,
+		"nombre": "Pequeña",
+		"ingredientes": [
+			{
+				"id": 14,
+				"nombre": "Tomate",
+				"precio": 3.0810316
+			},
+			{
+				"id": 15,
+				"nombre": "Cebolla",
+				"precio": 5.4081693
+			},
+			{
+				"id": 16,
+				"nombre": "Cebolla",
+				"precio": 7.659808
+			},
+			{
+				"id": 17,
+				"nombre": "Tomate",
+				"precio": 5.3878727
+			},
+			{
+				"id": 18,
+				"nombre": "Cebolla",
+				"precio": 2.1105094
+			}
+		]
+	},
+	{
+		"id": 6,
+		"nombre": "Pequeña",
+		"ingredientes": [
+			{
+				"id": 19,
+				"nombre": "Cebolla",
+				"precio": 9.29306
+			},
+			{
+				"id": 20,
+				"nombre": "Lechuga",
+				"precio": 7.571718
+			}
+		]
+	},
+	{
+		"id": 7,
+		"nombre": "Mediana",
+		"ingredientes": [
+			{
+				"id": 21,
+				"nombre": "Cebolla",
+				"precio": 6.089566
+			}
+		]
+	}
+]

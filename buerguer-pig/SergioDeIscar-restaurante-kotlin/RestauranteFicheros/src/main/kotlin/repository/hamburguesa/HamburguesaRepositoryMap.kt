@@ -135,7 +135,6 @@ class HamburguesaRepositoryMap(
 
     override fun downgrade(): List<Hamburguesa> {
         logger.info { "Repositorio ->\tdowngrade" }
-
         return storageService.saveAll(almacen.values.toList())
     }
 }

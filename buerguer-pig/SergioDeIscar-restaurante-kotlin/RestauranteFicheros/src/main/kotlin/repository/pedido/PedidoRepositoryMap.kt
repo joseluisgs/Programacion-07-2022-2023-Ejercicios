@@ -78,7 +78,6 @@ class PedidoRepositoryMap(
 
     override fun downgrade(): List<Pedido> {
         logger.info { "Repositorio ->\tdowngrade" }
-
         return storageService.saveAll(pedidos.values.toList())
     }
 }
