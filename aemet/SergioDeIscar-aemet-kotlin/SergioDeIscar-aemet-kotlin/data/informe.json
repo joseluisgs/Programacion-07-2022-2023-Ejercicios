@@ -1,0 +1,38 @@
+[
+	{
+		"day": "2017-10-29",
+		"temMedia": "14.245614035087716",
+		"temMax": "25.1",
+		"poblacionMax": "Aranjuez",
+		"timeMax": "16:30",
+		"temMin": "3.5",
+		"poblacionMin": "Rascafr�a",
+		"timeMin": "15:20",
+		"isPrecipitacion": "false",
+		"precipitacion": "0.0"
+	},
+	{
+		"day": "2017-10-30",
+		"temMedia": "14.245614035087716",
+		"temMax": "25.2",
+		"poblacionMax": "Alpedrete",
+		"timeMax": "14:40",
+		"temMin": "-0.2",
+		"poblacionMin": "Rascafr�a",
+		"timeMin": "14:10",
+		"isPrecipitacion": "false",
+		"precipitacion": "0.0"
+	},
+	{
+		"day": "2017-10-31",
+		"temMedia": "14.245614035087716",
+		"temMax": "22.4",
+		"poblacionMax": "Aranjuez",
+		"timeMax": "16:40",
+		"temMin": "-0.9",
+		"poblacionMin": "Rascafr�a",
+		"timeMin": "06:20",
+		"isPrecipitacion": "false",
+		"precipitacion": "0.0"
+	}
+]
