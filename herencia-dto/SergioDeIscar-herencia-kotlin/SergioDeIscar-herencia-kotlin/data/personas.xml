@@ -1,0 +1,102 @@
+<personas>
+   <persona id="0">
+      <nombre>Ana</nombre>
+      <tipo>Alumno</tipo>
+      <edad>39</edad>
+   </persona>
+   <persona id="1">
+      <nombre>Juan</nombre>
+      <tipo>Alumno</tipo>
+      <edad>28</edad>
+   </persona>
+   <persona id="2">
+      <nombre>Juan</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Programación</modulo>
+   </persona>
+   <persona id="3">
+      <nombre>Ana</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Entornos</modulo>
+   </persona>
+   <persona id="4">
+      <nombre>Ana</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Programación</modulo>
+   </persona>
+   <persona id="5">
+      <nombre>Ana</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Programación</modulo>
+   </persona>
+   <persona id="6">
+      <nombre>Pepe</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Programación</modulo>
+   </persona>
+   <persona id="7">
+      <nombre>Pepe</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Entornos</modulo>
+   </persona>
+   <persona id="8">
+      <nombre>Ana</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Entornos</modulo>
+   </persona>
+   <persona id="9">
+      <nombre>Pepe</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Programación</modulo>
+   </persona>
+   <persona id="10">
+      <nombre>Juan</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Entornos</modulo>
+   </persona>
+   <persona id="11">
+      <nombre>Pepe</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Programación</modulo>
+   </persona>
+   <persona id="12">
+      <nombre>Juan</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Entornos</modulo>
+   </persona>
+   <persona id="13">
+      <nombre>Ana</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Entornos</modulo>
+   </persona>
+   <persona id="14">
+      <nombre>Juan</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Programación</modulo>
+   </persona>
+   <persona id="15">
+      <nombre>Juan</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Programación</modulo>
+   </persona>
+   <persona id="16">
+      <nombre>Ana</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Programación</modulo>
+   </persona>
+   <persona id="17">
+      <nombre>Juan</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Entornos</modulo>
+   </persona>
+   <persona id="18">
+      <nombre>Pepe</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Entornos</modulo>
+   </persona>
+   <persona id="19">
+      <nombre>Ana</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Programación</modulo>
+   </persona>
+</personas>

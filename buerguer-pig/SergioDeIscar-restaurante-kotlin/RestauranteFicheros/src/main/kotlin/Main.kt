@@ -18,13 +18,14 @@ import services.storage.pedido.PedidoFileXml
 import services.storage.pedido.PedidoFileJson
 import services.storage.productos.ProductoFileJson
 
+@ExperimentalStdlibApi
 fun main(args: Array<String>){
     println("APP_NAME: ${AppConfig.APP_NAME}")
     hamburguesasTest()
     pedidosTest()
 }
 
-@OptIn(ExperimentalStdlibApi::class)
+@ExperimentalStdlibApi
 private fun pedidosTest(){
     val pedidoControllerJson = PedidoController(
         PedidoRepositoryMap(
@@ -73,7 +74,7 @@ private fun pedidosTest(){
     productoControllerJson.getAll().forEach{ println(it) }
 }
 
-@OptIn(ExperimentalStdlibApi::class)
+@ExperimentalStdlibApi
 private fun hamburguesasTest(){
     val hamburguesaControllerSeria = HamburguesaController(
         HamburguesaRepositoryMap(
@@ -125,11 +126,11 @@ private fun hamburguesasTest(){
     hamburguesaControllerJson.getAll().forEach { println(it) }
     println("Los controladores tienen la misma info: " +
             (
-                    hamburguesaControllerSeria.getAll() == hamburguesaControllerCsv.getAll() &&
-                            hamburguesaControllerCsv.getAll() == hamburguesaControllerBin.getAll() &&
-                            hamburguesaControllerBin.getAll() == hamburguesaControllerAleatorio.getAll() &&
-                            hamburguesaControllerAleatorio.getAll() == hamburguesaControllerJson.getAll()
-                    )
+                hamburguesaControllerSeria.getAll() == hamburguesaControllerCsv.getAll() &&
+                hamburguesaControllerCsv.getAll() == hamburguesaControllerBin.getAll() &&
+                hamburguesaControllerBin.getAll() == hamburguesaControllerAleatorio.getAll() &&
+                hamburguesaControllerAleatorio.getAll() == hamburguesaControllerJson.getAll()
+            )
     )
 
 

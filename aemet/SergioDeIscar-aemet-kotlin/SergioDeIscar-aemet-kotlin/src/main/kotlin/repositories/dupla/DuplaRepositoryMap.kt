@@ -12,7 +12,6 @@ private val logger = KotlinLogging.logger {  }
 class DuplaRepositoryMap(
     private val storageService: DuplaStorageService
 ): DuplaRepository {
-    //private val duplas = mutableListOf<Dupla>()
     private val duplas = mutableMapOf<String,Dupla>()
 
     override fun maxTemPorLugar(): Map<LocalDate, Map<String, Double>> {

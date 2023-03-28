@@ -38,7 +38,7 @@ object AccidenteFileJson: AccidenteStorageService {
         logger.debug { "AccidenteFileJson ->\tloadAll" }
 
         val file = File(localFile)
-        //if (!canReed(file)) return emptyList()
+        if (!file.exists() || !file.canRead()) return emptyList()
 
         val moshi = Moshi.Builder()
             .add(KotlinJsonAdapterFactory())
@@ -48,12 +48,4 @@ object AccidenteFileJson: AccidenteStorageService {
 
         return jsonAdapter.fromJson(json)?.map { it.toClass() } ?: emptyList()
     }
-}
-
-private fun canReed(file: File): Boolean{
-    return file.exists() && file.canRead()
-}
-
-private fun canWrite(file: File): Boolean{
-    return !file.exists() || (file.exists() && file.canWrite())
 }

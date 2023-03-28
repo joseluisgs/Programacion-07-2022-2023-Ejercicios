@@ -3,37 +3,57 @@
 		"userId": 0,
 		"productos": [
 			{
-				"productoId": 0,
-				"precioUnd": 5.470389,
-				"cantidad": 2
-			},
-			{
-				"productoId": 1,
-				"precioUnd": 2.8486376,
-				"cantidad": 2
-			},
-			{
-				"productoId": 2,
-				"precioUnd": 27.115673,
-				"cantidad": 8
-			},
-			{
-				"productoId": 3,
-				"precioUnd": 10.652065,
+				"productoId": 6,
+				"precioUnd": 30.007347,
 				"cantidad": 10
 			},
 			{
+				"productoId": 7,
+				"precioUnd": 33.472954,
+				"cantidad": 4
+			},
+			{
 				"productoId": 0,
-				"precioUnd": 12.766312,
-				"cantidad": 7
+				"precioUnd": 6.3570123,
+				"cantidad": 10
+			},
+			{
+				"productoId": 8,
+				"precioUnd": 15.107344,
+				"cantidad": 4
+			},
+			{
+				"productoId": 9,
+				"precioUnd": 19.752892,
+				"cantidad": 6
 			},
 			{
 				"productoId": 1,
-				"precioUnd": 4.247183,
+				"precioUnd": 12.8279085,
+				"cantidad": 2
+			},
+			{
+				"productoId": 10,
+				"precioUnd": 14.818941,
+				"cantidad": 10
+			},
+			{
+				"productoId": 2,
+				"precioUnd": 7.0341763,
 				"cantidad": 5
+			},
+			{
+				"productoId": 3,
+				"precioUnd": 10.889601,
+				"cantidad": 4
+			},
+			{
+				"productoId": 11,
+				"precioUnd": 26.232605,
+				"cantidad": 1
 			}
 		],
-		"createAt": "2023-03-24T11:00:52.491358100",
-		"total": 450.6842
+		"createAt": "2023-03-27T19:42:36.138465700",
+		"total": 955.28925
 	}
 ]

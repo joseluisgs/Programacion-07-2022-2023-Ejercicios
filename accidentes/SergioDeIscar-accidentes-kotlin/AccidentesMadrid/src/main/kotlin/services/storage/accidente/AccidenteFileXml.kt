@@ -11,18 +11,24 @@ object AccidenteFileXml: AccidenteStorageService{
     private val localFile = "${AppConfig.APP_DATA}${File.separator}accidente.xml"
 
     override fun saveAll(elements: List<Accidente>): List<Accidente> {
+        val file = File(localFile)
+        if (file.exists() && !file.canWrite()) return emptyList()
+
         val listDto = elements.map { it.toDto() }
         val accidentesDto = AccidentesDto(listDto)
 
         val serializer = Persister()
-        serializer.write(accidentesDto, File(localFile))
+        serializer.write(accidentesDto, file)
         return elements
     }
 
     override fun loadAll(): List<Accidente> {
+        val file = File(localFile)
+        if (!file.exists() || !file.canRead()) return emptyList()
+
         val serializer = Persister()
         val accidentes = serializer
-            .read(AccidentesDto::class.java, File(localFile))
+            .read(AccidentesDto::class.java, file)
         return accidentes.accidnetes.map { it.toClass() }
     }
 }
