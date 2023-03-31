@@ -11,7 +11,7 @@ private val logger = KotlinLogging.logger {}
 private val LOCAL_PATH = "${System.getProperty("user.dir")}${File.separator}"
 
 object AppConfig {
-    val APP_NAME = "Accidentes Madrid"
+    val APP_NAME = "Herencia DTO"
     val APP_VERSION = "1.0.0"
     lateinit var APP_AUTHOR: String
     lateinit var APP_DATA: String

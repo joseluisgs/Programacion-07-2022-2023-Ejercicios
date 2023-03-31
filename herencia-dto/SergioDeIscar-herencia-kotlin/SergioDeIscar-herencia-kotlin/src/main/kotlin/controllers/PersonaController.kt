@@ -10,6 +10,11 @@ private val logger = KotlinLogging.logger {}
 class PersonaController(
     private val repo: PersonaRepository
 ): PersonaExtension {
+    override fun getPorcentajePorTipo(): Map<String, Double> {
+        logger.debug { "PersonaController ->\tgetPorcentajePorTipo" }
+        return repo.getPorcentajePorTipo()
+    }
+
     override fun getAll(): List<Persona> {
         logger.debug { "PersonaController ->\tgetAll" }
         return repo.getAll()

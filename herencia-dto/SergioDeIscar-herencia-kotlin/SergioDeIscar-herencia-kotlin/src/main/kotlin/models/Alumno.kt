@@ -15,4 +15,8 @@ class Alumno(
     override fun toCsvRow(): String {
         return "$id,$nombre,Alumno,$edad,null\n"
     }
+
+    override fun toString(): String {
+        return "Alumno(id=$id, nombre='$nombre', edad=$edad)"
+    }
 }

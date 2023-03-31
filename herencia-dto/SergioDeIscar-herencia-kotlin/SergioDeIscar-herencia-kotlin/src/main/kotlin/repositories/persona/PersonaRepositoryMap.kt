@@ -1,15 +1,29 @@
 package repositories.persona
 
+import models.Alumno
 import models.Persona
+import models.Profesor
 import mu.KotlinLogging
 import service.storage.persona.PersonaStorageService
 
 private val logger = KotlinLogging.logger {  }
 
 class PersonaRepositoryMap(
-    val storageService: PersonaStorageService
+    private val storageService: PersonaStorageService
 ): PersonaRepository {
     private val personas = mutableMapOf<Int, Persona>()
+    override fun getPorcentajePorTipo(): Map<String, Double> {
+        logger.debug { "PersonaRepositoryMap ->\tgetPorcentajePorTipo" }
+        return personas.values
+            .groupBy {
+                when(it){
+                    is Alumno -> "Alumno"
+                    is Profesor -> "Profesor"
+                    else -> throw RuntimeException("Tipo de persona no reconocido")
+                }
+            }
+            .mapValues { it.value.size.toDouble() / personas.size }
+    }
 
     override fun getAll(): List<Persona> {
         logger.debug { "PersonaRepositoryMap ->\tgetAll" }
