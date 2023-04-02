@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class PersonaFileCsv implements PersonaStorageService{
@@ -57,7 +58,7 @@ public class PersonaFileCsv implements PersonaStorageService{
                             case "Profesor" -> new Profesor(Integer.parseInt(linea[0]), linea[1], linea[4]);
                             default -> throw new RuntimeException("Tipo de persona no reconocido");
                         }
-                    ).toList();
+                    ).collect(Collectors.toList());
         } catch (IOException e) {
             System.out.println("Error al leer el archivo");
         }

@@ -7,8 +7,10 @@ import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
+import java.io.Serializable;
+
 @Root(name = "persona")
-public class PersonaDto {
+public class PersonaDto implements Serializable {
     public PersonaDto(String id, String nombre, String tipo, String edad, String modulo) {
         this.id = id;
         this.nombre = nombre;

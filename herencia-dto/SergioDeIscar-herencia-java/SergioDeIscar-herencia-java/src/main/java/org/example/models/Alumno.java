@@ -2,7 +2,9 @@ package org.example.models;
 
 import org.example.dto.PersonaDto;
 
-public class Alumno extends Persona{
+import java.io.Serializable;
+
+public class Alumno extends Persona implements Serializable {
     private final int edad;
 
     public Alumno(String nombre, int edad) {

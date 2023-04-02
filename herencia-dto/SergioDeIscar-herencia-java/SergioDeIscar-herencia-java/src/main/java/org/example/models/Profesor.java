@@ -2,7 +2,9 @@ package org.example.models;
 
 import org.example.dto.PersonaDto;
 
-public class Profesor extends Persona{
+import java.io.Serializable;
+
+public class Profesor extends Persona implements Serializable {
     private final String modulo;
 
     public Profesor(String nombre, String modulo) {
