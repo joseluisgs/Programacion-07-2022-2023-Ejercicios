@@ -13,21 +13,21 @@ import static org.example.formateadores.Formateador.toLocalTimeFormate;
 @Root(name = "dupla")
 public class DuplaDto  implements Serializable {
     @Attribute(name = "poblacion")
-    private final String poblacion;
+    private String poblacion;
     @Attribute(name = "provincia")
-    private final String provincia;
+    private String provincia;
     @Element(name = "temMax")
-    private final String temMax;
+    private String temMax;
     @Element(name = "timeMax")
-    private final String timeMax;
+    private String timeMax;
     @Element(name = "temMin")
-    private final String temMin;
+    private String temMin;
     @Element(name = "timeMin")
-    private final String timeMin;
+    private String timeMin;
     @Element(name = "precipitacion")
-    private final String precipitacion;
+    private String precipitacion;
     @Attribute(name = "day")
-    private final String day;
+    private String day;
     public DuplaDto(String poblacion, String provincia, String temMax, String timeMax, String temMin, String timeMin, String precipitacion, String day)  {
         this.poblacion = poblacion;
         this.provincia = provincia;
@@ -38,6 +38,10 @@ public class DuplaDto  implements Serializable {
         this.precipitacion = precipitacion;
         this.day = day;
     }
+    public DuplaDto(){
+        // Constructor vacio para SimpleXML
+    }
+
     public Dupla toClass(){
         return new Dupla(
                 poblacion,
@@ -49,5 +53,31 @@ public class DuplaDto  implements Serializable {
                 Double.parseDouble(precipitacion),
                 LocalDate.parse(day)
         );
+    }
+
+    // Getters
+    public String getPoblacion() {
+        return poblacion;
+    }
+    public String getProvincia() {
+        return provincia;
+    }
+    public String getTemMax() {
+        return temMax;
+    }
+    public String getTimeMax() {
+        return timeMax;
+    }
+    public String getTemMin() {
+        return temMin;
+    }
+    public String getTimeMin() {
+        return timeMin;
+    }
+    public String getPrecipitacion() {
+        return precipitacion;
+    }
+    public String getDay() {
+        return day;
     }
 }

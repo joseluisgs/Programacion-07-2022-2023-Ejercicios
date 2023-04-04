@@ -1,11 +1,17 @@
 package org.example;
 
 import org.example.controllers.DuplaController;
+import org.example.controllers.InformeController;
+import org.example.factories.InformeFactory;
 import org.example.models.Dupla;
+import org.example.models.Informe;
 import org.example.repositories.dupla.DuplaRepositoryMap;
+import org.example.repositories.informe.InformeRepositoryMap;
 import org.example.services.storage.dupla.DuplaFileCsv;
 import org.example.services.storage.dupla.DuplaFileJson;
 import org.example.services.storage.dupla.DuplaFileXml;
+import org.example.services.storage.informe.InformeFileJson;
+import org.example.services.storage.informe.InformeFileXml;
 
 import java.util.List;
 
@@ -29,14 +35,30 @@ public class Main {
                 )
         );
         List<Dupla> duplas = controllerCsv.getAll();
-        //consultas(controllerCsv);
+
+        consultas(controllerCsv);
+
         saveAllControllers(controllers, duplas);
-        System.out.println("Todos los controllers tienen los mismos datos: " + checkControllers(controllers));
+        //System.out.println("Todos los controllers tienen los mismos datos: " + checkControllers(controllers));
+
+        createInformes(controllers.get(0));
     }
 
-    private static Boolean checkControllers(List<DuplaController> controllers) {
+    private static void createInformes(DuplaController duplaController) {
+        InformeController controllerJson = new InformeController(new InformeRepositoryMap(InformeFileJson.getInstance()));
+        InformeController controllerXml = new InformeController(new InformeRepositoryMap(InformeFileXml.getInstance()));
+        List<Informe> informes = InformeFactory.getInstance().createInformesMadrid(duplaController);
+        controllerJson.saveAll(informes, true);
+        controllerXml.saveAll(informes, true);
+        //System.out.println("Todos los informes tienen los mismos datos: " + checkControllersInforme(List.of(controllerJson, controllerXml)));
+    }
+
+    /*private static Boolean checkControllers(List<DuplaController> controllers) {
         return controllers.stream().allMatch(c -> c.getAll().equals(controllers.get(0).getAll()));
     }
+    private static Boolean checkControllersInforme(List<InformeController> controllers) {
+        return controllers.stream().allMatch(c -> c.getAll().equals(controllers.get(0).getAll()));
+    }*/
 
     private static void saveAllControllers(List<DuplaController> controllers, List<Dupla> duplas){
         controllers.forEach(c -> c.saveAll(duplas, true));

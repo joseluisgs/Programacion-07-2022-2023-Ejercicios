@@ -60,8 +60,6 @@ public class DuplaFileJson implements DuplaStorageService{
             BufferedSource source = okio.Okio.buffer(okio.Okio.source(file));
             DuplasDto dto = jsonAdapter.fromJson(source);
             return dto.getDuplas().stream().map(DuplaDto::toClass).toList();
-        } catch (FileNotFoundException e) {
-            System.out.println("Error al leer en el fichero");
         } catch (IOException e) {
             System.out.println("Error al leer en el fichero");
         }

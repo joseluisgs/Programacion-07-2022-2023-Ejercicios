@@ -7,7 +7,6 @@ import org.example.models.Dupla;
 import org.simpleframework.xml.core.Persister;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.List;
 
 public class DuplaFileXml implements DuplaStorageService{
@@ -43,12 +42,9 @@ public class DuplaFileXml implements DuplaStorageService{
         Persister persister = new Persister();
         try{
             return persister.read(DuplasDto.class, file)
-                .getDuplas()
-                .stream()
-                .map(DuplaDto::toClass)
-                .toList();
+                .getDuplas().stream().map(DuplaDto::toClass).toList();
         } catch (Exception e) {
-            System.out.println("Error al leer en el fichero XML");
+            e.printStackTrace();
         }
         return null;
     }

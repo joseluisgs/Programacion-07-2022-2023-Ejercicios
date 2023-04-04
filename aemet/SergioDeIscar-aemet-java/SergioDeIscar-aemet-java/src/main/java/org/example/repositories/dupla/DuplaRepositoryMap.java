@@ -220,7 +220,7 @@ public class DuplaRepositoryMap implements DuplaRepository{
     public Dupla maxTemMadrid(LocalDate day) {
         upgrade();
         return duplas.values().stream()
-                .filter(e -> e.getPoblacion().equals("Madrid") && e.getDay().equals(day))
+                .filter(e -> e.getProvincia().equals("Madrid") && e.getDay().equals(day))
                 .max(Comparator.comparing(Dupla::getTemMax))
                 .orElse(null);
     }
@@ -229,7 +229,7 @@ public class DuplaRepositoryMap implements DuplaRepository{
     public Dupla minTemMadrid(LocalDate day) {
         upgrade();
         return duplas.values().stream()
-                .filter(e -> e.getPoblacion().equals("Madrid") && e.getDay().equals(day))
+                .filter(e -> e.getProvincia().equals("Madrid") && e.getDay().equals(day))
                 .min(Comparator.comparing(Dupla::getTemMin))
                 .orElse(null);
     }
@@ -238,7 +238,7 @@ public class DuplaRepositoryMap implements DuplaRepository{
     public Double mediaPrecipitacionMadrid(LocalDate day) {
         upgrade();
         return duplas.values().stream()
-                .filter(e -> e.getPoblacion().equals("Madrid") && e.getDay().equals(day))
+                .filter(e -> e.getProvincia().equals("Madrid") && e.getDay().equals(day))
                 .mapToDouble(Dupla::getPrecipitacion)
                 .average()
                 .orElse(0.0);

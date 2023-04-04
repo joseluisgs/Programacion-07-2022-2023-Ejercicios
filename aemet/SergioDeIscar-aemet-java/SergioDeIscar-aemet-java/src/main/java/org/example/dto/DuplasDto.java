@@ -11,10 +11,15 @@ public class DuplasDto implements Serializable {
     public DuplasDto(List<DuplaDto> duplas) {
         this.duplas = duplas;
     }
+    public DuplasDto(){
+        // Constructor vacio para SimpleXML
+    }
     @ElementList(name = "dupla", inline = true)
     private List<DuplaDto> duplas;
 
+    //Getters
     public List<DuplaDto> getDuplas() {
         return duplas;
     }
+
 }

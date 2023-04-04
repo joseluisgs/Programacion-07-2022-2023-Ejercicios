@@ -19,6 +19,9 @@ dependencies {
 
     // Simple XML
     implementation("org.simpleframework:simple-xml:2.7.1")
+
+    //Lombok
+    //implementation("org.projectlombok:lombok:1.18.26")
 }
 
 tasks.test {
