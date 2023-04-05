@@ -1,0 +1,19 @@
+<Informe>
+   <fecha>31/10/2017</fecha>
+   <temperaturaMedia>11.0</temperaturaMedia>
+   <temperaturaMaxima>22.4</temperaturaMaxima>
+   <horaTemperaturaMaxima>16:40</horaTemperaturaMaxima>
+   <estacionTemperaturaMaxima>Aranjuez</estacionTemperaturaMaxima>
+   <temperaturaMinima>-0.2</temperaturaMinima>
+   <horaTemperaturaMinima>08:00</horaTemperaturaMinima>
+   <estacionTemperaturaMinima>Buitrago del Lozoya</estacionTemperaturaMinima>
+   <precipitacion>false</precipitacion>
+   <ListaSitiosPrecipitacion length="0"></ListaSitiosPrecipitacion>
+   <Datos>      INFORME DIARIO COMUNIDAD DE MADRID DIA:31/10/2017
+      ---------------------------------------------------- 
+      - Temperatura Media Comunidad: 11.0ºC
+      - Temperatura Maxima (Lugar y Momento): 22.4ºCen estacion de Aranjuez a las 16:40
+      - Temperatura Minima (Lugar y Momento): -0.2ºCen estacion de Buitrago del Lozoya a las 08:00
+      - Precipitaciones: false 
+</Datos>
+</Informe>
