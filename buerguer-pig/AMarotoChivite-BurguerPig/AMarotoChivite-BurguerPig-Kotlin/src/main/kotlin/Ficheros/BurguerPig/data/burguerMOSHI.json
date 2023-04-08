@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Burguer_1",
+    "ingredients": [
+      {
+        "name": "Cerdo",
+        "price": 2.2,
+        "id": 2
+      },
+      {
+        "name": "Atún",
+        "price": 2.1,
+        "id": 4
+      },
+      {
+        "name": "Queso",
+        "price": 1.3,
+        "id": 7
+      },
+      {
+        "name": "Mostaza",
+        "price": 0.5,
+        "id": 5
+      }
+    ],
+    "id": "fb76b56d-12cb-404c-8a59-3605647e4cc3",
+    "priceCalculate": 9.15
+  },
+  {
+    "name": "Burguer_2",
+    "ingredients": [
+      {
+        "name": "Mostaza",
+        "price": 0.5,
+        "id": 5
+      },
+      {
+        "name": "Cerdo",
+        "price": 2.2,
+        "id": 2
+      },
+      {
+        "name": "Atún",
+        "price": 2.1,
+        "id": 4
+      },
+      {
+        "name": "Tomate",
+        "price": 0.4,
+        "id": 0
+      }
+    ],
+    "id": "c5892309-307f-4c8d-865d-d13d68c8328c",
+    "priceCalculate": 7.800000000000002
+  },
+  {
+    "name": "Burguer_3",
+    "ingredients": [
+      {
+        "name": "Lechuga",
+        "price": 0.2,
+        "id": 1
+      },
+      {
+        "name": "Ketchup",
+        "price": 0.5,
+        "id": 6
+      }
+    ],
+    "id": "881e0801-0135-4c00-949b-333d89845cec",
+    "priceCalculate": 1.0499999999999998
+  },
+  {
+    "name": "Burguer_4",
+    "ingredients": [
+      {
+        "name": "Lechuga",
+        "price": 0.2,
+        "id": 1
+      },
+      {
+        "name": "Atún",
+        "price": 2.1,
+        "id": 4
+      },
+      {
+        "name": "Pollo",
+        "price": 1.5,
+        "id": 3
+      },
+      {
+        "name": "Cerdo",
+        "price": 2.2,
+        "id": 2
+      }
+    ],
+    "id": "488ebc72-eb14-4ee3-8f11-897566818946",
+    "priceCalculate": 9.0
+  },
+  {
+    "name": "Burguer_5",
+    "ingredients": [
+      {
+        "name": "Pollo",
+        "price": 1.5,
+        "id": 3
+      },
+      {
+        "name": "Tomate",
+        "price": 0.4,
+        "id": 0
+      },
+      {
+        "name": "Atún",
+        "price": 2.1,
+        "id": 4
+      },
+      {
+        "name": "Cerdo",
+        "price": 2.2,
+        "id": 2
+      }
+    ],
+    "id": "b4da6411-f6ad-40c4-96b5-a50728984917",
+    "priceCalculate": 9.3
+  },
+  {
+    "name": "Burguer_6",
+    "ingredients": [
+      {
+        "name": "Queso",
+        "price": 1.3,
+        "id": 7
+      },
+      {
+        "name": "Lechuga",
+        "price": 0.2,
+        "id": 1
+      }
+    ],
+    "id": "323a40ea-d96a-4993-a313-a39983b6b88d",
+    "priceCalculate": 2.25
+  },
+  {
+    "name": "Burguer_7",
+    "ingredients": [
+      {
+        "name": "Cerdo",
+        "price": 2.2,
+        "id": 2
+      },
+      {
+        "name": "Atún",
+        "price": 2.1,
+        "id": 4
+      }
+    ],
+    "id": "7e38aee7-e01b-437f-9d14-a61cb7d4c372",
+    "priceCalculate": 6.450000000000001
+  },
+  {
+    "name": "Burguer_8",
+    "ingredients": [
+      {
+        "name": "Cerdo",
+        "price": 2.2,
+        "id": 2
+      },
+      {
+        "name": "Queso",
+        "price": 1.3,
+        "id": 7
+      }
+    ],
+    "id": "988b4ddb-6255-4beb-95eb-960bb78b8f8b",
+    "priceCalculate": 5.25
+  }
+]

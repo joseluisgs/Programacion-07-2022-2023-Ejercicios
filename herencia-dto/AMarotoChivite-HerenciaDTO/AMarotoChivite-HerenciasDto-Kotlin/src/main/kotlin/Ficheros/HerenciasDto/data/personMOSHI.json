@@ -1,0 +1,124 @@
+[
+  {
+    "name": "David",
+    "edad": "24",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Pedro",
+    "edad": "40",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Elena",
+    "edad": "22",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Javier",
+    "edad": "26",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Juan",
+    "edad": "34",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Raquel",
+    "edad": "32",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Carla",
+    "edad": "26",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Rosa",
+    "edad": "39",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Ana",
+    "edad": "38",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Sara",
+    "edad": "38",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Pedro",
+    "edad": "37",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Jorge",
+    "edad": "38",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Carla",
+    "edad": "20",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Fernando",
+    "edad": "25",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Diego",
+    "edad": "35",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Diego",
+    "edad": "24",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Elena",
+    "edad": "36",
+    "type": "Profesor",
+    "profesor": {
+      "modulo": "Entornos"
+    }
+  },
+  {
+    "name": "Laura",
+    "edad": "22",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Javier",
+    "edad": "28",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Ana",
+    "edad": "24",
+    "type": "Alumno",
+    "alumno": {}
+  }
+]
