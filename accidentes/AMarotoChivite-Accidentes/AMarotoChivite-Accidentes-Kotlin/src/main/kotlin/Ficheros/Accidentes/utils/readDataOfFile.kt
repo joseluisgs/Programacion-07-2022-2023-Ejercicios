@@ -12,21 +12,21 @@ fun readDataOfCSV(): List<AccidenteDTO> {
     val lines = file.readLines().drop(1)
 
     val listAccidenteDTO = lines.map { line ->
-        val fields = line.split(';')
 
+        val fields = line.split(';')
         val numExpediente = fields[0]
         val fecha = fields[1]
         val hora = fields[2]
         val localizacion = fields[3]
         val numero = fields[4]
 
-        // Hay casos en los que no dispongamos de valor, por ello asigno como "null"
-        // val codDistrito = if (fields[5] == null) fields[5] else "null"
+        // Filtrar las filas que no tienen un valor para el campo "cod_distrito".
+        // El índice 5 corresponde al campo "cod_distrito".
         var codDistrito = ""
-        if (fields[5] == null) {
-            codDistrito = fields[5]
+        if (fields[5] == "") {
+            codDistrito = "nulo"
         } else {
-            codDistrito = "null"
+            codDistrito = fields[5]
         }
 
         val distrito = fields[6]
@@ -42,6 +42,7 @@ fun readDataOfCSV(): List<AccidenteDTO> {
         val coordenadaY = fields[16]
         val positivoAlcohol = fields[17]
         val positivoDroga = fields[18]
+
 
         AccidenteDTO(
             numExpediente,
