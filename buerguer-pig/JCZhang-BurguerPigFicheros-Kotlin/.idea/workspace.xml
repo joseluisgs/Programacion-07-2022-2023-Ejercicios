@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e0e90381-dd79-40b0-a8c9-dc7620fdd937" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../aemet/JCZhang-Aemet-Kotlin/src/main/kotlin/data/Aemet20171029.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aemet/JCZhang-Aemet-Kotlin/src/main/kotlin/data/Aemet20171030.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aemet/JCZhang-Aemet-Kotlin/src/main/kotlin/data/Aemet20171031.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Hamburguesas.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Ingredientes.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/hamburguesa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/hamburguesa.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/hamburguesas.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/hamburguesas.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/hamburguesas.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/ingredientes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/ingredientes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/ingredientes.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/ingredientes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/ingredientes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/IngredientesController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dto/HamburguesaDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dto/IngredienteDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mappers/HamburguesaMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mappers/ingredienteMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/repositories/Ingredientes/IngredientesRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/services/storage/hamburguesas/HamburguesaBinarioService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/services/storage/hamburguesas/HamburguesaCSVService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/services/storage/hamburguesas/HamburguesaFicheroTextoService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/services/storage/hamburguesas/HamburguesaJsonService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/services/storage/hamburguesas/HamburguesaSerializableService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/services/storage/hamburguesas/HamburguesaStorageService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/services/storage/hamburguesas/HamburguesaXmlService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/services/storage/ingredientes/IngredienteFicheroTextoService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/services/storage/ingredientes/IngredienteJsonService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/services/storage/ingredientes/IngredienteSerService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/services/storage/ingredientes/IngredienteXmlService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/services/storage/ingredientes/IngredientesBinarioService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/services/storage/ingredientes/IngredientesCSVService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/services/storage/ingredientes/IngredientesStorageService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/jsonAdapter.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../Hospital-MVC/caches/modules-2/files-2.1/org.simpleframework/simple-xml/2.7.1/2a949576bb8da7514024dc0b84efeeb2fc902a0/simple-xml-2.7.1-sources.jar!/org/simpleframework/xml/core/Persister.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2N8OqgXV6C5k72tpCUEJ9gnCFRP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jiach/Desktop/DAM/Programación/Programacion-07-2022-2023&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="repositories.Hamburguesas" />
+      <recent name="repositories.ficheroTexto" />
+      <recent name="services.storage.base" />
+      <recent name="services.storage.hamburguesas" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="JCZhang-BurguerPigFicheros-Kotlin.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0e90381-dd79-40b0-a8c9-dc7620fdd937" name="Changes" comment="" />
+      <created>1679042437860</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679042437860</updated>
+      <workItem from="1679042439380" duration="3728000" />
+      <workItem from="1679046210142" duration="2246000" />
+      <workItem from="1679048482309" duration="74000" />
+      <workItem from="1679048573499" duration="2413000" />
+      <workItem from="1679423464742" duration="74000" />
+      <workItem from="1679651677275" duration="805000" />
+      <workItem from="1679655082762" duration="108000" />
+      <workItem from="1679906166645" duration="75000" />
+      <workItem from="1679907123915" duration="3015000" />
+      <workItem from="1679910160619" duration="1143000" />
+      <workItem from="1679927686293" duration="5583000" />
+      <workItem from="1679985250757" duration="7585000" />
+      <workItem from="1679993028525" duration="354000" />
+      <workItem from="1679993459534" duration="1370000" />
+      <workItem from="1680533640679" duration="1211000" />
+      <workItem from="1680551499669" duration="4342000" />
+      <workItem from="1680557142944" duration="1708000" />
+      <workItem from="1680599826119" duration="5732000" />
+      <workItem from="1680706928168" duration="5092000" />
+      <workItem from="1680776199665" duration="4934000" />
+      <workItem from="1680800845402" duration="1687000" />
+      <workItem from="1680805572097" duration="1381000" />
+      <workItem from="1680872177100" duration="349000" />
+      <workItem from="1680874811363" duration="417000" />
+      <workItem from="1680878656251" duration="3080000" />
+      <workItem from="1680885215442" duration="6342000" />
+      <workItem from="1680891975412" duration="1317000" />
+      <workItem from="1680963497310" duration="2811000" />
+      <workItem from="1680995331275" duration="3213000" />
+      <workItem from="1681053401366" duration="2023000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.simpleframework.xml.core.PersistenceException" package="org.simpleframework.xml.core" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JCZhang_BurguerPigFicheros_Kotlin$MainKt.ic" NAME="MainKt Coverage Results" MODIFIED="1679910025831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
