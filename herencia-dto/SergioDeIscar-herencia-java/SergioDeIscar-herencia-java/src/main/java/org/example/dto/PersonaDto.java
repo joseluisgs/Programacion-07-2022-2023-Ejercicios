@@ -20,15 +20,15 @@ public class PersonaDto implements Serializable {
     }
 
     @Attribute(name = "id")
-    private String id;
+    private final String id;
     @Element(name = "nombre")
-    private String nombre;
+    private final String nombre;
     @Element(name = "tipo")
-    private String tipo;
+    private final String tipo;
     @Element(name = "edad", required = false)
-    private String edad;
+    private final String edad;
     @Element(name = "modulo", required = false)
-    private String modulo;
+    private final String modulo;
 
     public Persona toClass(){
         return switch (tipo) {

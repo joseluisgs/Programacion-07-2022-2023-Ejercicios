@@ -2,10 +2,7 @@ import controllers.PersonaController
 import factories.PersonaFactory
 import models.Persona
 import repositories.persona.PersonaRepositoryMap
-import service.storage.persona.PersonaFileCsv
-import service.storage.persona.PersonaFileJson
-import service.storage.persona.PersonaFileXml
-import service.storage.persona.PersonaStorageService
+import service.storage.persona.*
 
 @ExperimentalStdlibApi
 fun main() {
@@ -14,8 +11,16 @@ fun main() {
     generateFile(personas, PersonaFileJson)
     generateFile(personas, PersonaFileXml)
     generateFile(personas, PersonaFileCsv)
+    generateFile(personas, PersonaFileBinario)
+    generateFile(personas, PersonaFileSerializable)
 
-    println("Tienen el mismo contenido:" + equalContent(personas, listOf(PersonaFileJson, PersonaFileXml, PersonaFileCsv)))
+    println("Tienen el mismo contenido:" + equalContent(personas, listOf(
+        PersonaFileJson,
+        PersonaFileXml,
+        PersonaFileCsv,
+        PersonaFileBinario,
+        PersonaFileSerializable
+    )))
 }
 
 private fun generateFile(personas: List<Persona>, storageService: PersonaStorageService) {

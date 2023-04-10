@@ -53,4 +53,7 @@ data class InformeDto(
             precipitacion = Pair(isPrecipitacion.toBoolean(), precipitacion.toDouble())
         )
     }
+    fun toCsvRow(): String{
+        return "$day,$temMedia,$temMax,$poblacionMax,$timeMax,$temMin,$poblacionMin,$timeMin,$isPrecipitacion,$precipitacion\n"
+    }
 }

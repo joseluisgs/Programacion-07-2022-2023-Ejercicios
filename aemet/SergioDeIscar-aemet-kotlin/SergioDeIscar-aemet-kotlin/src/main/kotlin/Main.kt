@@ -1,14 +1,14 @@
 import controllers.DuplaController
 import controllers.InformeController
 import factories.InformeFactory
+import models.Informe
 import repositories.dupla.DuplaRepositoryMap
 import repositories.informe.InformeRepository
 import repositories.informe.InformeRepositoryMap
 import services.storage.dupla.DuplaFileCsv
 import services.storage.dupla.DuplaFileJson
 import services.storage.dupla.DuplaFileXml
-import services.storage.informe.InformeFileJson
-import services.storage.informe.InformeFileXml
+import services.storage.informe.*
 
 @ExperimentalStdlibApi
 fun main() {
@@ -36,27 +36,33 @@ fun main() {
         duplasCsv.containsAll(controllerXml.getAll())
     }")
 
-    consultas(controllerJson)
+    //consultas(controllerJson)
 
     createInfromes(controllerXml)
 }
 
 @ExperimentalStdlibApi
 private fun createInfromes(controllerDupla: DuplaController) {
-    val controllerInformeJson = InformeController(
-        InformeRepositoryMap(
-            InformeFileJson
-        )
-    )
-    val controllerInformeXml = InformeController(
-        InformeRepositoryMap(
-            InformeFileXml
-        )
-    )
     val informes = InformeFactory.createInformesMadrid(controllerDupla)
 
-    controllerInformeJson.saveAll(informes)
-    controllerInformeXml.saveAll(informes)
+    println("Tienen el mismo contenido: " + equalContent(informes, listOf(
+        InformeFileJson,
+        InformeFileXml,
+        InformeFileCsv,
+        InformeFileBinario
+    )))
+}
+
+private fun equalContent(informes: List<Informe>, listOf: List<InformeStorageService>): Boolean{
+    val controllers = listOf.map {
+        InformeController(
+            InformeRepositoryMap(
+                it
+            )
+        )
+    }
+    controllers.forEach{it.saveAll(informes)}
+    return controllers.map { it.getAll() }.distinct().size == 1
 }
 
 private fun consultas(controller: DuplaController) {

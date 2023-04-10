@@ -12,7 +12,7 @@ public class PersonasDto implements Serializable {
         this.personas = personas;
     }
     @ElementList(name = "persona", inline = true)
-    private List<PersonaDto> personas;
+    private final List<PersonaDto> personas;
 
     public List<PersonaDto> getPersonas() {
         return personas;

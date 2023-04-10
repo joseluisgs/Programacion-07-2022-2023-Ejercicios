@@ -40,9 +40,6 @@ object DuplaFileJson: DuplaStorageService {
         val file = File(localFile)
         if (!file.exists() || !file.canRead()) return emptyList()
 
-        val moshi = Moshi.Builder()
-            .add(KotlinJsonAdapterFactory())
-            .build()
         val jsonAdapter = moshi.adapter<List<DuplaDto>>()
         val json = file.readText()
 
