@@ -1,0 +1,111 @@
+[
+   {
+      "id": "ee2391b1-c83b-41f6-ad9d-f89c47fdcaea",
+      "nombre": "Hambuergesa de cerdo",
+      "ingredientes": [
+         {
+            "id": "1",
+            "nombre": "Cebolla",
+            "precio": "1.69"
+         },
+         {
+            "id": "2",
+            "nombre": "Carne",
+            "precio": "1.0"
+         },
+         {
+            "id": "3",
+            "nombre": "Cebolla",
+            "precio": "3.01"
+         }
+      ]
+   },
+   {
+      "id": "f7f29ec7-bdbd-41bf-8ff7-98c035f35a6e",
+      "nombre": "Hambuergesa de pollo",
+      "ingredientes": [
+         {
+            "id": "2",
+            "nombre": "Carne",
+            "precio": "1.0"
+         },
+         {
+            "id": "1",
+            "nombre": "Cebolla",
+            "precio": "1.69"
+         },
+         {
+            "id": "2",
+            "nombre": "Carne",
+            "precio": "1.0"
+         }
+      ]
+   },
+   {
+      "id": "113bee15-eb1d-4368-93af-1ff2f98ad435",
+      "nombre": "Hambuergesa de cerdo",
+      "ingredientes": [
+         {
+            "id": "3",
+            "nombre": "Cebolla",
+            "precio": "3.01"
+         },
+         {
+            "id": "1",
+            "nombre": "Cebolla",
+            "precio": "1.69"
+         },
+         {
+            "id": "1",
+            "nombre": "Cebolla",
+            "precio": "1.69"
+         },
+         {
+            "id": "2",
+            "nombre": "Carne",
+            "precio": "1.0"
+         }
+      ]
+   },
+   {
+      "id": "f5cab109-aa26-49ff-86cf-71c5eb88f7d0",
+      "nombre": "Hambuergesa de vaca",
+      "ingredientes": [
+         {
+            "id": "3",
+            "nombre": "Cebolla",
+            "precio": "3.01"
+         },
+         {
+            "id": "1",
+            "nombre": "Cebolla",
+            "precio": "1.69"
+         },
+         {
+            "id": "3",
+            "nombre": "Cebolla",
+            "precio": "3.01"
+         },
+         {
+            "id": "2",
+            "nombre": "Carne",
+            "precio": "1.0"
+         },
+         {
+            "id": "4",
+            "nombre": "Cebolla",
+            "precio": "2.89"
+         },
+         {
+            "id": "1",
+            "nombre": "Cebolla",
+            "precio": "1.69"
+         },
+         {
+            "id": "1",
+            "nombre": "Cebolla",
+            "precio": "1.69"
+         }
+      ]
+   }
+]

@@ -1,0 +1,104 @@
+{
+   "personas": [
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "modulo": "Programacion",
+         "nombre": "Ash",
+         "tipo": "profesor"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "modulo": "Programacion",
+         "nombre": "Ash",
+         "tipo": "profesor"
+      },
+      {
+         "modulo": "Entornos",
+         "nombre": "Ash",
+         "tipo": "profesor"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      },
+      {
+         "edad": "39",
+         "nombre": "Ash",
+         "tipo": "alumno"
+      }
+   ]
+}

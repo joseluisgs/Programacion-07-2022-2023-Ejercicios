@@ -1,0 +1,6 @@
+<listaIngredientesDto>
+   <ingrediente id="1" nombre="Pepinillo" precio="3.26"/>
+   <ingrediente id="2" nombre="Pan" precio="6.32"/>
+   <ingrediente id="3" nombre="Pepinillo" precio="0.5"/>
+   <ingrediente id="4" nombre="Cebolla" precio="2.14"/>
+</listaIngredientesDto>

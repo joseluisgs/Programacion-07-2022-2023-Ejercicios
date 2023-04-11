@@ -1,0 +1,104 @@
+{
+   "personas": [
+      {
+         "nombre": "Alberto",
+         "edad": "19",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Iván",
+         "edad": "32",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Roberto",
+         "modulo": "Programacion",
+         "tipo": "profesor"
+      },
+      {
+         "nombre": "Julieta",
+         "edad": "40",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Detesto",
+         "edad": "27",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Romeo",
+         "edad": "18",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Romeo",
+         "edad": "38",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Erfesto",
+         "edad": "30",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Dante",
+         "edad": "21",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Dante",
+         "edad": "36",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Julieta",
+         "edad": "27",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Ash",
+         "edad": "26",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Roberto",
+         "edad": "20",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Alex",
+         "edad": "38",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Detesto",
+         "modulo": "Entornos",
+         "tipo": "profesor"
+      },
+      {
+         "nombre": "Roberto",
+         "edad": "38",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Dante",
+         "edad": "26",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Alexa",
+         "edad": "24",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Dante",
+         "edad": "30",
+         "tipo": "alumno"
+      },
+      {
+         "nombre": "Nefer",
+         "edad": "38",
+         "tipo": "alumno"
+      }
+   ]
+}
