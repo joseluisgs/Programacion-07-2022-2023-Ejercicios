@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="145a4c43-2dfc-41cc-82c9-c3654933637d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/Apuntes para el examen.odt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/Apuntes/Documentación Entornos de desarrollo.odt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/Apuntes/Documentación Entornos de desarrollo.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/Apuntes/MarkDown/Archivo-prueba-markdown-main/ejemplo.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/Apuntes/MarkDown/Archivo-prueba-markdown-main/kk.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/Apuntes/MarkDown/Clean Code y TDD Pruebas de Software.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/Apuntes/Notas - Entorno.odt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/Apuntes/UD05.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/Apuntes/cleanCode.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/Apuntes/examen.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/EntornosDesarrollo-04-2022-2023" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/EntornosDesarrollo-05-2022-2023" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/EntornosDesarrollo-06-2022-2023" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/EntornosDesarrollo-07-2022-2023" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/UML/5.1_Ejemplos_UML.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/UML/Aprendiendo_UML_en_24_horas.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/UML/CFGS DAM DAW Entornos de Derarrollo.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/UML/DiagramasDeActividad.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/UML/Diseño orientado a objetos con UML.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/UML/Ejercicios01-1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/UML/Ejercicios02.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/UML/Ejercicios03.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/UML/Introducion_UML.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Entornos de programación/UML/manual_uml.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Examen/ed-e01-testjunit-2022-2023-sergiosimonf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Examen/ed-e01-testjunit-2022-2023-sergiosimonf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Examen/prog-e02-diciembre-2022-2023-sergiosimonf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Examen/prog-e02-diciembre-2022-2023-sergiosimonf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/7.4.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/7.4.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/7.4.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/src/main/kotlin/controler/HospitalController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/src/main/kotlin/controler/HospitalController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/src/main/kotlin/exceptions/pacientesExeptions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/src/main/kotlin/exceptions/pacientesExeptions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/src/main/kotlin/repositories/hospitalRepositoryMemoryListas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/src/main/kotlin/repositories/hospitalRepositoryMemoryListas.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/src/test/kotlin/controler/HospitalControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital/src/test/kotlin/controler/HospitalControllerTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/main/kotlin/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/main/kotlin/controler/HospitalController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/main/kotlin/models/PNormal.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/main/kotlin/models/PUrgencia.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/main/kotlin/models/PacienteNormal.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/main/kotlin/models/PacienteUrgencia.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/main/kotlin/models/Pacientes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/main/kotlin/repositories/hospitalRepositoryConjuntos.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/main/kotlin/repositories/hospitalRepositoryListas.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/main/kotlin/repositories/hospitalRepositoryMapas.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/main/kotlin/repositories/hospitalRepositoryMemoryConjuntos.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/main/kotlin/repositories/hospitalRepositoryMemoryListas.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/main/kotlin/repositories/hospitalRepositoryMemoryMapas.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/test/kotlin/controler/HospitalControllerTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/test/kotlin/repositories/hospitalRepositoryMemoryConjuntosTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/test/kotlin/repositories/hospitalRepositoryMemoryListasTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Genéricos, Abstractos y Colecciones/Matrices, Mapas y Conjuntos/Hospital2/src/test/kotlin/repositories/hospitalRepositoryMemoryMapasTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teoria extra/Apuntes de DanielParin/Java-para-nuevos-programadores" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teoria extra/Apuntes de DanielParin/Java-para-nuevos-programadores" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teoria extra/Kotlin-Supervivencia-2DAM-2022-2023" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teoria/Programacion-04-2022-2023/Ejemplos/aula-java/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teoria/Programacion-04-2022-2023/Ejemplos/aula-java/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teoria/Programacion-04-2022-2023/Ejemplos/aula-java/.gradle/7.5.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teoria/Programacion-04-2022-2023/Ejemplos/aula-java/.gradle/7.5.1/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teoria/Programacion-04-2022-2023/Ejemplos/aula-java/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teoria/Programacion-04-2022-2023/Ejemplos/aula-java/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teoria/Programacion-04-2022-2023/Ejemplos/aula-java/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teoria/Programacion-04-2022-2023/Ejemplos/aula-java/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teoria/Programacion-04-2022-2023/Ejemplos/aula-java/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teoria/Programacion-04-2022-2023/Ejemplos/aula-java/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teoria/Programacion-05-2022-2023" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teoria/Programacion-05-2022-2023" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Teoria/Programacion-06-2022-2023" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Teoria/Programacion-06-2022-2023" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Funciones/Java/Leer pimera y ultima letra de cada palabra.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$USER_HOME$/OneDrive/Documentos/DAM/Programación/Ejercicios/Manejo de Ficheros e información externa/Hamburgerseria-Pigs/Hamburgerseria-Pigs-Kotlin">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Hamburgerseria-Pigs-Kotlin" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Hamburgerseria-Pigs-Kotlin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Hamburgerseria-Pigs-Kotlin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2N8PIaqJ0DR5YIsMx01tHpHhfDy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/OneDrive/Documentos/DAM/Programación/Ejercicios/Manejo de Ficheros e información externa/Hamburgerseria-Pigs/Hamburgerseria-Pigs-Kotlin",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "build.tools",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Kotlin.MainKt (1)">
+    <configuration name="Hamburgerseria-Pigs-Kotlin [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="/home/sergio/OneDrive/Documentos/DAM/Programación/Ejercicios/Manejo de Ficheros e información externa/Hamburgerseria-Pigs/Hamburgerseria-Pigs-Kotlin [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$USER_HOME$/OneDrive/Documentos/DAM/Programación/Ejercicios/Manejo de Ficheros e información externa/Hamburgerseria-Pigs/Hamburgerseria-Pigs-Kotlin" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="Hamburgerseria-Pigs-Kotlin.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="org.example.Hamburgerseria-Pigs-Kotlin.main" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="Hamburgerseria-Pigs-Kotlin.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt (1)" />
+        <item itemvalue="Gradle.Hamburgerseria-Pigs-Kotlin [clean]" />
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle./home/sergio/OneDrive/Documentos/DAM/Programación/Ejercicios/Manejo de Ficheros e información externa/Hamburgerseria-Pigs/Hamburgerseria-Pigs-Kotlin [clean]" />
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="145a4c43-2dfc-41cc-82c9-c3654933637d" name="Changes" comment="" />
+      <created>1679042665188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679042665188</updated>
+      <workItem from="1679042669661" duration="701000" />
+      <workItem from="1679044660193" duration="1492000" />
+      <workItem from="1679046199482" duration="4975000" />
+      <workItem from="1679476381576" duration="101000" />
+      <workItem from="1679476749248" duration="8000" />
+      <workItem from="1679476942601" duration="45000" />
+      <workItem from="1679477246351" duration="325000" />
+      <workItem from="1679480258244" duration="1998000" />
+      <workItem from="1679482600139" duration="3308000" />
+      <workItem from="1679488815690" duration="2371000" />
+      <workItem from="1679509086072" duration="271000" />
+      <workItem from="1679509378407" duration="4661000" />
+      <workItem from="1679588721747" duration="505000" />
+      <workItem from="1679651649220" duration="4648000" />
+      <workItem from="1679735691235" duration="10381000" />
+      <workItem from="1679906677033" duration="2495000" />
+      <workItem from="1679909285623" duration="2180000" />
+      <workItem from="1679945405262" duration="494000" />
+      <workItem from="1679946138435" duration="2270000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
