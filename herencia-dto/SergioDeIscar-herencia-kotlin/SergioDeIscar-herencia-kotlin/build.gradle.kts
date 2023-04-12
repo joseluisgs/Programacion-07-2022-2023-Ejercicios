@@ -23,6 +23,9 @@ dependencies {
 
     // Simple xml
     implementation("org.simpleframework:simple-xml:2.7.1")
+
+    //SqlLite
+    implementation("org.xerial:sqlite-jdbc:3.40.1.0")
 }
 
 tasks.test {

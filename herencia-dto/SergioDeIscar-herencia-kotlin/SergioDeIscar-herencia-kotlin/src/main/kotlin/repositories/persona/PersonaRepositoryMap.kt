@@ -44,7 +44,8 @@ class PersonaRepositoryMap(
 
     override fun saveAll(elements: List<Persona>, storage: Boolean) {
         logger.debug { "PersonaRepositoryMap ->\tsaveAll" }
-        elements.forEach { save(it, storage) }
+        elements.forEach { save(it, false) }
+        if (storage) downgrade()
     }
 
     override fun deleteById(id: Int): Persona? {

@@ -8,19 +8,22 @@ import service.storage.persona.*
 fun main() {
     val personas = PersonaFactory.getRdnPersonas()
 
-    generateFile(personas, PersonaFileJson)
+    /*generateFile(personas, PersonaFileJson)
     generateFile(personas, PersonaFileXml)
     generateFile(personas, PersonaFileCsv)
     generateFile(personas, PersonaFileBinario)
-    generateFile(personas, PersonaFileSerializable)
+    generateFile(personas, PersonaFileSerializable)*/
 
-    println("Tienen el mismo contenido:" + equalContent(personas, listOf(
+    generateFile(personas, PersonaDB)
+
+    /*println("Tienen el mismo contenido:" + equalContent(personas, listOf(
         PersonaFileJson,
         PersonaFileXml,
         PersonaFileCsv,
         PersonaFileBinario,
-        PersonaFileSerializable
-    )))
+        PersonaFileSerializable,
+        PersonaDB
+    )))*/
 }
 
 private fun generateFile(personas: List<Persona>, storageService: PersonaStorageService) {
