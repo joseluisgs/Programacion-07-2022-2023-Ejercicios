@@ -9,14 +9,14 @@
 - Temperatura mínima por provincia (día, lugar, valor y valor)
 - Temperatura media por provincia (día, lugar y valor)
 - Listado de precipitación media por día y provincia
-- Numero de lugares en el que llovío por día y provincia
+- Número de lugares en el que llovío por día y provincia
 - Temperatura média de la provincia de Madrid
 - Media de temperatura máxima total
 - Media de temprratura minima total
 - Lugares donde la máxima ha sido antes de las 15:00 por día
 - Lugares donde la mínima ha sido después de las 17:30 por día
 
-4.- Para la privincia de Madid exportar en JSON y XML el siguiente informe
+4.- Para la privincia de Madrid exportar en JSON y XML el siguiente informe
 - Por cada día:
   - Temperatura media
   - Temperatura máxima (Lugar y momento)
