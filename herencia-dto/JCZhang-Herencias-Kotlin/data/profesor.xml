@@ -1,0 +1,10 @@
+<profesores>
+   <profesor>
+      <nombre>Pedro</nombre>
+      <modulo>PROGRAMACION</modulo>
+   </profesor>
+   <profesor>
+      <nombre>Olga</nombre>
+      <modulo>ENTORNOS</modulo>
+   </profesor>
+</profesores>

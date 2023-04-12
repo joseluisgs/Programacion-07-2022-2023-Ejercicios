@@ -1,5 +1,5 @@
 <hamburguesas>
-   <hamburguesa id="46a250ea-05e9-4e71-b45c-85c4120fe5cf" precio="4.75">
+   <hamburguesa id="54a43238-f80b-469f-99d8-d41616153b22" precio="4.75">
       <nombre>CheeseBurger</nombre>
       <ingrediente>
          <ID>9</ID>
@@ -17,7 +17,7 @@
          <precio>1.0</precio>
       </ingrediente>
    </hamburguesa>
-   <hamburguesa id="1ec9711f-fcce-477a-8f30-d02d0bbde424" precio="5.6">
+   <hamburguesa id="293608bf-d7c1-4bdd-b0ba-8d03df0c161d" precio="5.6">
       <nombre>BaconCrispyBurger</nombre>
       <ingrediente>
          <ID>9</ID>
@@ -45,7 +45,7 @@
          <precio>0.35</precio>
       </ingrediente>
    </hamburguesa>
-   <hamburguesa id="f29ff191-82b5-43ed-b859-84240cb6a208" precio="6.35">
+   <hamburguesa id="61649080-0818-47ed-935e-77f2e4e55021" precio="6.35">
       <nombre>AllInBurger</nombre>
       <ingrediente>
          <ID>9</ID>
@@ -78,7 +78,7 @@
          <precio>1.0</precio>
       </ingrediente>
    </hamburguesa>
-   <hamburguesa id="31899d58-3553-491c-b64a-c560b6dee22b" precio="8.25">
+   <hamburguesa id="2538dfc1-d762-4534-b8fa-197e12a72592" precio="8.25">
       <nombre>DoubleCheeseBurger</nombre>
       <ingrediente>
          <ID>9</ID>

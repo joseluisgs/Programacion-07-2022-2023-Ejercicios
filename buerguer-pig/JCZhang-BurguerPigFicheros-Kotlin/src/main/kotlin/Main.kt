@@ -5,14 +5,17 @@ import models.Ingrediente
 import repositories.Hamburguesas.HamburguesasRepository
 import repositories.Ingredientes.IngredientesRepository
 import services.storage.hamburguesas.HamburguesaSerializableService
+import services.storage.hamburguesas.HamburguesaXmlService
 import services.storage.ingredientes.IngredienteSerService
+import services.storage.ingredientes.IngredienteXmlService
+import services.storage.ingredientes.IngredientesBinarioService
 
 
 @OptIn(ExperimentalStdlibApi::class)
 fun main() {
 
-    val ingredientesRepository = IngredientesRepository(IngredienteSerService)
-    val hamburguesasRepository = HamburguesasRepository(HamburguesaSerializableService)
+    val ingredientesRepository = IngredientesRepository(IngredienteXmlService)
+    val hamburguesasRepository = HamburguesasRepository(HamburguesaXmlService)
 
 
     val ingredientesController = IngredientesController(ingredientesRepository)
@@ -44,13 +47,13 @@ fun main() {
     val ingredientes = listOf(tomate, lechuga, carne, pepinillos, bacon, queso)
     val hamburguesas = listOf(cheeseBurger, baconCrispyBurger, allInBurger, doubleCheeseBurger)
 
-    //Hambuguesa más cara
+    //Hamburguesa más cara
     mostExpensiveBurger(hamburguesas)
-    //Hambuguesa con más ingredientes
+    //Hamburguesa con más ingredientes
     burguerWithMostIngredients(hamburguesas)
-    //Número de Hambuguesas por ingrediente (séase el número de hamburguesas que tiene cada ingrediente)
+    //Número de Hamburguesas por ingrediente (séase el número de hamburguesas que tiene cada ingrediente)
     numberOfBurguersPerIngredient(hamburguesas, ingredientes)
-    //Hambuguesaas agrupadas por total de ingredientes
+    //Hamburguesas agrupadas por total de ingredientes
     buguersGroupedByNumberOfIngredientes(hamburguesas)
     // precio medio de las hamburguesas
     averagePriceBurger(hamburguesas)

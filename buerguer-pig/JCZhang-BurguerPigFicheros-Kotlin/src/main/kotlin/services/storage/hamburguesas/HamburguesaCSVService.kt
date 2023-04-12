@@ -24,7 +24,7 @@ object HamburguesaCSVService : HamburguesaStorageService {
         //escribo el encabezado
         file.writeText("id, nombre, ingrediente, precio" + "\n")
         items.forEach {
-            file.appendText("${it.id},${it.nombre},${it.ingredientes!!.joinToString("|")},${it.precio} "+ "\n")
+            file.appendText("${it.id},${it.nombre},${it.ingredientes.joinToString("|")},${it.precio} "+ "\n")
         }
     }
 
