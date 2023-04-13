@@ -1,0 +1,29 @@
+6<listaHamburgesasDto>
+   <hamburgesa id="8242959f-3f5b-4634-9466-2e3149f283e0" nombre="Hambuergesa de cerdo">
+      <ingrediente id="2" nombre="Carne" precio="6.38"/>
+   </hamburgesa>
+   <hamburgesa id="7e3837c9-e524-448c-a296-be565e9f752c" nombre="Hambuergesa de vaca">
+      <ingrediente id="3" nombre="Salsa" precio="2.66"/>
+      <ingrediente id="1" nombre="Cebolla" precio="6.34"/>
+      <ingrediente id="1" nombre="Cebolla" precio="6.34"/>
+      <ingrediente id="4" nombre="Salsa" precio="4.21"/>
+   </hamburgesa>
+   <hamburgesa id="2efcf096-d5ff-433f-8373-ed3dc58d6aa4" nombre="Hambuergesa de pollo">
+      <ingrediente id="1" nombre="Cebolla" precio="6.34"/>
+      <ingrediente id="4" nombre="Salsa" precio="4.21"/>
+      <ingrediente id="4" nombre="Salsa" precio="4.21"/>
+      <ingrediente id="4" nombre="Salsa" precio="4.21"/>
+      <ingrediente id="2" nombre="Carne" precio="6.38"/>
+      <ingrediente id="3" nombre="Salsa" precio="2.66"/>
+      <ingrediente id="2" nombre="Carne" precio="6.38"/>
+      <ingrediente id="3" nombre="Salsa" precio="2.66"/>
+   </hamburgesa>
+   <hamburgesa id="8d0f0285-3e29-4c59-befb-e8564d92fbc4" nombre="Hambuergesa de cerdo">
+      <ingrediente id="4" nombre="Salsa" precio="4.21"/>
+      <ingrediente id="2" nombre="Carne" precio="6.38"/>
+      <ingrediente id="1" nombre="Cebolla" precio="6.34"/>
+      <ingrediente id="3" nombre="Salsa" precio="2.66"/>
+      <ingrediente id="2" nombre="Carne" precio="6.38"/>
+      <ingrediente id="1" nombre="Cebolla" precio="6.34"/>
+   </hamburgesa>
+</listaHamburgesasDto>
