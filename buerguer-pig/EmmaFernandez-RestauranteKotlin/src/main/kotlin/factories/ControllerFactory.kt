@@ -11,6 +11,7 @@ import services.storage.texto.HamburguesaTextoService
 import services.storage.xml.HamburguesaXmlService
 import services.storage.binario.IngredienteBinarioService
 import services.storage.csv.IngredienteCsvService
+import services.storage.json.HamburguesaJsonService
 import services.storage.json.IngredienteJsonService
 import services.storage.serializable.IngredienteSerializableService
 import services.storage.texto.IngredienteTextoService
@@ -29,5 +30,5 @@ object ControllerFactory {
     fun hamburguesaTexto() = HamburguesaController(HamburguesaRepository(HamburguesaTextoService))
     fun hamburguesaBinario() = HamburguesaController(HamburguesaRepository(HamburguesaBinarioService))
     fun hamburguesaXml() = HamburguesaController(HamburguesaRepository(HamburguesaXmlService))
-    // fun hamburguesaJson() = HamburguesaController(HamburguesaRepository(HamburguesaJsonService))
+    fun hamburguesaJson() = HamburguesaController(HamburguesaRepository(HamburguesaJsonService))
 }

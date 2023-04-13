@@ -1,5 +1,6 @@
 package models.dto
 
+import com.squareup.moshi.Json
 import models.Hamburguesa
 import org.simpleframework.xml.Attribute
 import org.simpleframework.xml.Element
@@ -10,14 +11,17 @@ import java.util.*
 data class HamburguesaDto(
     @field:Attribute(name = "id")
     @param:Attribute(name = "id")
+    @Json(name = "id")
     val id: String,
 
     @field:Element(name = "nombre")
     @param:Element(name = "nombre")
+    @Json(name = "nombre")
     val nombre: String,
 
     @field:Element(name = "ingredientes")
     @param:Element(name = "ingredientes")
+    @Json(name = "ingredientes")
     val ingredientes: IngredientesDto
 )
 

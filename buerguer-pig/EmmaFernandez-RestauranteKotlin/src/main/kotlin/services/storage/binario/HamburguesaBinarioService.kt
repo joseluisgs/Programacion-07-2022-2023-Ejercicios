@@ -16,10 +16,8 @@ object HamburguesaBinarioService : HamburguesaStorageService {
         file.outputStream().buffered().use {
             items.forEach { hamburguesa ->
                 it.write(
-                    hamburguesa.id.toString().toByteArray()
-                            + "\n".toByteArray()
-                            + hamburguesa.nombre.toByteArray()
-                            + "\n".toByteArray()
+                    hamburguesa.id.toString().toByteArray() + "\n".toByteArray()
+                            + hamburguesa.nombre.toByteArray() + "\n".toByteArray()
                             + hamburguesa.ingredientes.joinToString(";") { it.toString() }.toByteArray()
                             + "\n".toByteArray()
                 )
@@ -57,12 +55,12 @@ object HamburguesaBinarioService : HamburguesaStorageService {
                         ingredientes = ingredientes.toString().split(";")
                             .map { ingrediente -> ingrediente.split(",") }
                             .map { (id, nombre, precio) ->
-                            Ingrediente(
-                                id = id.toInt(),
-                                nombre = nombre,
-                                precio = precio.toDouble()
-                            )
-                        }
+                                Ingrediente(
+                                    id = id.toInt(),
+                                    nombre = nombre,
+                                    precio = precio.toDouble()
+                                )
+                            }
                     )
                 )
             }

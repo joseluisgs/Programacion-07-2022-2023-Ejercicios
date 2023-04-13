@@ -13,12 +13,12 @@ object IngredienteSerializableService : IngredienteStorageService {
     private val localFile = "${AppConfig.SERIALIZABLE_PATH}${File.separator}ingredientes.ser"
 
     override fun saveAll(items: List<Ingrediente>) {
-        val oos = ObjectOutputStream(FileOutputStream(localFile))
-        oos.use { it.writeObject(items) }
+        ObjectOutputStream(FileOutputStream(localFile))
+            .use { it.writeObject(items) }
     }
 
     override fun loadAll(): List<Ingrediente> {
-        val ois = ObjectInputStream(FileInputStream(localFile))
-        ois.use { return it.readObject() as List<Ingrediente> }
+        ObjectInputStream(FileInputStream(localFile))
+            .use { return it.readObject() as List<Ingrediente> }
     }
 }

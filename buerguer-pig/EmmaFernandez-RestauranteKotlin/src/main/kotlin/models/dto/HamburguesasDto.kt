@@ -1,5 +1,6 @@
 package models.dto
 
+import com.squareup.moshi.Json
 import models.Hamburguesa
 import org.simpleframework.xml.ElementList
 import org.simpleframework.xml.Root
@@ -8,6 +9,7 @@ import org.simpleframework.xml.Root
 data class HamburguesasDto(
     @field:ElementList(name = "hamburguesas", inline = true)
     @param:ElementList(name = "hamburguesas", inline = true)
+    @Json(name = "hamburguesas")
     val hamburguesas: List<HamburguesaDto>
 )
 

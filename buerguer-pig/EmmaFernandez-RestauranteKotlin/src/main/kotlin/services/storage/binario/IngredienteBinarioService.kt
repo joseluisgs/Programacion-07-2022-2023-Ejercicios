@@ -14,10 +14,8 @@ object IngredienteBinarioService : IngredienteStorageService {
         file.outputStream().buffered().use {
             items.forEach { ingrediente ->
                 it.write(
-                    ingrediente.id.toString().toByteArray()
-                            + "\n".toByteArray()
-                            + ingrediente.nombre.toByteArray()
-                            + "\n".toByteArray()
+                    ingrediente.id.toString().toByteArray() + "\n".toByteArray()
+                            + ingrediente.nombre.toByteArray() + "\n".toByteArray()
                             + ingrediente.precio.toString().toByteArray()
                             + "\n".toByteArray()
                 )

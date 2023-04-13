@@ -12,12 +12,12 @@ import java.io.ObjectOutputStream
 object HamburguesaSerializableService : HamburguesaStorageService {
     private val localFile = "${AppConfig.SERIALIZABLE_PATH}${File.separator}hamburguesas.ser"
     override fun saveAll(items: List<Hamburguesa>) {
-        val oos = ObjectOutputStream(FileOutputStream(localFile))
-        oos.use { it.writeObject(items) }
+        ObjectOutputStream(FileOutputStream(localFile))
+            .use { it.writeObject(items) }
     }
 
     override fun loadAll(): List<Hamburguesa> {
-        val ois = ObjectInputStream(FileInputStream(localFile))
-        ois.use { return it.readObject() as List<Hamburguesa> }
+        ObjectInputStream(FileInputStream(localFile))
+            .use { return it.readObject() as List<Hamburguesa> }
     }
 }
