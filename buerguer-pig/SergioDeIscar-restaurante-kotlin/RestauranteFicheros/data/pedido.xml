@@ -1,0 +1,14 @@
+<pedidos>
+   <pedido id_usuario="0" create_at="2023-03-27T19:42:36.138465700" total="955.28925">
+      <linea_pedido id_producto="6" precio_und="30.007347" cantidad="10"/>
+      <linea_pedido id_producto="7" precio_und="33.472954" cantidad="4"/>
+      <linea_pedido id_producto="0" precio_und="6.3570123" cantidad="10"/>
+      <linea_pedido id_producto="8" precio_und="15.107344" cantidad="4"/>
+      <linea_pedido id_producto="9" precio_und="19.752892" cantidad="6"/>
+      <linea_pedido id_producto="1" precio_und="12.8279085" cantidad="2"/>
+      <linea_pedido id_producto="10" precio_und="14.818941" cantidad="10"/>
+      <linea_pedido id_producto="2" precio_und="7.0341763" cantidad="5"/>
+      <linea_pedido id_producto="3" precio_und="10.889601" cantidad="4"/>
+      <linea_pedido id_producto="11" precio_und="26.232605" cantidad="1"/>
+   </pedido>
+</pedidos>

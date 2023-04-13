@@ -1,0 +1,58 @@
+{
+	"informes": [
+		{
+			"day": "2017-10-29",
+			"precipitacion": {
+				"isPrecipitacion": "false",
+				"value": "0.0"
+			},
+			"temMax": {
+				"poblacion": "Aranjuez",
+				"tem": "25.1",
+				"time": "16:30"
+			},
+			"temMedia": "14.24561403508772",
+			"temMin": {
+				"poblacion": "Rascafr?a",
+				"tem": "24.3",
+				"time": "15:20"
+			}
+		},
+		{
+			"day": "2017-10-30",
+			"precipitacion": {
+				"isPrecipitacion": "false",
+				"value": "0.0"
+			},
+			"temMax": {
+				"poblacion": "Alpedrete",
+				"tem": "25.2",
+				"time": "14:40"
+			},
+			"temMedia": "14.24561403508772",
+			"temMin": {
+				"poblacion": "Rascafr?a",
+				"tem": "23.2",
+				"time": "14:10"
+			}
+		},
+		{
+			"day": "2017-10-31",
+			"precipitacion": {
+				"isPrecipitacion": "false",
+				"value": "0.0"
+			},
+			"temMax": {
+				"poblacion": "Aranjuez",
+				"tem": "22.4",
+				"time": "16:40"
+			},
+			"temMedia": "14.24561403508772",
+			"temMin": {
+				"poblacion": "Rascafr?a",
+				"tem": "18.0",
+				"time": "14:40"
+			}
+		}
+	]
+}
