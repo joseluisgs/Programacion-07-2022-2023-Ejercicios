@@ -1,0 +1,76 @@
+{
+  "alumnos": [
+    {
+      "nombre": "Pedro",
+      "edad": 22
+    },
+    {
+      "nombre": "María",
+      "edad": 25
+    },
+    {
+      "nombre": "Carlos",
+      "edad": 20
+    },
+    {
+      "nombre": "Ana",
+      "edad": 23
+    },
+    {
+      "nombre": "Luis",
+      "edad": 30
+    },
+    {
+      "nombre": "Sara",
+      "edad": 26
+    },
+    {
+      "nombre": "Andrés",
+      "edad": 19
+    },
+    {
+      "nombre": "Laura",
+      "edad": 35
+    },
+    {
+      "nombre": "Diego",
+      "edad": 21
+    },
+    {
+      "nombre": "Carmen",
+      "edad": 28
+    },
+    {
+      "nombre": "Roberto",
+      "edad": 24
+    },
+    {
+      "nombre": "Isabel",
+      "edad": 27
+    },
+    {
+      "nombre": "Javier",
+      "edad": 32
+    },
+    {
+      "nombre": "Patricia",
+      "edad": 29
+    },
+    {
+      "nombre": "José",
+      "edad": 36
+    },
+    {
+      "nombre": "Paula",
+      "edad": 31
+    },
+    {
+      "nombre": "Raúl",
+      "edad": 34
+    },
+    {
+      "nombre": "Silvia",
+      "edad": 40
+    }
+  ]
+}
