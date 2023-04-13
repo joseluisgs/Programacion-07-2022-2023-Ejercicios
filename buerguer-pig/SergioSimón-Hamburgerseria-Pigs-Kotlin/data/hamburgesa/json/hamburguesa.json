@@ -1,0 +1,171 @@
+[
+  {
+    "id": "e7635d1a-9ac3-4bf2-9756-296e810c9170",
+    "name": "Hamburger",
+    "receta": [
+      {
+        "id": 1,
+        "name": "Pan",
+        "price": 2.58
+      },
+      {
+        "id": 2,
+        "name": "Lechuga",
+        "price": 4.68
+      },
+      {
+        "id": 3,
+        "name": "Queso",
+        "price": 1.28
+      },
+      {
+        "id": 4,
+        "name": "Carne",
+        "price": 3.93
+      },
+      {
+        "id": 5,
+        "name": "Cebolla",
+        "price": 1.44
+      },
+      {
+        "id": 6,
+        "name": "Ketchup",
+        "price": 0.83
+      },
+      {
+        "id": 7,
+        "name": "Pepinillo",
+        "price": 4.76
+      }
+    ]
+  },
+  {
+    "id": "9d603d48-a36c-4815-8335-117bb167d636",
+    "name": "Hamburger",
+    "receta": [
+      {
+        "id": 1,
+        "name": "Pan",
+        "price": 1.03
+      },
+      {
+        "id": 2,
+        "name": "Lechuga",
+        "price": 3.42
+      },
+      {
+        "id": 3,
+        "name": "Queso",
+        "price": 4.11
+      },
+      {
+        "id": 4,
+        "name": "Carne",
+        "price": 4.18
+      },
+      {
+        "id": 5,
+        "name": "Cebolla",
+        "price": 3.29
+      },
+      {
+        "id": 6,
+        "name": "Ketchup",
+        "price": 1.84
+      },
+      {
+        "id": 7,
+        "name": "Pepinillo",
+        "price": 2.72
+      }
+    ]
+  },
+  {
+    "id": "62765a72-b4c5-48e1-8fbd-b7c0bf8fe5c8",
+    "name": "Hamburger",
+    "receta": [
+      {
+        "id": 1,
+        "name": "Pan",
+        "price": 4.03
+      },
+      {
+        "id": 2,
+        "name": "Lechuga",
+        "price": 1.04
+      },
+      {
+        "id": 3,
+        "name": "Queso",
+        "price": 4.34
+      },
+      {
+        "id": 4,
+        "name": "Carne",
+        "price": 1.9
+      },
+      {
+        "id": 5,
+        "name": "Cebolla",
+        "price": 1.89
+      },
+      {
+        "id": 6,
+        "name": "Ketchup",
+        "price": 1.85
+      },
+      {
+        "id": 7,
+        "name": "Pepinillo",
+        "price": 1.75
+      }
+    ]
+  },
+  {
+    "id": "7b012557-bfce-4232-b2a0-34b2a58e5768",
+    "name": "Hamburguesa Tocha",
+    "receta": [
+      {
+        "id": 1,
+        "name": "Pan",
+        "price": 2.87
+      },
+      {
+        "id": 2,
+        "name": "Lechuga",
+        "price": 1.11
+      },
+      {
+        "id": 3,
+        "name": "Queso",
+        "price": 0.88
+      },
+      {
+        "id": 4,
+        "name": "Carne",
+        "price": 0.74
+      },
+      {
+        "id": 5,
+        "name": "Cebolla",
+        "price": 4.73
+      },
+      {
+        "id": 6,
+        "name": "Ketchup",
+        "price": 3.7
+      },
+      {
+        "id": 7,
+        "name": "Pepinillo",
+        "price": 0.62
+      },
+      {
+        "id": 8,
+        "name": "Bacon",
+        "price": 5.0
+      }
+    ]
+  }
+]
