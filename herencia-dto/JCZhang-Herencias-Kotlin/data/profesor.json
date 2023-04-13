@@ -1,0 +1,12 @@
+{
+  "profesores": [
+    {
+      "nombre": "Pedro",
+      "modulo": "PROGRAMACION"
+    },
+    {
+      "nombre": "Olga",
+      "modulo": "ENTORNOS"
+    }
+  ]
+}

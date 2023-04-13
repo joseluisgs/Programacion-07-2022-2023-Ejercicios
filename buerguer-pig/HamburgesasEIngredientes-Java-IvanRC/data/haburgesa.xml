@@ -1,0 +1,69 @@
+<hamburgesas>
+   <hamburgesa id="44cd3b31-687c-4f5a-9906-d952ee749279" nombre="Hambuergesa de cerdo">
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+   </hamburgesa>
+   <hamburgesa id="f1c9717e-d5d2-430f-bc47-8edcd26cea36" nombre="Hambuergesa de cerdo">
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+   </hamburgesa>
+   <hamburgesa id="655926e7-9694-4eb2-9e33-7ae79a4f7b4d" nombre="Hambuergesa de cerdo">
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+   </hamburgesa>
+   <hamburgesa id="f84a91c8-6ad8-4068-9771-5e5975c08504" nombre="Hambuergesa de pollo">
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+   </hamburgesa>
+   <hamburgesa id="0ef471d4-4415-4875-adcc-1152be60cb72" nombre="Hambuergesa de pollo">
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+      <ingrediente id="1" nombre="Carne" precio="27.07709837947172"/>
+   </hamburgesa>
+   <hamburgesa id="b5d80148-4872-40cf-b383-8cca9c7f9009" nombre="Hambuergesa de pollo">
+      <ingrediente id="2" nombre="Pepinillo" precio="27.932704817249054"/>
+      <ingrediente id="3" nombre="Salsa" precio="45.4521242290508"/>
+      <ingrediente id="2" nombre="Pepinillo" precio="27.932704817249054"/>
+      <ingrediente id="3" nombre="Salsa" precio="45.4521242290508"/>
+      <ingrediente id="3" nombre="Salsa" precio="45.4521242290508"/>
+      <ingrediente id="5" nombre="Lechuga" precio="11.04380101803516"/>
+      <ingrediente id="1" nombre="Pepinillo" precio="80.52377717510495"/>
+   </hamburgesa>
+   <hamburgesa id="4c1eb494-4e8f-4975-90b4-a117489abecd" nombre="Hambuergesa de vaca">
+      <ingrediente id="5" nombre="Lechuga" precio="11.04380101803516"/>
+      <ingrediente id="2" nombre="Pepinillo" precio="27.932704817249054"/>
+      <ingrediente id="1" nombre="Pepinillo" precio="80.52377717510495"/>
+      <ingrediente id="1" nombre="Pepinillo" precio="80.52377717510495"/>
+      <ingrediente id="2" nombre="Pepinillo" precio="27.932704817249054"/>
+      <ingrediente id="2" nombre="Pepinillo" precio="27.932704817249054"/>
+      <ingrediente id="2" nombre="Pepinillo" precio="27.932704817249054"/>
+   </hamburgesa>
+   <hamburgesa id="9fd624b4-529c-41aa-9882-966d11e6442c" nombre="Hambuergesa de vaca">
+      <ingrediente id="5" nombre="Lechuga" precio="11.04380101803516"/>
+      <ingrediente id="4" nombre="Pepinillo" precio="0.33639927422183247"/>
+   </hamburgesa>
+   <hamburgesa id="cbc39876-14d4-4a95-83c3-3d1414098dcd" nombre="Hambuergesa de pollo">
+      <ingrediente id="5" nombre="Lechuga" precio="11.04380101803516"/>
+   </hamburgesa>
+   <hamburgesa id="7fc6d7da-716d-47db-b09e-54d0c6f87bd9" nombre="Hambuergesa de pollo">
+      <ingrediente id="2" nombre="Pepinillo" precio="27.932704817249054"/>
+      <ingrediente id="5" nombre="Lechuga" precio="11.04380101803516"/>
+      <ingrediente id="4" nombre="Pepinillo" precio="0.33639927422183247"/>
+      <ingrediente id="3" nombre="Salsa" precio="45.4521242290508"/>
+   </hamburgesa>
+</hamburgesas>

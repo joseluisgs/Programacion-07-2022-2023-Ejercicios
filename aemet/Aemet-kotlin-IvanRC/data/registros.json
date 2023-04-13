@@ -1,0 +1,83 @@
+{
+   "mapa_informes": [
+      {
+         "mapa_registros": {
+            "2017-10-29": {
+               "dia": "2017-10-29",
+               "temperatura_media": "14.976315789473684"
+            },
+            "2017-10-30": {
+               "dia": "2017-10-30",
+               "temperatura_media": "13.56842105263158"
+            },
+            "2017-10-31": {
+               "dia": "2017-10-31",
+               "temperatura_media": "11.528947368421054"
+            }
+         }
+      },
+      {
+         "mapa_registros": {
+            "2017-10-29": {
+               "dia": "2017-10-29",
+               "temperatura_max": "25.1",
+               "lugar": "Aranjuez",
+               "momento": "16:30"
+            },
+            "2017-10-30": {
+               "dia": "2017-10-30",
+               "temperatura_max": "25.2",
+               "lugar": "Alpedrete",
+               "momento": "14:40"
+            },
+            "2017-10-31": {
+               "dia": "2017-10-31",
+               "temperatura_max": "22.4",
+               "lugar": "Aranjuez",
+               "momento": "16:40"
+            }
+         }
+      },
+      {
+         "mapa_registros": {
+            "2017-10-29": {
+               "dia": "2017-10-29",
+               "temperatura_min": "3.5",
+               "lugar": "Rozas de Puerto Real",
+               "momento": "17:30"
+            },
+            "2017-10-30": {
+               "dia": "2017-10-30",
+               "temperatura_min": "-0.2",
+               "lugar": "Madrid, Retiro",
+               "momento": "16:10"
+            },
+            "2017-10-31": {
+               "dia": "2017-10-31",
+               "temperatura_min": "-0.9",
+               "lugar": "Madrid, Retiro",
+               "momento": "16:30"
+            }
+         }
+      },
+      {
+         "mapa_registros": {
+            "2017-10-29": {
+               "dia": "2017-10-29",
+               "hubo_precipitacion": "No",
+               "precipitacion": "0.0"
+            },
+            "2017-10-30": {
+               "dia": "2017-10-30",
+               "hubo_precipitacion": "No",
+               "precipitacion": "0.0"
+            },
+            "2017-10-31": {
+               "dia": "2017-10-31",
+               "hubo_precipitacion": "No",
+               "precipitacion": "0.0"
+            }
+         }
+      }
+   ]
+}

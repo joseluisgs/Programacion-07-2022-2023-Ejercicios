@@ -1,0 +1,22 @@
+[
+   {
+      "id": "1",
+      "nombre": "Cebolla",
+      "precio": "1.69"
+   },
+   {
+      "id": "2",
+      "nombre": "Carne",
+      "precio": "1.0"
+   },
+   {
+      "id": "3",
+      "nombre": "Cebolla",
+      "precio": "3.01"
+   },
+   {
+      "id": "4",
+      "nombre": "Cebolla",
+      "precio": "2.89"
+   }
+]
