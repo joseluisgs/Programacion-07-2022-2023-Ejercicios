@@ -1,0 +1,102 @@
+[
+   {
+      "tipo": "Profesor",
+      "modulo": "Entornos",
+      "nombre": "Khíntila"
+   },
+   {
+      "tipo": "Profesor",
+      "modulo": "Entornos",
+      "nombre": "Emilio"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "40",
+      "nombre": "Khíntila"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "33",
+      "nombre": "Nemo"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "18",
+      "nombre": "Sigérico"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "18",
+      "nombre": "Turismundo"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "39",
+      "nombre": "Recesvinto"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "29",
+      "nombre": "DuditaMacUsuario"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "28",
+      "nombre": "Eurico"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "20",
+      "nombre": "Sisenando"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "34",
+      "nombre": "Ana"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "27",
+      "nombre": "Khíntila"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "28",
+      "nombre": "Gunter"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "27",
+      "nombre": "Wamba"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "39",
+      "nombre": "DuditaMacUsuario"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "28",
+      "nombre": "Eurico"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "22",
+      "nombre": "Sisebuto"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "34",
+      "nombre": "Eurico"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "30",
+      "nombre": "Gorka"
+   },
+   {
+      "tipo": "Alumno",
+      "edad": "28",
+      "nombre": "Ciceron"
+   }
+]
