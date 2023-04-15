@@ -1,6 +1,6 @@
 package repositories
 
 interface IExternalStore<T> {
-    fun upgrade(): List<T>
-    fun downgrade(): List<T>
+    fun upgrade(): Iterable<T>
+    fun downgrade(): Iterable<T>
 }

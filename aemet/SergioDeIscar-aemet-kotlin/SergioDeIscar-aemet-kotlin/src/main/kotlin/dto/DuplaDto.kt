@@ -33,17 +33,4 @@ data class DuplaDto(
     @field:Attribute(name = "day")
     @param:Attribute(name = "day")
     val day: String
-){
-    fun toClass(): Dupla {
-        return Dupla(
-            poblacion,
-            provincia,
-            temMax.toDouble(),
-            timeMax.toLocalTimeFormate(),
-            temMin.toDouble(),
-            timeMin.toLocalTimeFormate(),
-            precipitacion.toDouble(),
-            LocalDate.parse(day)
-        )
-    }
-}
+)

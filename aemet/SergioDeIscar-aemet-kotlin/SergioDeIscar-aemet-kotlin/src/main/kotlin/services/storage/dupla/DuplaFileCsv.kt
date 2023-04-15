@@ -20,7 +20,7 @@ object DuplaFileCsv: DuplaStorageService {
         return loadOneFile("Aemet20171029") + loadOneFile("Aemet20171030") + loadOneFile("Aemet20171031")
     }
 
-    private fun loadOneFile(name:String): List<Dupla>{
+    private fun loadOneFile(name:String): Iterable<Dupla>{
         val duplasCsv = DuplaFileCsv::class.java.getResourceAsStream("/$name.csv")
             ?: throw RuntimeException("Error al cargar el CSV o el fichero no existe")
         val duplas = mutableListOf<Dupla>()
@@ -47,6 +47,6 @@ object DuplaFileCsv: DuplaStorageService {
             )
         }
 
-        return duplas
+        return duplas.toList()
     }
 }

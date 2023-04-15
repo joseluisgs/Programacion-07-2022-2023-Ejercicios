@@ -11,10 +11,9 @@ private val logger = KotlinLogging.logger {}
 private val LOCAL_PATH = "${System.getProperty("user.dir")}${File.separator}"
 
 object AppConfig {
-    val APP_NAME = "Accidentes Madrid"
-    val APP_VERSION = "1.0.0"
-    lateinit var APP_AUTHOR: String
-    lateinit var APP_DATA: String
+    private var _APP_DATA: String = "data"
+    val APP_DATA: String
+        get() = _APP_DATA
 
     init {
         loadProperties()
@@ -23,7 +22,7 @@ object AppConfig {
 
     private fun initStorage() {
         logger.debug { "Creando directorio data si no existe" }
-        Files.createDirectories(Paths.get(APP_DATA))
+        Files.createDirectories(Paths.get(_APP_DATA))
     }
 
     private fun loadProperties() {
@@ -31,11 +30,8 @@ object AppConfig {
         val properties = Properties()
         properties.load(AppConfig::class.java.getResourceAsStream("/config.properties"))
 
-        APP_AUTHOR = properties.getProperty("app.auth") ?: "nobody"
-        APP_DATA = properties.getProperty("app.storage.dir") ?: "data"
-        APP_DATA = "$LOCAL_PATH$APP_DATA"
+        _APP_DATA = LOCAL_PATH + properties.getProperty("app.storage.dir", "data")
 
-        logger.info { "Configuración: app.author = $APP_AUTHOR" }
-        logger.info { "Configuración: app.storage.dir = $APP_DATA" }
+        logger.info { "Configuración: app.storage.dir = $_APP_DATA" }
     }
 }

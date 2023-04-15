@@ -5,6 +5,8 @@ import com.squareup.moshi.adapter
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import config.AppConfig
 import dto.InformeDto
+import mappers.toClass
+import mappers.toDto
 import models.Informe
 import mu.KotlinLogging
 import java.io.File

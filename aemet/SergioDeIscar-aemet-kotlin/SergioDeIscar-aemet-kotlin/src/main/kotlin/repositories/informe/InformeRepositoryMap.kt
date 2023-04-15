@@ -29,9 +29,10 @@ class InformeRepositoryMap(
         return element
     }
 
-    override fun saveAll(elements: List<Informe>, storage: Boolean) {
+    override fun saveAll(elements: Iterable<Informe>, storage: Boolean) {
         logger.debug { "InformeRepositoryMap ->\tsaveAll" }
-        elements.forEach { save(it, storage) }
+        elements.forEach { save(it, false) }
+        if (storage) downgrade()
     }
 
     override fun deleteById(id: LocalDate): Informe? {
@@ -52,7 +53,7 @@ class InformeRepositoryMap(
         return element
     }
 
-    override fun upgrade(): List<Informe> {
+    override fun upgrade(): Iterable<Informe> {
         logger.debug { "InformeRepositoryMap ->\tupgrade" }
         informes.clear()
         val load = storageService.loadAll()
@@ -60,7 +61,7 @@ class InformeRepositoryMap(
         return load
     }
 
-    override fun downgrade(): List<Informe> {
+    override fun downgrade(): Iterable<Informe> {
         logger.debug { "InformeRepositoryMap ->\tdowngrade" }
         return storageService.saveAll(informes.values.toList())
     }

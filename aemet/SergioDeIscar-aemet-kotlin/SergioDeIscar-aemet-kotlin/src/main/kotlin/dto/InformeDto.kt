@@ -43,17 +43,4 @@ data class InformeDto(
     @field:Element(name = "precipitacion")
     @param:Element(name = "precipitacion")
     val precipitacion: String
-){
-    fun toClass(): Informe{
-        return Informe(
-            day = LocalDate.parse(day),
-            temMedia = temMedia.toDouble(),
-            temMax = Triple(poblacionMax, LocalTime.parse(timeMax), temMax.toDouble()),
-            temMin = Triple(poblacionMin, LocalTime.parse(timeMin), temMin.toDouble()),
-            precipitacion = Pair(isPrecipitacion.toBoolean(), precipitacion.toDouble())
-        )
-    }
-    fun toCsvRow(): String{
-        return "$day,$temMedia,$temMax,$poblacionMax,$timeMax,$temMin,$poblacionMin,$timeMin,$isPrecipitacion,$precipitacion\n"
-    }
-}
+)

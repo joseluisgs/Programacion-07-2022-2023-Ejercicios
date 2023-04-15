@@ -176,9 +176,10 @@ class DuplaRepositoryMap(
         return element
     }
 
-    override fun saveAll(elements: List<Dupla>, storage: Boolean) {
+    override fun saveAll(elements: Iterable<Dupla>, storage: Boolean) {
         logger.debug { "DuplaRepositoryMap ->\tsaveAll" }
-        elements.forEach { save(it, storage) }
+        elements.forEach { save(it, false) }
+        if (storage) downgrade()
     }
 
     override fun deleteById(id: String): Dupla? {
@@ -200,7 +201,7 @@ class DuplaRepositoryMap(
         return save(element)
     }
 
-    override fun upgrade(): List<Dupla> {
+    override fun upgrade(): Iterable<Dupla> {
         logger.debug { "DuplaRepositoryMap ->\tupgrade" }
         duplas.clear()
         val load = storageService.loadAll()
@@ -208,7 +209,7 @@ class DuplaRepositoryMap(
         return load
     }
 
-    override fun downgrade(): List<Dupla> {
+    override fun downgrade(): Iterable<Dupla> {
         logger.debug { "DuplaRepositoryMap ->\tdowngrade" }
         return storageService.saveAll(duplas.values.toList())
     }

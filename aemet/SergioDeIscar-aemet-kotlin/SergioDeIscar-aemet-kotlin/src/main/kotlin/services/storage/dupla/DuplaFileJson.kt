@@ -5,6 +5,8 @@ import com.squareup.moshi.adapter
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import config.AppConfig
 import dto.DuplaDto
+import mappers.toClass
+import mappers.toDto
 import models.Dupla
 import mu.KotlinLogging
 import java.io.File
@@ -26,10 +28,8 @@ object DuplaFileJson: DuplaStorageService {
         if (file.exists() && !file.canWrite()) return emptyList()
 
         val jsonAdapter = moshi.adapter<List<DuplaDto>>()
-        val dto = elements.map { it.toDto() }
-        val json = jsonAdapter.indent("\t").toJson(dto)
 
-        file.writeText(json)
+        file.writeText(jsonAdapter.indent("\t").toJson(elements.map { it.toDto() }))
 
         return elements
     }

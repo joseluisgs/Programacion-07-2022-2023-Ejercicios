@@ -15,17 +15,4 @@ data class Dupla(
     val timeMin: LocalTime,
     val precipitacion: Double,
     val day: LocalDate
-): Serializable{
-    fun toDto(): DuplaDto{
-        return DuplaDto(
-            poblacion = poblacion,
-            provincia = provincia,
-            temMax = temMax.toString(),
-            timeMax = timeMax.toFormatString(),
-            temMin = temMin.toString(),
-            timeMin = timeMin.toFormatString(),
-            precipitacion = precipitacion.toString(),
-            day = day.toString()
-        )
-    }
-}
+): Serializable

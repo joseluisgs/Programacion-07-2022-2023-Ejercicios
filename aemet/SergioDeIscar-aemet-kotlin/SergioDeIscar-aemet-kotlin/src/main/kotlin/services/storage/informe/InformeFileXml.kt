@@ -2,6 +2,8 @@ package services.storage.informe
 
 import config.AppConfig
 import dto.InformesDto
+import mappers.toClass
+import mappers.toDto
 import models.Informe
 import mu.KotlinLogging
 import org.simpleframework.xml.core.Persister

@@ -2,6 +2,8 @@ package services.storage.dupla
 
 import config.AppConfig
 import dto.DuplasDto
+import mappers.toClass
+import mappers.toDto
 import models.Dupla
 import org.simpleframework.xml.core.Persister
 import java.io.File

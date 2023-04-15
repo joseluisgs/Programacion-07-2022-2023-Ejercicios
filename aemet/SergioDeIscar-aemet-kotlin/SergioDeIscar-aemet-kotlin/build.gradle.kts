@@ -23,6 +23,12 @@ dependencies {
 
     // Simple xml
     implementation("org.simpleframework:simple-xml:2.7.1")
+
+    // Result
+    implementation("com.michael-bull.kotlin-result:kotlin-result:1.1.17")
+
+    // Mockk
+    testImplementation("io.mockk:mockk:1.13.4")
 }
 
 tasks.test {
