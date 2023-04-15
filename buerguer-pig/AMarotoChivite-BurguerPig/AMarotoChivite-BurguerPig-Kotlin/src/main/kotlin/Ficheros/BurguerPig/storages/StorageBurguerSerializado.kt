@@ -11,6 +11,7 @@ class StorageBurguerSerializado : IStorageGeneral<Burguer> {
     private val logger = KotlinLogging.logger {}
 
     private val localFile = "${ConfigApp.APP_DATA}${File.separator}burguerSerializado.ser"
+    val file = File(localFile)
 
     /**
      * Guardamos los objetos del repositorio en el fichero
@@ -18,12 +19,14 @@ class StorageBurguerSerializado : IStorageGeneral<Burguer> {
      */
     override fun saveInFile(repository: List<Burguer>) {
         logger.debug { "Storage: Escribiendo (sobreescribiendo) en Serializado" }
-        val file = File(localFile)
 
-        ObjectOutputStream(FileOutputStream(file)).use {
-            // Podemos escribir cualquier objeto serializable, ya sea un objeto o una colección
-            it.writeObject(repository)
+        val fileOutPut: FileOutputStream = FileOutputStream(file)
+        val escritura: ObjectOutputStream = ObjectOutputStream(fileOutPut)
+
+        repository.forEach {
+            escritura.writeObject(it)
         }
+        escritura.close()
     }
 
     /**
@@ -32,13 +35,24 @@ class StorageBurguerSerializado : IStorageGeneral<Burguer> {
      */
     override fun readAllModelsInFile(): List<Burguer> {
         logger.debug { "Storage: Leyendo desde fichero Serializado" }
-        val file = File(localFile)
+
         if (!file.exists()) return emptyList()
 
-        ObjectInputStream(FileInputStream(file)).use {
-            // Podemos leer cualquier objeto serializable, ya sea un objeto o una colección!!!
-            return it.readObject() as MutableList<Burguer>
+        val fileInPut: FileInputStream = FileInputStream(file)
+        val lectura: ObjectInputStream = ObjectInputStream(fileInPut)
+
+        val burguers = mutableListOf<Burguer>()
+
+        while (true) {
+            try {
+                val burguer = lectura.readObject() as Burguer
+                burguers.add(burguer)
+            } catch (e: EOFException) {
+                break
+            }
         }
+        lectura.close()
+        return burguers
 
     }
 }

@@ -7,12 +7,12 @@ import mu.KotlinLogging
 import java.io.File
 import java.util.*
 
-
 class StorageBurguerCSV : IStorageGeneral<Burguer> {
 
     private val logger = KotlinLogging.logger {}
 
     private val localFile = "${ConfigApp.APP_DATA}${File.separator}burguerCSV.csv"
+    val file = File(localFile)
 
     /**
      * Guardamos los objetos del repositorio en el fichero
@@ -21,7 +21,6 @@ class StorageBurguerCSV : IStorageGeneral<Burguer> {
     override fun saveInFile(repository: List<Burguer>) {
         logger.debug { "Storage: Escribiendo (sobreescribiendo) en CSV" }
 
-        val file = File(localFile)
         file.writeText("id_burguer,nombre_burguer,precio_burguer,ingrediente_id;ingrediente_nombre;ingrediente_precio" + "\n")
         repository.forEach {
             file.appendText("${it.getUUID()},${it.name},${it.getPrice()},${printIngredients(it.ingredients)}" + "\n")
@@ -46,7 +45,6 @@ class StorageBurguerCSV : IStorageGeneral<Burguer> {
      */
     override fun readAllModelsInFile(): List<Burguer> {
         logger.debug { "Storage: Leyendo desde fichero CSV" }
-        val file = File(localFile)
 
         // Filtro por si no existe el archivo
         if (!file.exists()) return emptyList()

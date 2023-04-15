@@ -13,6 +13,7 @@ class StorageBurguerTexto : IStorageGeneral<Burguer> {
     private val logger = KotlinLogging.logger {}
 
     private val localFile = "${ConfigApp.APP_DATA}${File.separator}burguerTexto.txt"
+    val file = File(localFile)
 
     /**
      * Guardamos los objetos del repositorio en el fichero
@@ -20,7 +21,6 @@ class StorageBurguerTexto : IStorageGeneral<Burguer> {
      */
     override fun saveInFile(repository: List<Burguer>) {
         logger.debug { "Storage: Escribiendo (sobreescribiendo) en Texto Plano" }
-        val file = File(localFile)
 
         file.writeText("")
         repository.forEach {
@@ -31,7 +31,7 @@ class StorageBurguerTexto : IStorageGeneral<Burguer> {
 
             // Ingredientes
             it.ingredients.forEach { ingredient ->
-                file.appendText(ingredient!!.getID().toString() + "\n")
+                file.appendText(ingredient.getID().toString() + "\n")
                 file.appendText(ingredient.name + "\n")
                 file.appendText(ingredient.price.toString() + "\n")
             }
@@ -45,7 +45,6 @@ class StorageBurguerTexto : IStorageGeneral<Burguer> {
      */
     override fun readAllModelsInFile(): List<Burguer> {
         logger.debug { "Storage: Leyendo desde fichero de Texto Plano" }
-        val file = File(localFile)
 
         // Filtro por si no existe el archivo
         if (!file.exists()) return emptyList()

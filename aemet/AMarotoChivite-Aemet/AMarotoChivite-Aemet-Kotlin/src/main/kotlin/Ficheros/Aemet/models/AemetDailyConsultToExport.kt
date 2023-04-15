@@ -15,7 +15,7 @@ class AemetDailyConsultToExport(
     var precipitation: Double = 0.0
     var isPrecipitacion: Boolean = false
 
-    @Transient
+    @Transient // Transient propio de la librería de kotlin, para que no me serialice el campo
     private var temperatureCount = 0
 
     @Transient

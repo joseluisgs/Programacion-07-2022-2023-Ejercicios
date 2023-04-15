@@ -1,0 +1,107 @@
+{
+  "myListAlumno": [
+    {
+      "name": "Jorge",
+      "edad": "37",
+      "type": "Alumno"
+    },
+    {
+      "name": "Carla",
+      "edad": "23",
+      "type": "Alumno"
+    },
+    {
+      "name": "Sara",
+      "edad": "26",
+      "type": "Alumno"
+    },
+    {
+      "name": "Diego",
+      "edad": "22",
+      "type": "Alumno"
+    },
+    {
+      "name": "Juan",
+      "edad": "33",
+      "type": "Alumno"
+    },
+    {
+      "name": "Rosa",
+      "edad": "40",
+      "type": "Alumno"
+    },
+    {
+      "name": "Sofía",
+      "edad": "22",
+      "type": "Alumno"
+    },
+    {
+      "name": "Elena",
+      "edad": "18",
+      "type": "Alumno"
+    },
+    {
+      "name": "Jorge",
+      "edad": "33",
+      "type": "Alumno"
+    },
+    {
+      "name": "Jorge",
+      "edad": "31",
+      "type": "Alumno"
+    },
+    {
+      "name": "Elena",
+      "edad": "23",
+      "type": "Alumno"
+    },
+    {
+      "name": "Miguel",
+      "edad": "26",
+      "type": "Alumno"
+    },
+    {
+      "name": "Javier",
+      "edad": "19",
+      "type": "Alumno"
+    },
+    {
+      "name": "Elena",
+      "edad": "39",
+      "type": "Alumno"
+    },
+    {
+      "name": "Laura",
+      "edad": "21",
+      "type": "Alumno"
+    },
+    {
+      "name": "Diego",
+      "edad": "18",
+      "type": "Alumno"
+    },
+    {
+      "name": "Fernando",
+      "edad": "20",
+      "type": "Alumno"
+    },
+    {
+      "name": "Carla",
+      "edad": "36",
+      "type": "Alumno"
+    },
+    {
+      "name": "Raquel",
+      "edad": "23",
+      "type": "Alumno"
+    }
+  ],
+  "myListProfesor": [
+    {
+      "name": "Ana",
+      "edad": "27",
+      "modulo": "Programación",
+      "type": "Profesor"
+    }
+  ]
+}

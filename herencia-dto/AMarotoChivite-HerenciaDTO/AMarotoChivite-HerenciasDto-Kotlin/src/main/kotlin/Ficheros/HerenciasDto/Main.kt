@@ -5,6 +5,7 @@ import Ficheros.HerenciasDto.config.ConfigApp
 import Ficheros.HerenciasDto.controllers.ControllerQueries
 import Ficheros.HerenciasDto.repositories.Repository
 import Ficheros.HerenciasDto.storage.factories.FactoryStorageCSV
+import Ficheros.HerenciasDto.storage.factories.FactoryStorageGSON_JSON
 import Ficheros.HerenciasDto.storage.factories.FactoryStorageMOSHI_JSON
 import Ficheros.HerenciasDto.storage.factories.FactoryStorageXML
 import kotlin.system.exitProcess
@@ -63,6 +64,7 @@ fun decisionTypeStorage(): Repository {
         println("1: En CSV")
         println("2: En MOSHI_JSON")
         println("3: En XML")
+        println("4: En GSON_JSON")
         println("0: Salir")
 
         when (readln()) {
@@ -76,6 +78,10 @@ fun decisionTypeStorage(): Repository {
 
             "3" -> {
                 return FactoryStorageXML().create()
+            }
+
+            "4" -> {
+                return FactoryStorageGSON_JSON().create()
             }
 
             "0" -> {

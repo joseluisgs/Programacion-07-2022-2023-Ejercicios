@@ -9,10 +9,9 @@
 # Enunciado (HerenciasDto)
 Escritura desde mis modelos donde elegimos el formato de fichero y su porterior lectura del mismo:
 
-(CSV, XML, y JSON en Moshi y Gson)
+CSV, XML, y JSON en Moshi (con adaptadores) y Gson (sin adaptadores)
 
 ---
-
 
 ##  Diseño implementado
 Arquitectura por capas, empleando el modelo-controlador

@@ -14,6 +14,7 @@ class StorageBurguerXML : IStorageGeneral<Burguer> {
     private val logger = KotlinLogging.logger {}
 
     private val localFile = "${ConfigApp.APP_DATA}${File.separator}burguerXML.xml"
+    val file = File(localFile)
 
     private val serializer = Persister()
 
@@ -23,7 +24,7 @@ class StorageBurguerXML : IStorageGeneral<Burguer> {
      */
     override fun saveInFile(repository: List<Burguer>) {
         logger.debug { "Storage: Escribiendo (sobreescribiendo) en XML" }
-        val file = File(localFile)
+
         serializer.write(BurguerListMapper().toDtoList(repository), file)
     }
 
@@ -33,7 +34,7 @@ class StorageBurguerXML : IStorageGeneral<Burguer> {
      */
     override fun readAllModelsInFile(): List<Burguer> {
         logger.debug { "Storage: Leyendo desde fichero de XML" }
-        val file = File(localFile)
+
         return BurguerListMapper().toModelList(serializer.read(BurguerListDto::class.java, file))
     }
 }

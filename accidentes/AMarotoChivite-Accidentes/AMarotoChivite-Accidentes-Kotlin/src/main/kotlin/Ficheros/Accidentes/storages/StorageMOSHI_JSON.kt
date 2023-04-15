@@ -24,7 +24,7 @@ class StorageMOSHI_JSON : IStorageToImportExport<AccidenteDTO> {
 
     override fun saveInFileWithFilter() {
         logger.debug { "Storage: Escribiendo en JSON con MOSHI" }
-
+        
         val listToExport = readDataOfCSV()
 
         file.writeText(jsonAdapter.indent("  ").toJson(listToExport))

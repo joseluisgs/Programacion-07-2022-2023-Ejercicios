@@ -2,9 +2,12 @@ package Ficheros.BurguerPig.storages
 
 import Ficheros.BurguerPig.config.ConfigApp
 import Ficheros.BurguerPig.models.Burguer
+import Ficheros.BurguerPig.models.dto.BurguerDTO
+import Ficheros.BurguerPig.models.dto.BurguerListDto
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
+import mappers.BurguerListMapper
 import mu.KotlinLogging
 import java.io.File
 
@@ -25,7 +28,7 @@ class StorageBurguerGSON_JSON : IStorageGeneral<Burguer> {
 
         // Utilizando GSON (en clases no abstractas y embebidas)
         val gson = GsonBuilder().setPrettyPrinting().create()
-        val jsonString = gson.toJson(repository)
+        val jsonString = gson.toJson(BurguerListMapper().toDto(repository).list)
         file.writeText(jsonString)
     }
 
@@ -39,8 +42,9 @@ class StorageBurguerGSON_JSON : IStorageGeneral<Burguer> {
         // Utilizando GSON (en clases no abstractas y embebidas)
         val gson = Gson()
         val jsonString = file.readText()
-        val type = object : TypeToken<List<Burguer>>() {}.type
-        return gson.fromJson(jsonString, type)
+        val type = object : TypeToken<List<BurguerDTO>>() {}.type
+        val dtoList = gson.fromJson<List<BurguerDTO>>(jsonString, type)
+        return BurguerListMapper().toModelList(BurguerListDto(dtoList))
     }
 }
 
