@@ -1,0 +1,35 @@
+<informes>
+   <informe day="2017-10-29">
+      <temMedia>14.245614035087716</temMedia>
+      <temMax>25.1</temMax>
+      <poblacionMax>Aranjuez</poblacionMax>
+      <timeMax>16:30</timeMax>
+      <temMin>3.5</temMin>
+      <poblacionMin>Rascafr�a</poblacionMin>
+      <timeMin>15:20</timeMin>
+      <isPrecipitacion>false</isPrecipitacion>
+      <precipitacion>0.0</precipitacion>
+   </informe>
+   <informe day="2017-10-30">
+      <temMedia>14.245614035087716</temMedia>
+      <temMax>25.2</temMax>
+      <poblacionMax>Alpedrete</poblacionMax>
+      <timeMax>14:40</timeMax>
+      <temMin>-0.2</temMin>
+      <poblacionMin>Rascafr�a</poblacionMin>
+      <timeMin>14:10</timeMin>
+      <isPrecipitacion>false</isPrecipitacion>
+      <precipitacion>0.0</precipitacion>
+   </informe>
+   <informe day="2017-10-31">
+      <temMedia>14.245614035087716</temMedia>
+      <temMax>22.4</temMax>
+      <poblacionMax>Aranjuez</poblacionMax>
+      <timeMax>16:40</timeMax>
+      <temMin>-0.9</temMin>
+      <poblacionMin>Rascafr�a</poblacionMin>
+      <timeMin>06:20</timeMin>
+      <isPrecipitacion>false</isPrecipitacion>
+      <precipitacion>0.0</precipitacion>
+   </informe>
+</informes>

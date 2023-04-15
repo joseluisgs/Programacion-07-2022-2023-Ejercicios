@@ -1,0 +1,47 @@
+<informes>
+   <informe day="2017-10-29">
+      <tem_media>14.24561403508772</tem_media>
+      <tem_max poblacion="Aranjuez">
+         <value>25.1</value>
+         <time>16:30</time>
+      </tem_max>
+      <tem_min poblacion="Rascafr�a">
+         <value>24.3</value>
+         <time>15:20</time>
+      </tem_min>
+      <precipitacion>
+         <isPrecipitacion>false</isPrecipitacion>
+         <value>0.0</value>
+      </precipitacion>
+   </informe>
+   <informe day="2017-10-30">
+      <tem_media>14.24561403508772</tem_media>
+      <tem_max poblacion="Alpedrete">
+         <value>25.2</value>
+         <time>14:40</time>
+      </tem_max>
+      <tem_min poblacion="Rascafr�a">
+         <value>23.2</value>
+         <time>14:10</time>
+      </tem_min>
+      <precipitacion>
+         <isPrecipitacion>false</isPrecipitacion>
+         <value>0.0</value>
+      </precipitacion>
+   </informe>
+   <informe day="2017-10-31">
+      <tem_media>14.24561403508772</tem_media>
+      <tem_max poblacion="Aranjuez">
+         <value>22.4</value>
+         <time>16:40</time>
+      </tem_max>
+      <tem_min poblacion="Rascafr�a">
+         <value>18.0</value>
+         <time>14:40</time>
+      </tem_min>
+      <precipitacion>
+         <isPrecipitacion>false</isPrecipitacion>
+         <value>0.0</value>
+      </precipitacion>
+   </informe>
+</informes>

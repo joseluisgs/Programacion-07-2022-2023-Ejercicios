@@ -1,0 +1,16 @@
+ecb1472c-4308-4c61-9780-8438a1e75276
+CheeseBurger
+3/Carne/2.5, 5/Bacon/1.25, 6/Queso/1.0
+4.75
+ffc6f924-f6b1-4815-b841-aae194ff1591
+BaconCrispyBurger
+3/Carne/2.5, 5/Bacon/1.25, 6/Queso/1.0, 2/Lechuga/0.5, 4/Pepinillos/0.35
+5.6
+5e84f33b-95ca-4dcc-bd3e-3b6c32095f3c
+AllInBurger
+3/Carne/2.5, 1/Tomate/0.75, 2/Lechuga/0.5, 4/Pepinillos/0.35, 5/Bacon/1.25, 6/Queso/1.0
+6.35
+32f9f226-a1a8-4790-aa5d-397a01255f28
+DoubleCheeseBurger
+3/Carne/2.5, 3/Carne/2.5, 5/Bacon/1.25, 6/Queso/1.0, 6/Queso/1.0
+8.25

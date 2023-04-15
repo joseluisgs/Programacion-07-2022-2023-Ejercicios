@@ -1,0 +1,17 @@
+[
+   {
+      "id": 1,
+      "nombre": "Pepinillo",
+      "precio": 64.59534343512773
+   },
+   {
+      "id": 2,
+      "nombre": "Carne",
+      "precio": 88.7352480933695
+   },
+   {
+      "id": 3,
+      "nombre": "Cebolla",
+      "precio": 46.056787466896395
+   }
+]

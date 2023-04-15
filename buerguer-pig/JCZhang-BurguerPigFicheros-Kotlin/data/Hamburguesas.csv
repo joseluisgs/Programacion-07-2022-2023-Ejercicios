@@ -1,0 +1,5 @@
+id, nombre, ingrediente, precio
+68468ab4-7cea-4d24-ac72-8f86840a25a6,CheeseBurger,3/Carne/2.5|5/Bacon/1.25|6/Queso/1.0,4.75 
+096129c1-242d-4a8b-8c0e-dadd1148ecd3,BaconCrispyBurger,3/Carne/2.5|5/Bacon/1.25|6/Queso/1.0|2/Lechuga/0.5|4/Pepinillos/0.35,5.6 
+57161c93-ad6c-4282-bfa8-a0d3a9e74858,AllInBurger,3/Carne/2.5|1/Tomate/0.75|2/Lechuga/0.5|4/Pepinillos/0.35|5/Bacon/1.25|6/Queso/1.0,6.35 
+3fd3109c-b539-430d-a076-0c7c2a655dd7,DoubleCheeseBurger,3/Carne/2.5|3/Carne/2.5|5/Bacon/1.25|6/Queso/1.0|6/Queso/1.0,8.25 

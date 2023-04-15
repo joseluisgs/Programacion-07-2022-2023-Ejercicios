@@ -1,0 +1,112 @@
+[
+   {
+      "id": "b52b0bfa-f2b3-4426-b5e4-bd4627eb7682",
+      "ingredientes": [
+         {
+            "id": "3",
+            "nombre": "Cebolla",
+            "precio": "46.056787466896395"
+         }
+      ],
+      "nombre": "Hambuergesa de vaca"
+   },
+   {
+      "id": "8283ec00-aa8e-4204-9d42-42c3cf155fca",
+      "ingredientes": [
+         {
+            "id": "3",
+            "nombre": "Cebolla",
+            "precio": "46.056787466896395"
+         },
+         {
+            "id": "2",
+            "nombre": "Carne",
+            "precio": "88.7352480933695"
+         },
+         {
+            "id": "1",
+            "nombre": "Pepinillo",
+            "precio": "64.59534343512773"
+         },
+         {
+            "id": "2",
+            "nombre": "Carne",
+            "precio": "88.7352480933695"
+         },
+         {
+            "id": "1",
+            "nombre": "Pepinillo",
+            "precio": "64.59534343512773"
+         },
+         {
+            "id": "2",
+            "nombre": "Carne",
+            "precio": "88.7352480933695"
+         }
+      ],
+      "nombre": "Hambuergesa de vaca"
+   },
+   {
+      "id": "fe234b79-25fa-4341-8730-c9cb283f4131",
+      "ingredientes": [
+         {
+            "id": "1",
+            "nombre": "Pepinillo",
+            "precio": "64.59534343512773"
+         },
+         {
+            "id": "1",
+            "nombre": "Pepinillo",
+            "precio": "64.59534343512773"
+         },
+         {
+            "id": "1",
+            "nombre": "Pepinillo",
+            "precio": "64.59534343512773"
+         },
+         {
+            "id": "3",
+            "nombre": "Cebolla",
+            "precio": "46.056787466896395"
+         }
+      ],
+      "nombre": "Hambuergesa de pollo"
+   },
+   {
+      "id": "22e93170-7449-4073-b985-f3ac5a2fe869",
+      "ingredientes": [
+         {
+            "id": "2",
+            "nombre": "Carne",
+            "precio": "88.7352480933695"
+         },
+         {
+            "id": "2",
+            "nombre": "Carne",
+            "precio": "88.7352480933695"
+         },
+         {
+            "id": "1",
+            "nombre": "Pepinillo",
+            "precio": "64.59534343512773"
+         },
+         {
+            "id": "1",
+            "nombre": "Pepinillo",
+            "precio": "64.59534343512773"
+         }
+      ],
+      "nombre": "Hambuergesa de pollo"
+   },
+   {
+      "id": "0f7b02f0-24a1-4743-a522-3f484a68b363",
+      "ingredientes": [
+         {
+            "id": "2",
+            "nombre": "Carne",
+            "precio": "88.7352480933695"
+         }
+      ],
+      "nombre": "Hambuergesa de pollo"
+   }
+]

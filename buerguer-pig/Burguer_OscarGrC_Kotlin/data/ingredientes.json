@@ -1,0 +1,46 @@
+{
+   "listaIngredientes": [
+      {
+         "nombre": "Pan",
+         "id": "1",
+         "precio": "100",
+         "fechaCreacion": "10:26:41"
+      },
+      {
+         "nombre": "Lechuga",
+         "id": "2",
+         "precio": "50",
+         "fechaCreacion": "10:26:41"
+      },
+      {
+         "nombre": "Tomate",
+         "id": "3",
+         "precio": "50",
+         "fechaCreacion": "10:26:41"
+      },
+      {
+         "nombre": "Carne",
+         "id": "4",
+         "precio": "100",
+         "fechaCreacion": "10:26:41"
+      },
+      {
+         "nombre": "Pepinillo",
+         "id": "5",
+         "precio": "10",
+         "fechaCreacion": "10:26:41"
+      },
+      {
+         "nombre": "Bacon",
+         "id": "6",
+         "precio": "50",
+         "fechaCreacion": "10:26:41"
+      },
+      {
+         "nombre": "Queso",
+         "id": "7",
+         "precio": "50",
+         "fechaCreacion": "10:26:41"
+      }
+   ]
+}

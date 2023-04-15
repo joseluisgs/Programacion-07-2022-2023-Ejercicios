@@ -1,0 +1,20 @@
+<ingredientes>
+   <Ingrediente id="1" precio="0.75">
+      <nombre>Tomate</nombre>
+   </Ingrediente>
+   <Ingrediente id="2" precio="0.5">
+      <nombre>Lechuga</nombre>
+   </Ingrediente>
+   <Ingrediente id="3" precio="2.5">
+      <nombre>Carne</nombre>
+   </Ingrediente>
+   <Ingrediente id="4" precio="0.35">
+      <nombre>Pepinillos</nombre>
+   </Ingrediente>
+   <Ingrediente id="5" precio="1.25">
+      <nombre>Bacon</nombre>
+   </Ingrediente>
+   <Ingrediente id="6" precio="1.0">
+      <nombre>Queso</nombre>
+   </Ingrediente>
+</ingredientes>
