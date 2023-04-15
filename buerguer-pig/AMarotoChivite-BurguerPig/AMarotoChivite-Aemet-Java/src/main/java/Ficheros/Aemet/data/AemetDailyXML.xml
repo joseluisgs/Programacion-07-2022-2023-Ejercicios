@@ -1,0 +1,59 @@
+<informe>
+   <dia_value key="2017-10-30">
+      <aemetDailyConsultToExport>
+         <isPrecipitacion>false</isPrecipitacion>
+         <date>2017-10-30</date>
+         <mediaTemperature>13.56842105263158</mediaTemperature>
+         <maxTemperature>
+            <value>25.2</value>
+            <time>14:40</time>
+            <lugar>Alpedrete - Madrid</lugar>
+         </maxTemperature>
+         <minTemperature>
+            <value>-0.2</value>
+            <time>14:10</time>
+            <lugar>Rascafría - Madrid</lugar>
+         </minTemperature>
+         <precipitation>0.0</precipitation>
+         <precipitacion>false</precipitacion>
+      </aemetDailyConsultToExport>
+   </dia_value>
+   <dia_value key="2017-10-31">
+      <aemetDailyConsultToExport>
+         <isPrecipitacion>false</isPrecipitacion>
+         <date>2017-10-31</date>
+         <mediaTemperature>11.528947368421054</mediaTemperature>
+         <maxTemperature>
+            <value>22.4</value>
+            <time>16:40</time>
+            <lugar>Aranjuez - Madrid</lugar>
+         </maxTemperature>
+         <minTemperature>
+            <value>-0.9</value>
+            <time>06:20</time>
+            <lugar>Rascafría - Madrid</lugar>
+         </minTemperature>
+         <precipitation>0.0</precipitation>
+         <precipitacion>false</precipitacion>
+      </aemetDailyConsultToExport>
+   </dia_value>
+   <dia_value key="2017-10-29">
+      <aemetDailyConsultToExport>
+         <isPrecipitacion>false</isPrecipitacion>
+         <date>2017-10-29</date>
+         <mediaTemperature>14.976315789473684</mediaTemperature>
+         <maxTemperature>
+            <value>25.1</value>
+            <time>16:30</time>
+            <lugar>Aranjuez - Madrid</lugar>
+         </maxTemperature>
+         <minTemperature>
+            <value>3.5</value>
+            <time>15:20</time>
+            <lugar>Rascafría - Madrid</lugar>
+         </minTemperature>
+         <precipitation>0.0</precipitation>
+         <precipitacion>false</precipitacion>
+      </aemetDailyConsultToExport>
+   </dia_value>
+</informe>
