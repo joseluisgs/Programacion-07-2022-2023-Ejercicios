@@ -5,7 +5,7 @@ import locate.toLocalMoney
 import java.io.Serializable
 
 class Hamburguesa(
-    id: Int,
+    id: Long = 0,
     nombre: String,
     val ingredientes: List<Ingrediente> = emptyList()
 ): Producto(
@@ -23,14 +23,9 @@ class Hamburguesa(
         return nombre.hashCode() + ingredientes.hashCode()
     }
 
-    override fun toDto(): ProductoDto {
-        return ProductoDto(
-            id.toString(),
-            nombre,
-            precio.toLocalMoney(),
-            "Hamburguesa",
-            ingredientes.map { it.toDto() }
-        )
+    override fun copy(id: Long, nombre: String, precio: Float): Producto {
+        this.id = id
+        return Hamburguesa(id, nombre, ingredientes)
     }
 
     override fun equals(other: Any?): Boolean {

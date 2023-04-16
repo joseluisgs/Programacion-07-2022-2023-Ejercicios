@@ -3,9 +3,7 @@ package models
 import dto.ProductoDto
 import java.io.Serializable
 
-abstract class Producto(val id: Int, val nombre: String, val precio: Float): Serializable {
-    fun toLineaPedido(cantidad: Int = 1): LineaPedido {
-        return LineaPedido(this.id, precio, cantidad)
-    }
-    abstract fun toDto(): ProductoDto
+abstract class Producto(var id: Long, val nombre: String, val precio: Float): Serializable{
+    //Copy method like data class
+    abstract fun copy(id: Long = this.id, nombre: String = this.nombre, precio: Float = this.precio): Producto
 }

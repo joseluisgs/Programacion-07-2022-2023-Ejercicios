@@ -1,9 +1,6 @@
 package controllers
 
-import com.github.michaelbull.result.Err
-import com.github.michaelbull.result.Ok
-import com.github.michaelbull.result.Result
-import com.github.michaelbull.result.onSuccess
+import com.github.michaelbull.result.*
 import errors.DuplaError
 import models.Dupla
 import mu.KotlinLogging
@@ -114,11 +111,11 @@ class DuplaController(
 
     fun update(element: Dupla): Result<Dupla, DuplaError> {
         logger.debug { "DuplaController ->\tupdate" }
-        return element.validate().onSuccess { repo.update(element) }
+        return element.validate().andThen { repo.update(element)?.let { Ok(it) } ?: Err(DuplaError.DuplaNoEncontradaError()) }
     }
 
     fun updateById(id: String, element: Dupla): Result<Dupla, DuplaError> {
         logger.debug { "DuplaController ->\tupdateById" }
-        return element.validate().onSuccess { repo.updateById(id, element) }
+        return element.validate().andThen { repo.updateById(id, element)?.let { Ok(it) } ?: Err(DuplaError.DuplaNoEncontradaError()) }
     }
 }

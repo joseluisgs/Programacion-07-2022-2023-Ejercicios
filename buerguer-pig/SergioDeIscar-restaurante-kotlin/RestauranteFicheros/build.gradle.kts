@@ -18,12 +18,17 @@ dependencies {
     implementation("io.github.microutils:kotlin-logging-jvm:3.0.4")
 
     // Moshi
-    //implementation("com.squareup.moshi:moshi:1.14.0")
     implementation("com.squareup.moshi:moshi-adapters:1.14.0")
     implementation("com.squareup.moshi:moshi-kotlin:1.14.0")
 
     // Simple xml
     implementation("org.simpleframework:simple-xml:2.7.1")
+
+    //SqlLite
+    implementation("org.xerial:sqlite-jdbc:3.40.1.0")
+
+    // Result
+    implementation("com.michael-bull.kotlin-result:kotlin-result:1.1.17")
 }
 
 tasks.test {

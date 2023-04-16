@@ -4,7 +4,7 @@ import dto.ProductoDto
 import locate.toLocalMoney
 import java.io.Serializable
 
-class Bebida(id: Int, nombre: String, precio: Float, val capacidad: Int): Producto(id, nombre, precio), Serializable {
+class Bebida(id: Long = 0, nombre: String, precio: Float, val capacidad: Int): Producto(id, nombre, precio), Serializable {
     override fun toString(): String {
         return "Bebida ($id) -> Nombre: $nombre ; Precio: ${precio.toLocalMoney()} ; Capacidad: $capacidad"
     }
@@ -13,15 +13,9 @@ class Bebida(id: Int, nombre: String, precio: Float, val capacidad: Int): Produc
         return nombre.hashCode() + precio.hashCode() + capacidad.hashCode()
     }
 
-    override fun toDto(): ProductoDto {
-        return ProductoDto(
-            id.toString(),
-            nombre,
-            precio.toLocalMoney(),
-            "Bebida",
-            null,
-            capacidad.toString()
-        )
+    override fun copy(id: Long, nombre: String, precio: Float): Producto {
+        this.id = id
+        return Bebida(id, nombre, precio, capacidad)
     }
 
     override fun equals(other: Any?): Boolean {

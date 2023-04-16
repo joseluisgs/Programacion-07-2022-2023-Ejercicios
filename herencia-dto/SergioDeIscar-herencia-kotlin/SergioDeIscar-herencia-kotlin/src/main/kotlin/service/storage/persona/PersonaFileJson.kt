@@ -10,6 +10,7 @@ import mappers.toDto
 import models.Persona
 import mu.KotlinLogging
 import java.io.File
+import java.io.IOException
 
 private val logger = KotlinLogging.logger {}
 
@@ -21,7 +22,7 @@ object PersonaFileJson: PersonaStorageService {
     override fun saveAll(elements: List<Persona>): List<Persona> {
         logger.debug { "PersonaFileJson ->\tsaveAll" }
         val file = File(localFile)
-        if (file.exists() && !file.canWrite() ) return emptyList()
+        if (file.exists() && !file.canWrite() ) throw IOException("No se puede escribir en el archivo")
 
         val jsonAdapter = moshi.adapter<List<PersonaDto>>()
         file.writeText(
@@ -35,7 +36,7 @@ object PersonaFileJson: PersonaStorageService {
     override fun loadAll(): List<Persona> {
         logger.debug { "PersonaFileJson ->\tloadAll" }
         val file = File(localFile)
-        if(!file.exists() || !file.canRead()) return emptyList()
+        if(!file.exists() || !file.canRead()) throw IOException("No se puede leer el archivo")
 
         val jsonAdapter = moshi.adapter<List<PersonaDto>>()
         return jsonAdapter.fromJson(file.readText())?.map { it.toClass() } ?: emptyList()

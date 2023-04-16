@@ -11,10 +11,14 @@ private val logger = KotlinLogging.logger {}
 private val LOCAL_PATH = "${System.getProperty("user.dir")}${File.separator}"
 
 object AppConfig {
-    val APP_NAME = "Restaurante Ficheros"
-    val APP_VERSION = "1.0.0"
-    lateinit var APP_AUTHOR: String
-    lateinit var APP_DATA: String
+    private var _APP_DATA: String = ""
+    val APP_DATA: String get() = _APP_DATA
+
+    private var _APP_DB_URL: String = ""
+    val APP_DB_URL: String get() = _APP_DB_URL
+
+    private var _APP_DB_RESET: Boolean = false
+    val APP_DB_RESET: Boolean get() = _APP_DB_RESET
 
     init {
         loadProperties()
@@ -31,11 +35,11 @@ object AppConfig {
         val properties = Properties()
         properties.load(AppConfig::class.java.getResourceAsStream("/config.properties"))
 
-        APP_AUTHOR = properties.getProperty("app.auth") ?: "nobody"
-        APP_DATA = properties.getProperty("app.storage.dir") ?: "data"
-        APP_DATA = "$LOCAL_PATH$APP_DATA"
+        _APP_DB_URL = properties.getProperty("app.db.url") ?: "jdbc:sqlite:Persona.db"
+        _APP_DATA = LOCAL_PATH + properties.getProperty("app.storage.dir", "data")
+        _APP_DB_RESET = properties.getProperty("app.db.reset", "false").toBoolean()
 
-        logger.debug { "Configuración: app.author = $APP_AUTHOR" }
-        logger.debug { "Configuración: app.storage.dir = $APP_DATA" }
+        logger.info { "Configuración: app.db.url = $APP_DB_URL" }
+        logger.info { "Configuración: app.storage.dir = $APP_DATA" }
     }
 }

@@ -1,11 +1,11 @@
 package repository
 
 interface CrudRepository<T, ID> {
-    fun getAll(): List<T>
-    fun getById(id: ID): T?
-    fun save(element: T): T
-    fun saveAll(elements: List<T>)
-    fun deleteById(id: ID): T?
-    fun update(element: T): T?
-    fun updateById(id: ID, element: T): T?
+    fun findAll(): Iterable<T>
+    fun findById(id: ID): T?
+    fun save(element: T, storage: Boolean = true): T
+    fun saveAll(elements: Iterable<T>, storage: Boolean = true)
+    fun deleteById(id: ID): Boolean
+    fun delete(element: T): Boolean
+    fun existsById(id: ID): Boolean
 }

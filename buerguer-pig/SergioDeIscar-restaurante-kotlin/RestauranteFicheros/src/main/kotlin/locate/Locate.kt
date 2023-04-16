@@ -9,7 +9,13 @@ fun Float.toLocalMoney(): String{
 
 fun String.moneyToFloat(): Float{
     val paco = this.replace("€", "").replace(',', '.').trim()
-    return paco.toFloat()
+    return paco.toFloat().round()
+}
+
+fun Float.round(decimals: Int = 2): Float{
+    var multiplier = 1.0f
+    repeat(decimals) { multiplier *= 10 }
+    return kotlin.math.round(this * multiplier) / multiplier
 }
 
 fun Double.toLocalMoney(): String{

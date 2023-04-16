@@ -14,6 +14,7 @@ class PersonaRepositoryMap(
     private val personas = mutableMapOf<Long, Persona>()
     override fun getPorcentajePorTipo(): Map<String, Double> {
         logger.debug { "PersonaRepositoryMap ->\tgetPorcentajePorTipo" }
+        upgrade()
         return personas.values
             .groupBy {
                 when(it){
@@ -27,11 +28,13 @@ class PersonaRepositoryMap(
 
     override fun findAll(): Iterable<Persona> {
         logger.debug { "PersonaRepositoryMap ->\tgetAll" }
+        upgrade()
         return personas.values.toList()
     }
 
     override fun findById(id: Long): Persona? {
         logger.debug { "PersonaRepositoryMap ->\tgetById" }
+        upgrade()
         return personas[id]
     }
 
@@ -50,16 +53,19 @@ class PersonaRepositoryMap(
 
     override fun deleteById(id: Long): Boolean {
         logger.debug { "PersonaRepositoryMap ->\tdeleteById" }
-        return personas.remove(id) != null
+        val result = personas.remove(id) != null
+        downgrade()
+        return result
     }
 
     override fun delete(element: Persona): Boolean {
+        logger.debug { "PersonaRepositoryMap ->\tdelete" }
         return deleteById(element.id)
     }
 
     override fun existsById(id: Long): Boolean {
         logger.debug { "PersonaRepositoryMap ->\texistsById" }
-        return personas.containsKey(id)
+        return findById(id) != null
     }
 
     private fun upgrade(): List<Persona> {
