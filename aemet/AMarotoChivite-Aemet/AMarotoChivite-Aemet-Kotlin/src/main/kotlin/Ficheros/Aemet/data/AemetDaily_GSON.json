@@ -1,0 +1,50 @@
+{
+  "2017-10-29": {
+    "date": "2017-10-29",
+    "maxTemperature": {
+      "value": 25.1,
+      "time": "16:30",
+      "lugar": "Aranjuez - Madrid"
+    },
+    "minTemperature": {
+      "value": 3.5,
+      "time": "15:20",
+      "lugar": "Rascafr�a - Madrid"
+    },
+    "mediaTemperature": 14.976315789473684,
+    "precipitation": 0.0,
+    "isPrecipitacion": false
+  },
+  "2017-10-30": {
+    "date": "2017-10-30",
+    "maxTemperature": {
+      "value": 25.2,
+      "time": "14:40",
+      "lugar": "Alpedrete - Madrid"
+    },
+    "minTemperature": {
+      "value": -0.2,
+      "time": "14:10",
+      "lugar": "Rascafr�a - Madrid"
+    },
+    "mediaTemperature": 13.56842105263158,
+    "precipitation": 0.0,
+    "isPrecipitacion": false
+  },
+  "2017-10-31": {
+    "date": "2017-10-31",
+    "maxTemperature": {
+      "value": 22.4,
+      "time": "16:40",
+      "lugar": "Aranjuez - Madrid"
+    },
+    "minTemperature": {
+      "value": -0.9,
+      "time": "06:20",
+      "lugar": "Rascafr�a - Madrid"
+    },
+    "mediaTemperature": 11.528947368421054,
+    "precipitation": 0.0,
+    "isPrecipitacion": false
+  }
+}

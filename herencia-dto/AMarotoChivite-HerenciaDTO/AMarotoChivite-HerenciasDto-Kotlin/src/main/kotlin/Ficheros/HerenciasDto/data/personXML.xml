@@ -1,0 +1,83 @@
+<listPersonas>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Profesor" type="Profesor">
+      <nombreProfesor>Elena</nombreProfesor>
+      <edad>22</edad>
+      <modulo>Entornos</modulo>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Elena</nombreAlumno>
+      <edad>24</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Javier</nombreAlumno>
+      <edad>23</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Raquel</nombreAlumno>
+      <edad>36</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Luis</nombreAlumno>
+      <edad>18</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Ana</nombreAlumno>
+      <edad>33</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Diego</nombreAlumno>
+      <edad>35</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Elena</nombreAlumno>
+      <edad>20</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Ana</nombreAlumno>
+      <edad>27</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Javier</nombreAlumno>
+      <edad>27</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Juan</nombreAlumno>
+      <edad>36</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>María</nombreAlumno>
+      <edad>29</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Pilar</nombreAlumno>
+      <edad>35</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Juan</nombreAlumno>
+      <edad>32</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Sara</nombreAlumno>
+      <edad>28</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Jorge</nombreAlumno>
+      <edad>23</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Fernando</nombreAlumno>
+      <edad>23</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Fernando</nombreAlumno>
+      <edad>36</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Sara</nombreAlumno>
+      <edad>34</edad>
+   </persona>
+   <persona class="Ficheros.HerenciasDto.models.dto.PersonDTO$Alumno" type="Alumno">
+      <nombreAlumno>Miguel</nombreAlumno>
+      <edad>22</edad>
+   </persona>
+</listPersonas>

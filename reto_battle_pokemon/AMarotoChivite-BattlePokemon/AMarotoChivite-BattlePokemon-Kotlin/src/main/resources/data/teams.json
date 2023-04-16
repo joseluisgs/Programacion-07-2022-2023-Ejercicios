@@ -1,0 +1,374 @@
+[
+  {
+    "listPokemon": [
+      {
+        "ratioDefense": "0.7",
+        "life": "104",
+        "listType": [
+          "WATER",
+          "PLANT"
+        ],
+        "listMovement": [
+          {
+            "power": "62",
+            "pointsPower": "3",
+            "type": "PLANT"
+          },
+          {
+            "power": "66",
+            "pointsPower": "2",
+            "type": "WATER"
+          },
+          {
+            "power": "62",
+            "pointsPower": "2",
+            "type": "PLANT"
+          },
+          {
+            "power": "50",
+            "pointsPower": "2",
+            "type": "FIRE"
+          }
+        ],
+        "idPokemon": "0"
+      },
+      {
+        "ratioDefense": "0.6",
+        "life": "121",
+        "listType": [
+          "PLANT"
+        ],
+        "listMovement": [
+          {
+            "power": "59",
+            "pointsPower": "3",
+            "type": "FIRE"
+          },
+          {
+            "power": "60",
+            "pointsPower": "2",
+            "type": "PLANT"
+          },
+          {
+            "power": "56",
+            "pointsPower": "4",
+            "type": "FIRE"
+          },
+          {
+            "power": "57",
+            "pointsPower": "4",
+            "type": "WATER"
+          }
+        ],
+        "idPokemon": "1"
+      },
+      {
+        "ratioDefense": "0.2",
+        "life": "142",
+        "listType": [
+          "WATER",
+          "PLANT"
+        ],
+        "listMovement": [
+          {
+            "power": "57",
+            "pointsPower": "4",
+            "type": "PLANT"
+          },
+          {
+            "power": "57",
+            "pointsPower": "3",
+            "type": "FIRE"
+          },
+          {
+            "power": "49",
+            "pointsPower": "4",
+            "type": "FIRE"
+          },
+          {
+            "power": "66",
+            "pointsPower": "2",
+            "type": "PLANT"
+          }
+        ],
+        "idPokemon": "2"
+      },
+      {
+        "ratioDefense": "0.4",
+        "life": "135",
+        "listType": [
+          "WATER"
+        ],
+        "listMovement": [
+          {
+            "power": "52",
+            "pointsPower": "4",
+            "type": "FIRE"
+          },
+          {
+            "power": "51",
+            "pointsPower": "2",
+            "type": "WATER"
+          },
+          {
+            "power": "45",
+            "pointsPower": "2",
+            "type": "FIRE"
+          },
+          {
+            "power": "46",
+            "pointsPower": "3",
+            "type": "WATER"
+          }
+        ],
+        "idPokemon": "3"
+      },
+      {
+        "ratioDefense": "0.4",
+        "life": "138",
+        "listType": [
+          "WATER"
+        ],
+        "listMovement": [
+          {
+            "power": "70",
+            "pointsPower": "4",
+            "type": "WATER"
+          },
+          {
+            "power": "70",
+            "pointsPower": "4",
+            "type": "WATER"
+          },
+          {
+            "power": "47",
+            "pointsPower": "3",
+            "type": "FIRE"
+          },
+          {
+            "power": "63",
+            "pointsPower": "3",
+            "type": "PLANT"
+          }
+        ],
+        "idPokemon": "4"
+      },
+      {
+        "ratioDefense": "0.6",
+        "life": "112",
+        "listType": [
+          "WATER"
+        ],
+        "listMovement": [
+          {
+            "power": "61",
+            "pointsPower": "3",
+            "type": "FIRE"
+          },
+          {
+            "power": "51",
+            "pointsPower": "4",
+            "type": "WATER"
+          },
+          {
+            "power": "53",
+            "pointsPower": "2",
+            "type": "WATER"
+          },
+          {
+            "power": "54",
+            "pointsPower": "4",
+            "type": "FIRE"
+          }
+        ],
+        "idPokemon": "5"
+      }
+    ],
+    "idTeam": "0"
+  },
+  {
+    "listPokemon": [
+      {
+        "ratioDefense": "0.5",
+        "life": "103",
+        "listType": [
+          "PLANT"
+        ],
+        "listMovement": [
+          {
+            "power": "56",
+            "pointsPower": "3",
+            "type": "FIRE"
+          },
+          {
+            "power": "56",
+            "pointsPower": "4",
+            "type": "FIRE"
+          },
+          {
+            "power": "52",
+            "pointsPower": "4",
+            "type": "FIRE"
+          },
+          {
+            "power": "52",
+            "pointsPower": "3",
+            "type": "FIRE"
+          }
+        ],
+        "idPokemon": "6"
+      },
+      {
+        "ratioDefense": "0.4",
+        "life": "138",
+        "listType": [
+          "FIRE"
+        ],
+        "listMovement": [
+          {
+            "power": "45",
+            "pointsPower": "4",
+            "type": "WATER"
+          },
+          {
+            "power": "63",
+            "pointsPower": "2",
+            "type": "PLANT"
+          },
+          {
+            "power": "67",
+            "pointsPower": "3",
+            "type": "PLANT"
+          },
+          {
+            "power": "55",
+            "pointsPower": "4",
+            "type": "WATER"
+          }
+        ],
+        "idPokemon": "7"
+      },
+      {
+        "ratioDefense": "0.7",
+        "life": "128",
+        "listType": [
+          "WATER"
+        ],
+        "listMovement": [
+          {
+            "power": "66",
+            "pointsPower": "2",
+            "type": "WATER"
+          },
+          {
+            "power": "66",
+            "pointsPower": "3",
+            "type": "WATER"
+          },
+          {
+            "power": "62",
+            "pointsPower": "4",
+            "type": "FIRE"
+          },
+          {
+            "power": "62",
+            "pointsPower": "3",
+            "type": "WATER"
+          }
+        ],
+        "idPokemon": "8"
+      },
+      {
+        "ratioDefense": "0.3",
+        "life": "121",
+        "listType": [
+          "PLANT"
+        ],
+        "listMovement": [
+          {
+            "power": "59",
+            "pointsPower": "2",
+            "type": "FIRE"
+          },
+          {
+            "power": "57",
+            "pointsPower": "3",
+            "type": "PLANT"
+          },
+          {
+            "power": "55",
+            "pointsPower": "3",
+            "type": "PLANT"
+          },
+          {
+            "power": "57",
+            "pointsPower": "3",
+            "type": "PLANT"
+          }
+        ],
+        "idPokemon": "9"
+      },
+      {
+        "ratioDefense": "0.5",
+        "life": "132",
+        "listType": [
+          "WATER"
+        ],
+        "listMovement": [
+          {
+            "power": "53",
+            "pointsPower": "3",
+            "type": "PLANT"
+          },
+          {
+            "power": "62",
+            "pointsPower": "3",
+            "type": "WATER"
+          },
+          {
+            "power": "68",
+            "pointsPower": "2",
+            "type": "WATER"
+          },
+          {
+            "power": "58",
+            "pointsPower": "4",
+            "type": "WATER"
+          }
+        ],
+        "idPokemon": "10"
+      },
+      {
+        "ratioDefense": "0.4",
+        "life": "129",
+        "listType": [
+          "FIRE"
+        ],
+        "listMovement": [
+          {
+            "power": "45",
+            "pointsPower": "3",
+            "type": "PLANT"
+          },
+          {
+            "power": "53",
+            "pointsPower": "4",
+            "type": "PLANT"
+          },
+          {
+            "power": "65",
+            "pointsPower": "3",
+            "type": "WATER"
+          },
+          {
+            "power": "54",
+            "pointsPower": "4",
+            "type": "FIRE"
+          }
+        ],
+        "idPokemon": "11"
+      }
+    ],
+    "idTeam": "1"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Carla",
+    "edad": "23",
+    "type": "Profesor",
+    "profesor": {
+      "modulo": "Entornos"
+    }
+  },
+  {
+    "name": "Sara",
+    "edad": "29",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Luis",
+    "edad": "32",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Carla",
+    "edad": "36",
+    "type": "Profesor",
+    "profesor": {
+      "modulo": "Programación"
+    }
+  },
+  {
+    "name": "María",
+    "edad": "36",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Lucía",
+    "edad": "25",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Javier",
+    "edad": "28",
+    "type": "Profesor",
+    "profesor": {
+      "modulo": "Entornos"
+    }
+  },
+  {
+    "name": "Fernando",
+    "edad": "33",
+    "type": "Profesor",
+    "profesor": {
+      "modulo": "Entornos"
+    }
+  },
+  {
+    "name": "Sofía",
+    "edad": "30",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Javier",
+    "edad": "21",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Miguel",
+    "edad": "35",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Juan",
+    "edad": "39",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Miguel",
+    "edad": "31",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Carla",
+    "edad": "25",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Fernando",
+    "edad": "20",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Carla",
+    "edad": "31",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Laura",
+    "edad": "40",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Elena",
+    "edad": "18",
+    "type": "Alumno",
+    "alumno": {}
+  },
+  {
+    "name": "Carla",
+    "edad": "18",
+    "type": "Profesor",
+    "profesor": {
+      "modulo": "Programación"
+    }
+  },
+  {
+    "name": "Raquel",
+    "edad": "24",
+    "type": "Profesor",
+    "profesor": {
+      "modulo": "Programación"
+    }
+  }
+]

@@ -1,0 +1,9 @@
+id_burguer,nombre_burguer,precio_burguer,ingrediente_id;ingrediente_nombre;ingrediente_precio
+72fad593-5156-483d-b450-28190a1d28b3,Burguer_1,7.050000000000001,2;Cerdo;2.2|4;Atún;2.1|0;Tomate;0.4
+1c519444-d6c6-4e76-a09c-eb9b7633937c,Burguer_2,4.95,1;Lechuga;0.2|0;Tomate;0.4|2;Cerdo;2.2|5;Mostaza;0.5
+e6f2e67d-daff-4b31-a21a-8f411aeff291,Burguer_3,4.050000000000001,5;Mostaza;0.5|2;Cerdo;2.2
+5df3f6a1-a39e-4e67-ad93-154fda936a01,Burguer_4,7.200000000000001,2;Cerdo;2.2|4;Atún;2.1|5;Mostaza;0.5
+c5acaf97-9e1c-4e68-841d-a69d3c4c6f92,Burguer_5,1.35,5;Mostaza;0.5|0;Tomate;0.4
+d91bdbb6-d628-4938-a7d1-a8c3cfcc8694,Burguer_6,3.45,4;Atún;2.1|1;Lechuga;0.2
+cd277eef-f6db-4ee0-b78c-46255ff17c14,Burguer_7,6.8999999999999995,5;Mostaza;0.5|6;Ketchup;0.5|4;Atún;2.1|3;Pollo;1.5
+e4f206dc-d490-4ce3-b83d-02ea6bdfa52a,Burguer_8,5.7,1;Lechuga;0.2|3;Pollo;1.5|4;Atún;2.1

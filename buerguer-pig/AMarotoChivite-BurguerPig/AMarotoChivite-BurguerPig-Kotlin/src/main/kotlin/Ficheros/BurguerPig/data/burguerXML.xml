@@ -1,0 +1,45 @@
+<hamburguesas>
+   <hamburguesa name="Burguer_1" uuid="9df9f7af-122c-4888-b6d2-f88dd46b25c1" precio="6.15">
+      <ingrediente name="Cerdo" precio="2.2" id="2"/>
+      <ingrediente name="Lechuga" precio="0.2" id="1"/>
+      <ingrediente name="Queso" precio="1.3" id="7"/>
+      <ingrediente name="Tomate" precio="0.4" id="0"/>
+   </hamburguesa>
+   <hamburguesa name="Burguer_2" uuid="6f923016-b690-4752-b278-d06802dc82ba" precio="4.8">
+      <ingrediente name="Mostaza" precio="0.5" id="5"/>
+      <ingrediente name="Lechuga" precio="0.2" id="1"/>
+      <ingrediente name="Atún" precio="2.1" id="4"/>
+      <ingrediente name="Tomate" precio="0.4" id="0"/>
+   </hamburguesa>
+   <hamburguesa name="Burguer_3" uuid="24a1af5d-5312-46eb-9d82-0988686f7b5a" precio="3.6000000000000005">
+      <ingrediente name="Cerdo" precio="2.2" id="2"/>
+      <ingrediente name="Lechuga" precio="0.2" id="1"/>
+   </hamburguesa>
+   <hamburguesa name="Burguer_4" uuid="99ca3406-57a8-47c4-af27-c50f06dd812c" precio="9.0">
+      <ingrediente name="Lechuga" precio="0.2" id="1"/>
+      <ingrediente name="Atún" precio="2.1" id="4"/>
+      <ingrediente name="Pollo" precio="1.5" id="3"/>
+      <ingrediente name="Cerdo" precio="2.2" id="2"/>
+   </hamburguesa>
+   <hamburguesa name="Burguer_5" uuid="46be8b4b-e50e-4317-ad49-7ef2a339290c" precio="4.2">
+      <ingrediente name="Ketchup" precio="0.5" id="6"/>
+      <ingrediente name="Atún" precio="2.1" id="4"/>
+      <ingrediente name="Lechuga" precio="0.2" id="1"/>
+   </hamburguesa>
+   <hamburguesa name="Burguer_6" uuid="bb4f7487-b699-484b-87cb-d31958f62293" precio="2.5500000000000003">
+      <ingrediente name="Queso" precio="1.3" id="7"/>
+      <ingrediente name="Tomate" precio="0.4" id="0"/>
+   </hamburguesa>
+   <hamburguesa name="Burguer_7" uuid="594f2f0b-b92d-48ab-9a5d-5e1202c2009c" precio="4.35">
+      <ingrediente name="Mostaza" precio="0.5" id="5"/>
+      <ingrediente name="Pollo" precio="1.5" id="3"/>
+      <ingrediente name="Tomate" precio="0.4" id="0"/>
+      <ingrediente name="Ketchup" precio="0.5" id="6"/>
+   </hamburguesa>
+   <hamburguesa name="Burguer_8" uuid="0b23dca6-551f-43fe-8180-708e736df78a" precio="7.050000000000001">
+      <ingrediente name="Pollo" precio="1.5" id="3"/>
+      <ingrediente name="Cerdo" precio="2.2" id="2"/>
+      <ingrediente name="Mostaza" precio="0.5" id="5"/>
+      <ingrediente name="Ketchup" precio="0.5" id="6"/>
+   </hamburguesa>
+</hamburguesas>
