@@ -49,6 +49,7 @@ public class StorageTexto implements IStorageToWriteRead<Burguer> {
     @Override
     public List<Burguer> readFile() {
         logger.debug("Storage: Leyendo de Texto");
+
         List<Burguer> repository = new ArrayList<>();
 
         try (Scanner scanner = new Scanner(file)) {

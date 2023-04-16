@@ -39,6 +39,8 @@ public class StorageGson implements IStorageToWriteRead<Burguer> {
 
     @Override
     public List<Burguer> readFile() {
+        logger.debug("Storage: Leyendo desde JSON con GSON");
+
         Gson gson = new Gson();
         String jsonString = null;
         try {

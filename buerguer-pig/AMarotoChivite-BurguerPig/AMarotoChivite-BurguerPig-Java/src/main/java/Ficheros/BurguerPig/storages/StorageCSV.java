@@ -55,7 +55,6 @@ public class StorageCSV implements IStorageToWriteRead<Burguer> {
     @Override
     public List<Burguer> readFile() {
         logger.debug("Storage: Leyendo desde fichero CSV");
-        File file = new File(localFile);
 
         // Filtro por si no existe el archivo
         if (!file.exists()) return Collections.emptyList();
@@ -64,7 +63,7 @@ public class StorageCSV implements IStorageToWriteRead<Burguer> {
         try {
             lines = Files.readAllLines(file.toPath(), Charset.defaultCharset());
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("Error al leer desde CSV", e);
         }
 
         // Eliminamos primera fila

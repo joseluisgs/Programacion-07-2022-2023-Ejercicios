@@ -11,6 +11,7 @@ import org.simpleframework.xml.core.Persister;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import java.util.Collections;
 import java.util.List;
 
 public class StorageXml implements IStorageToWriteRead<Burguer> {
@@ -25,6 +26,7 @@ public class StorageXml implements IStorageToWriteRead<Burguer> {
     @Override
     public void saveFile(List<Burguer> listItems) {
         logger.debug("Storage: Escribiendo en XML");
+
         var listBurguers = new BurguerListMapper(new BurguerMapper()).toDtoList(listItems);
         try {
             serializer.write(listBurguers, file);
@@ -35,6 +37,7 @@ public class StorageXml implements IStorageToWriteRead<Burguer> {
 
     @Override
     public List<Burguer> readFile() {
+        logger.debug("Storage: Leyendo desde XML");
 
         BurguerListDto listOfBurguersDTO = null;
         try {
@@ -46,7 +49,7 @@ public class StorageXml implements IStorageToWriteRead<Burguer> {
         if (listOfBurguersDTO != null) {
             return new BurguerListMapper(new BurguerMapper()).toModelList(listOfBurguersDTO);
         } else {
-            return null;
+            return Collections.emptyList();
         }
     }
 }
