@@ -93,7 +93,7 @@ fun main(args: Array<String>) {
     val lista1 = accidentes
         .filter {
             it.hora !in (LocalTime.of(6,0,0)..LocalTime.of(20,0,0)) &&
-            it.fecha.dayOfMonth in (5..7)
+            it.fecha.dayOfWeek in (DayOfWeek.FRIDAY .. DayOfWeek.SUNDAY)
         }
     println(lista1.take(10).joinToString(separator = "\n"))
     println()
@@ -102,7 +102,7 @@ fun main(args: Array<String>) {
     val lista2 = accidentes
         .filter {
             it.hora !in (LocalTime.of(6,0,0)..LocalTime.of(20,0,0)) &&
-                    it.fecha.dayOfMonth in (5..7) &&
+                    it.fecha.dayOfWeek in (DayOfWeek.FRIDAY .. DayOfWeek.SUNDAY) &&
                     it.esPositivaEnAlchol
         }
     println(lista2.take(10).joinToString(separator = "\n"))
@@ -124,7 +124,7 @@ fun main(args: Array<String>) {
     println(distrito1)
     println("Distrito con mas accidentes durante los fines de semana:")
     val distrito2 = accidentes
-        .filter { it.fecha.dayOfMonth in (5..7) }
+        .filter { it.fecha.dayOfWeek in (DayOfWeek.FRIDAY .. DayOfWeek.SUNDAY) }
         .groupBy { it.distrito }.mapValues { it.value.size }.maxBy { it.value }.key
     println(distrito2)
     if(distrito1 == distrito2){
