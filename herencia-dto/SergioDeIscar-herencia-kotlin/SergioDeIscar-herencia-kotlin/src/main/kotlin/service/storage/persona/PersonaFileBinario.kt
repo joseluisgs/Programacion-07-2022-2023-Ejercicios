@@ -2,6 +2,7 @@ package service.storage.persona
 
 import config.AppConfig
 import dto.PersonaDto
+import mappers.toClass
 import models.Persona
 import mu.KotlinLogging
 import java.io.BufferedInputStream

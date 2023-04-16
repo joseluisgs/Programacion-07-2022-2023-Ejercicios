@@ -26,6 +26,9 @@ dependencies {
 
     //SqlLite
     implementation("org.xerial:sqlite-jdbc:3.40.1.0")
+
+    // Result
+    implementation("com.michael-bull.kotlin-result:kotlin-result:1.1.17")
 }
 
 tasks.test {

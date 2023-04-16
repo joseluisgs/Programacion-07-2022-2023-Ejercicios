@@ -35,12 +35,12 @@ object PersonaFileCsv: PersonaStorageService {
             .map { row ->
                 when(row[2]){
                     "Alumno" -> Alumno(
-                        row[0].toInt(),
+                        row[0].toLong(),
                         row[1],
                         row[3].toInt(),
                     )
                     "Profesor" -> Profesor(
-                        row[0].toInt(),
+                        row[0].toLong(),
                         row[1],
                         row[4],
                     )

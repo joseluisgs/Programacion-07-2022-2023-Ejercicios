@@ -2,6 +2,8 @@ package service.storage.persona
 
 import config.AppConfig
 import dto.PersonasDto
+import mappers.toClass
+import mappers.toDto
 import models.Persona
 import mu.KotlinLogging
 import org.simpleframework.xml.core.Persister
@@ -21,7 +23,7 @@ object PersonaFileXml: PersonaStorageService{
             PersonasDto(
                 elements.map { it.toDto() }
             ),
-            File(localFile)
+            file
         )
         return elements
     }

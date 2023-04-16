@@ -1,6 +1,7 @@
-import controllers.PersonaController
+import controllers.persona.PersonaController
 import factories.PersonaFactory
 import models.Persona
+import repositories.persona.PersonaRepositoryDataBase
 import repositories.persona.PersonaRepositoryMap
 import service.storage.persona.*
 
@@ -8,46 +9,41 @@ import service.storage.persona.*
 fun main() {
     val personas = PersonaFactory.getRdnPersonas()
 
-    /*generateFile(personas, PersonaFileJson)
-    generateFile(personas, PersonaFileXml)
-    generateFile(personas, PersonaFileCsv)
-    generateFile(personas, PersonaFileBinario)
-    generateFile(personas, PersonaFileSerializable)*/
-
-    generateFile(personas, PersonaDB)
-
-    /*println("Tienen el mismo contenido:" + equalContent(personas, listOf(
-        PersonaFileJson,
-        PersonaFileXml,
-        PersonaFileCsv,
-        PersonaFileBinario,
-        PersonaFileSerializable,
-        PersonaDB
-    )))*/
-}
-
-private fun generateFile(personas: List<Persona>, storageService: PersonaStorageService) {
-    val controller = PersonaController(
-        PersonaRepositoryMap(
-            storageService
+    val controllers = listOf(
+        PersonaController(
+            PersonaRepositoryDataBase()
+        ),
+        PersonaController(
+            PersonaRepositoryMap(
+                PersonaFileBinario
+            )
+        ),
+        PersonaController(
+            PersonaRepositoryMap(
+                PersonaFileCsv
+            )
+        ),
+        PersonaController(
+            PersonaRepositoryMap(
+                PersonaFileJson
+            )
+        ),
+        PersonaController(
+            PersonaRepositoryMap(
+                PersonaFileSerializable
+            )
+        ),
+        PersonaController(
+            PersonaRepositoryMap(
+                PersonaFileXml
+            )
         )
     )
 
-    controller.saveAll(personas)
-    controller.getAll().forEach { println(it) }
+    println("Tienen el mismo contenido:" + generateFile(personas, controllers))
 }
 
-private fun equalContent(personas: List<Persona>, listOf: List<PersonaStorageService>): Boolean {
-    val controllers = listOf.map {
-        PersonaController(
-            PersonaRepositoryMap(
-                it
-            )
-        )
-    }
-    controllers.forEach { it.saveAll(personas) } // Cargar datos
-    controllers.forEach {
-        println(it.getPorcentajePorTipo().mapValues { "${it.value * 100} %" })
-    }
-    return controllers.map { it.getAll() }.distinct().size == 1
+private fun generateFile(personas: List<Persona>, controllers: List<PersonaController>): Boolean {
+    controllers.forEach { it.saveAll(personas) }
+    return controllers.all { it.findAll() == personas }
 }

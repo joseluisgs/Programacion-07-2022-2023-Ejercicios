@@ -27,12 +27,4 @@ data class PersonaDto(
     @field:Element(name = "modulo", required = false)
     @param:Element(name = "modulo", required = false)
     val modulo: String?
-): Serializable{
-    fun toClass(): Persona{
-        return when(tipo){
-            "Alumno" -> models.Alumno(id.toInt(), nombre, edad!!.toInt())
-            "Profesor" -> models.Profesor(id.toInt(), nombre, modulo!!)
-            else -> throw Exception("Tipo de persona desconocido")
-        }
-    }
-}
+): Serializable

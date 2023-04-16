@@ -10,8 +10,8 @@ private val logger = KotlinLogging.logger {  }
 
 class PersonaRepositoryMap(
     private val storageService: PersonaStorageService
-): PersonaRepository {
-    private val personas = mutableMapOf<Int, Persona>()
+): PersonaExtension {
+    private val personas = mutableMapOf<Long, Persona>()
     override fun getPorcentajePorTipo(): Map<String, Double> {
         logger.debug { "PersonaRepositoryMap ->\tgetPorcentajePorTipo" }
         return personas.values
@@ -25,12 +25,12 @@ class PersonaRepositoryMap(
             .mapValues { it.value.size.toDouble() / personas.size }
     }
 
-    override fun getAll(): List<Persona> {
+    override fun findAll(): Iterable<Persona> {
         logger.debug { "PersonaRepositoryMap ->\tgetAll" }
         return personas.values.toList()
     }
 
-    override fun getById(id: Int): Persona? {
+    override fun findById(id: Long): Persona? {
         logger.debug { "PersonaRepositoryMap ->\tgetById" }
         return personas[id]
     }
@@ -42,30 +42,27 @@ class PersonaRepositoryMap(
         return element
     }
 
-    override fun saveAll(elements: List<Persona>, storage: Boolean) {
+    override fun saveAll(elements: Iterable<Persona>, storage: Boolean) {
         logger.debug { "PersonaRepositoryMap ->\tsaveAll" }
         elements.forEach { save(it, false) }
         if (storage) downgrade()
     }
 
-    override fun deleteById(id: Int): Persona? {
+    override fun deleteById(id: Long): Boolean {
         logger.debug { "PersonaRepositoryMap ->\tdeleteById" }
-        return personas.remove(id)
+        return personas.remove(id) != null
     }
 
-    override fun update(element: Persona): Persona? {
-        logger.debug { "PersonaRepositoryMap ->\tupdate" }
-        return updateById(element.id, element)
+    override fun delete(element: Persona): Boolean {
+        return deleteById(element.id)
     }
 
-    override fun updateById(id: Int, element: Persona): Persona? {
-        logger.debug { "PersonaRepositoryMap ->\tupdateById" }
-        personas[id] ?: return null
-        personas[id] = element
-        return element
+    override fun existsById(id: Long): Boolean {
+        logger.debug { "PersonaRepositoryMap ->\texistsById" }
+        return personas.containsKey(id)
     }
 
-    override fun upgrade(): List<Persona> {
+    private fun upgrade(): List<Persona> {
         logger.debug { "PersonaRepositoryMap ->\tupgrade" }
         personas.clear()
         val load = storageService.loadAll()
@@ -73,7 +70,7 @@ class PersonaRepositoryMap(
         return load
     }
 
-    override fun downgrade(): List<Persona> {
+    private fun downgrade(): List<Persona> {
         logger.debug { "PersonaRepositoryMap ->\tdowngrade" }
         return storageService.saveAll(personas.values.toList())
     }
