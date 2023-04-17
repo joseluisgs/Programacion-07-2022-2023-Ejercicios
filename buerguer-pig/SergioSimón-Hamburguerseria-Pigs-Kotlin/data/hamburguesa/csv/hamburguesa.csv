@@ -1,0 +1,4 @@
+id,nombre,ingredientes,precio
+e038ae06-d424-41a1-baed-39d05ddb17f7,Hamburger,[1;Pan;0.71|2;Lechuga;3.37|3;Queso;3.9|4;Carne;4.61|5;Cebolla;4.9|6;Ketchup;4.57|7;Pepinillo;3.22],25.28
+c2962060-1ad1-401b-957c-c9342cc9ee6f,Hamburger,[1;Pan;4.59|2;Lechuga;1.62|3;Queso;1.02|4;Carne;4.02|5;Cebolla;1.5|6;Ketchup;4.16|7;Pepinillo;1.66],18.57
+a2fba1dc-73df-4b09-9b3f-b28193fafb46,Hamburger,[1;Pan;3.86|2;Lechuga;0.67|3;Queso;3.58|4;Carne;1.68|5;Cebolla;1.73|6;Ketchup;1.39|7;Pepinillo;0.91],13.82

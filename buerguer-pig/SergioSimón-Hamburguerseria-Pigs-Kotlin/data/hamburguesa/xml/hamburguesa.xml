@@ -1,0 +1,92 @@
+<List_Hamburguesas>
+   <Hamburguesa id="e0a2299d-a70a-45db-9ce1-dd28deddf1c1" name="Hamburger">
+      <ingrediente id="1">
+         <name>Pan</name>
+         <price>0.59</price>
+      </ingrediente>
+      <ingrediente id="2">
+         <name>Lechuga</name>
+         <price>3.58</price>
+      </ingrediente>
+      <ingrediente id="3">
+         <name>Queso</name>
+         <price>1.79</price>
+      </ingrediente>
+      <ingrediente id="4">
+         <name>Carne</name>
+         <price>2.05</price>
+      </ingrediente>
+      <ingrediente id="5">
+         <name>Cebolla</name>
+         <price>4.02</price>
+      </ingrediente>
+      <ingrediente id="6">
+         <name>Ketchup</name>
+         <price>2.59</price>
+      </ingrediente>
+      <ingrediente id="7">
+         <name>Pepinillo</name>
+         <price>2.31</price>
+      </ingrediente>
+   </Hamburguesa>
+   <Hamburguesa id="ae978c09-75e6-4932-9211-9eb4f584978b" name="Hamburger">
+      <ingrediente id="1">
+         <name>Pan</name>
+         <price>2.4</price>
+      </ingrediente>
+      <ingrediente id="2">
+         <name>Lechuga</name>
+         <price>0.85</price>
+      </ingrediente>
+      <ingrediente id="3">
+         <name>Queso</name>
+         <price>3.19</price>
+      </ingrediente>
+      <ingrediente id="4">
+         <name>Carne</name>
+         <price>3.11</price>
+      </ingrediente>
+      <ingrediente id="5">
+         <name>Cebolla</name>
+         <price>4.49</price>
+      </ingrediente>
+      <ingrediente id="6">
+         <name>Ketchup</name>
+         <price>3.01</price>
+      </ingrediente>
+      <ingrediente id="7">
+         <name>Pepinillo</name>
+         <price>1.43</price>
+      </ingrediente>
+   </Hamburguesa>
+   <Hamburguesa id="46fa71b7-bd77-4f8d-8033-5c1cfa475507" name="Hamburger">
+      <ingrediente id="1">
+         <name>Pan</name>
+         <price>4.49</price>
+      </ingrediente>
+      <ingrediente id="2">
+         <name>Lechuga</name>
+         <price>0.65</price>
+      </ingrediente>
+      <ingrediente id="3">
+         <name>Queso</name>
+         <price>4.69</price>
+      </ingrediente>
+      <ingrediente id="4">
+         <name>Carne</name>
+         <price>4.9</price>
+      </ingrediente>
+      <ingrediente id="5">
+         <name>Cebolla</name>
+         <price>4.09</price>
+      </ingrediente>
+      <ingrediente id="6">
+         <name>Ketchup</name>
+         <price>2.65</price>
+      </ingrediente>
+      <ingrediente id="7">
+         <name>Pepinillo</name>
+         <price>3.59</price>
+      </ingrediente>
+   </Hamburguesa>
+</List_Hamburguesas>

@@ -1,0 +1,12 @@
+9c330b56-1d5c-4d5c-b47a-38710a432901
+Hamburger
+[1;Pan;1.04|2;Lechuga;4.36|3;Queso;4.35|4;Carne;4.64|5;Cebolla;3.15|6;Ketchup;4.62|7;Pepinillo;2.28]
+24.44
+dfc58b82-7204-408a-8fc6-46742e8f640e
+Hamburger
+[1;Pan;4.65|2;Lechuga;0.69|3;Queso;4.32|4;Carne;3.07|5;Cebolla;0.67|6;Ketchup;4.55|7;Pepinillo;2.93]
+20.88
+ff404213-f08c-4234-879e-7d551722bb74
+Hamburger
+[1;Pan;1.18|2;Lechuga;4.99|3;Queso;2.25|4;Carne;3.28|5;Cebolla;4.61|6;Ketchup;3.91|7;Pepinillo;3.58]
+23.799999999999997
