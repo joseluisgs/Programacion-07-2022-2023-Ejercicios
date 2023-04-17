@@ -105,7 +105,7 @@ public class Main {
 
         System.out.println("Listado de accidentes que se produzcan en fin de semana y de noche (a partir de las 8 de la tarde hasta las 6 de la mañana):");
         List<Accidente> lista1 = accidentes.stream().filter(a ->
-                !(a.getHora().getHour() < 20 && a.getHora().getHour() > 6) && a.getFecha().getDayOfMonth() >= 5 && a.getFecha().getDayOfMonth() <= 7
+                !(a.getHora().getHour() < 20 && a.getHora().getHour() > 6) && a.getFecha().getDayOfWeek().compareTo(DayOfWeek.FRIDAY) > 0 && a.getFecha().getDayOfWeek().compareTo(DayOfWeek.SUNDAY) < 0
         ).toList();
         for(int i=0; i<10; i++){
             System.out.println(lista1.get(i)+"\n");
@@ -114,7 +114,7 @@ public class Main {
 
         System.out.println("Listado de accidentes que se produzcan en fin de semana y de noche donde se haya dado positivo en alchol:");
         List<Accidente> lista2 = accidentes.stream().filter(a ->
-                !(a.getHora().getHour() < 20 && a.getHora().getHour() > 6) && a.getFecha().getDayOfMonth() >= 5 && a.getFecha().getDayOfMonth() <= 7 && a.getEsPositivaEnAlchol()
+                !(a.getHora().getHour() < 20 && a.getHora().getHour() > 6) && a.getFecha().getDayOfWeek().compareTo(DayOfWeek.FRIDAY) > 0 && a.getFecha().getDayOfWeek().compareTo(DayOfWeek.SUNDAY) < 0 && a.getEsPositivaEnAlchol()
         ).toList();
         for(int i=0; i<10; i++){
             System.out.println(lista2.get(i)+"\n");
@@ -145,7 +145,7 @@ public class Main {
         System.out.println(distritos[0]);
         System.out.println("Distrito con mas accidentes durante los fines de semana:");
 
-        Map<Object, Long> mapa10 = accidentes.stream().filter(a ->a.getFecha().getDayOfMonth() >= 5 && a.getFecha().getDayOfMonth() <= 7).collect(Collectors.groupingBy(a -> a.getDistrito(), Collectors.counting()));
+        Map<Object, Long> mapa10 = accidentes.stream().filter(a ->a.getFecha().getDayOfWeek().compareTo(DayOfWeek.FRIDAY) > 0 && a.getFecha().getDayOfWeek().compareTo(DayOfWeek.SUNDAY) < 0).collect(Collectors.groupingBy(a -> a.getDistrito(), Collectors.counting()));
 
         AtomicReference<Long> finalNumAccidentes1 = new AtomicReference<>(0L);
         mapa10.keySet().forEach(k -> {
