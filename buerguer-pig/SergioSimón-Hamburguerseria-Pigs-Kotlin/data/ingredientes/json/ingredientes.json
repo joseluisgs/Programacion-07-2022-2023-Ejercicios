@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Pan",
+    "price": 3.72
+  },
+  {
+    "id": 2,
+    "name": "Lechuga",
+    "price": 3.08
+  },
+  {
+    "id": 3,
+    "name": "Queso",
+    "price": 1.74
+  },
+  {
+    "id": 4,
+    "name": "Carne",
+    "price": 1.59
+  },
+  {
+    "id": 5,
+    "name": "Cebolla",
+    "price": 1.83
+  },
+  {
+    "id": 6,
+    "name": "Ketchup",
+    "price": 4.88
+  },
+  {
+    "id": 7,
+    "name": "Pepinillo",
+    "price": 3.29
+  }
+]
