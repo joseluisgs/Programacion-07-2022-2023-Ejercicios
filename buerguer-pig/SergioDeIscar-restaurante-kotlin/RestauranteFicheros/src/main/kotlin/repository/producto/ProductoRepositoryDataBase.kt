@@ -29,27 +29,27 @@ class ProductoRepositoryDataBase: ProductoRepository {
 
     override fun getBebidaConMenosCapacidad(): Bebida? {
         logger.debug { "ProductoRepositoryMap ->\tgetBebidaConMenosCapacidad" }
-        return findAll().filterIsInstance<Bebida>().minByOrNull { it.capacidad }
+        return findBebidas().minByOrNull { it.capacidad }
     }
 
     override fun getHamburguesaMasCara(): Hamburguesa? {
         logger.debug { "ProductoRepositoryMap ->\tgetHamburguesaMasCara" }
-        return findAll().filterIsInstance<Hamburguesa>().maxByOrNull { it.precio }
+        return findHamburguesas().maxByOrNull { it.precio }
     }
 
     override fun getHamburguesaConMasIngredientes(): Hamburguesa? {
         logger.debug { "ProductoRepositoryMap ->\tgetHamburguesaConMasIngredientes" }
-        return findAll().filterIsInstance<Hamburguesa>().maxByOrNull { it.ingredientes.size }
+        return findHamburguesas().maxByOrNull { it.ingredientes.size }
     }
 
     override fun getHamburguesasPrecioMedio(): Double {
         logger.debug { "ProductoRepositoryMap ->\tgetHamburguesasPrecioMedio" }
-        return findAll().filterIsInstance<Hamburguesa>().map { it.precio }.average()
+        return findHamburguesas().map { it.precio }.average()
     }
 
     override fun getPrecioMedioIngredientes(): Map<String, Double> {
         logger.debug { "ProductoRepositoryMap ->\tgetPrecioMedioIngredientes" }
-        return findAll().filterIsInstance<Hamburguesa>().flatMap { it.ingredientes }
+        return findHamburguesas().flatMap { it.ingredientes }
             .groupBy { it.nombre }
             .mapValues { it.value.map { it.precio }.average() }
     }
@@ -59,9 +59,9 @@ class ProductoRepositoryDataBase: ProductoRepository {
         return findBebidas() + findHamburguesas() // Cosas de Kotlin :D
     }
 
-    private fun findBebidas(): List<Producto> {
+    private fun findBebidas(): List<Bebida> {
         logger.info { "ProductoRepositoryMap ->\tfindBebidas" }
-        val bebidas = mutableListOf<Producto>()
+        val bebidas = mutableListOf<Bebida>()
         val sql = """
             SELECT nIdProducto, cNombre, nPrecio, tB.nCapacidad FROM tProducto
             INNER JOIN tBebida tB on tProducto.nIdProducto = tB.nIdBebida""".trimIndent()
@@ -81,9 +81,9 @@ class ProductoRepositoryDataBase: ProductoRepository {
         return bebidas.toList()
     }
 
-    private fun findHamburguesas(): List<Producto> {
+    private fun findHamburguesas(): List<Hamburguesa> {
         logger.info { "ProductoRepositoryMap ->\tfindHamburguesas" }
-        val hamburguesas = mutableListOf<Producto>()
+        val hamburguesas = mutableListOf<Hamburguesa>()
         val sql = """
             SELECT nIdProducto, cNombre, nPrecio FROM tProducto
             INNER JOIN tHamburguesa tH on tProducto.nIdProducto = tH.nIdHamburguesa""".trimIndent()
@@ -162,13 +162,8 @@ class ProductoRepositoryDataBase: ProductoRepository {
         element.copy(id = newID)
 
         when(element){
-            is Bebida -> {
-                crearBebida(element)
-            }
-
-            is Hamburguesa -> {
-                crearHamburguesa(element)
-            }
+            is Bebida -> crearBebida(element)
+            is Hamburguesa -> crearHamburguesa(element)
         }
         return element
     }
@@ -208,11 +203,10 @@ class ProductoRepositoryDataBase: ProductoRepository {
                 }
             }
             ingre.copy(id = newIngreId)
-        }
-        DataBaseManager.dataBase.prepareStatement(insertTHamburguesa_Ingrediente).use { stm ->
-            ingredientes.forEach {
+
+            DataBaseManager.dataBase.prepareStatement(insertTHamburguesa_Ingrediente).use { stm ->
                 stm.setLong(1, idHamburguesa)
-                stm.setLong(2, it.id)
+                stm.setLong(2, ingre.id)
                 stm.executeUpdate()
             }
         }

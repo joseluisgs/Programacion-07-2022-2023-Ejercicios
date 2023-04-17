@@ -29,6 +29,9 @@ dependencies {
 
     // Result
     implementation("com.michael-bull.kotlin-result:kotlin-result:1.1.17")
+
+    // MyBatis
+    implementation("org.mybatis:mybatis:3.5.11")
 }
 
 tasks.test {

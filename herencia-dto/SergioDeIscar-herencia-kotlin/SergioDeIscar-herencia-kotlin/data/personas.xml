@@ -1,6 +1,6 @@
 <personas>
    <persona id="1">
-      <nombre>Pepe</nombre>
+      <nombre>Ana</nombre>
       <tipo>Profesor</tipo>
       <modulo>Programación</modulo>
    </persona>
@@ -10,24 +10,24 @@
       <modulo>Entornos</modulo>
    </persona>
    <persona id="3">
-      <nombre>Pepe</nombre>
+      <nombre>Ana</nombre>
       <tipo>Profesor</tipo>
       <modulo>Entornos</modulo>
    </persona>
    <persona id="4">
-      <nombre>Pepe</nombre>
-      <tipo>Profesor</tipo>
-      <modulo>Programación</modulo>
-   </persona>
-   <persona id="5">
       <nombre>Juan</nombre>
       <tipo>Profesor</tipo>
       <modulo>Entornos</modulo>
    </persona>
-   <persona id="6">
+   <persona id="5">
       <nombre>Pepe</nombre>
       <tipo>Profesor</tipo>
       <modulo>Programación</modulo>
+   </persona>
+   <persona id="6">
+      <nombre>Ana</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Entornos</modulo>
    </persona>
    <persona id="7">
       <nombre>Pepe</nombre>
@@ -40,9 +40,9 @@
       <modulo>Entornos</modulo>
    </persona>
    <persona id="9">
-      <nombre>Ana</nombre>
+      <nombre>Pepe</nombre>
       <tipo>Profesor</tipo>
-      <modulo>Programación</modulo>
+      <modulo>Entornos</modulo>
    </persona>
    <persona id="10">
       <nombre>Pepe</nombre>
@@ -50,19 +50,19 @@
       <modulo>Entornos</modulo>
    </persona>
    <persona id="11">
-      <nombre>Ana</nombre>
+      <nombre>Juan</nombre>
       <tipo>Profesor</tipo>
-      <modulo>Entornos</modulo>
+      <modulo>Programación</modulo>
    </persona>
    <persona id="12">
-      <nombre>Ana</nombre>
+      <nombre>Juan</nombre>
       <tipo>Profesor</tipo>
       <modulo>Entornos</modulo>
    </persona>
    <persona id="13">
-      <nombre>Juan</nombre>
+      <nombre>Ana</nombre>
       <tipo>Profesor</tipo>
-      <modulo>Entornos</modulo>
+      <modulo>Programación</modulo>
    </persona>
    <persona id="14">
       <nombre>Juan</nombre>
@@ -70,9 +70,9 @@
       <modulo>Entornos</modulo>
    </persona>
    <persona id="15">
-      <nombre>Ana</nombre>
-      <tipo>Alumno</tipo>
-      <edad>37</edad>
+      <nombre>Pepe</nombre>
+      <tipo>Profesor</tipo>
+      <modulo>Programación</modulo>
    </persona>
    <persona id="16">
       <nombre>Juan</nombre>
@@ -80,9 +80,9 @@
       <modulo>Programación</modulo>
    </persona>
    <persona id="17">
-      <nombre>Ana</nombre>
-      <tipo>Profesor</tipo>
-      <modulo>Programación</modulo>
+      <nombre>Juan</nombre>
+      <tipo>Alumno</tipo>
+      <edad>37</edad>
    </persona>
    <persona id="18">
       <nombre>Juan</nombre>
@@ -90,13 +90,13 @@
       <modulo>Programación</modulo>
    </persona>
    <persona id="19">
-      <nombre>Pepe</nombre>
-      <tipo>Profesor</tipo>
-      <modulo>Programación</modulo>
-   </persona>
-   <persona id="20">
       <nombre>Juan</nombre>
       <tipo>Profesor</tipo>
       <modulo>Entornos</modulo>
+   </persona>
+   <persona id="20">
+      <nombre>Pepe</nombre>
+      <tipo>Alumno</tipo>
+      <edad>40</edad>
    </persona>
 </personas>

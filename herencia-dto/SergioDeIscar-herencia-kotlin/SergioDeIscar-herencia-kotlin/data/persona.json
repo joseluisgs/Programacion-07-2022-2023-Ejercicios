@@ -1,7 +1,7 @@
 [
 	{
 		"id": "1",
-		"nombre": "Pepe",
+		"nombre": "Ana",
 		"tipo": "Profesor",
 		"modulo": "Programación"
 	},
@@ -13,27 +13,27 @@
 	},
 	{
 		"id": "3",
-		"nombre": "Pepe",
+		"nombre": "Ana",
 		"tipo": "Profesor",
 		"modulo": "Entornos"
 	},
 	{
 		"id": "4",
-		"nombre": "Pepe",
-		"tipo": "Profesor",
-		"modulo": "Programación"
-	},
-	{
-		"id": "5",
 		"nombre": "Juan",
 		"tipo": "Profesor",
 		"modulo": "Entornos"
 	},
 	{
-		"id": "6",
+		"id": "5",
 		"nombre": "Pepe",
 		"tipo": "Profesor",
 		"modulo": "Programación"
+	},
+	{
+		"id": "6",
+		"nombre": "Ana",
+		"tipo": "Profesor",
+		"modulo": "Entornos"
 	},
 	{
 		"id": "7",
@@ -49,9 +49,9 @@
 	},
 	{
 		"id": "9",
-		"nombre": "Ana",
+		"nombre": "Pepe",
 		"tipo": "Profesor",
-		"modulo": "Programación"
+		"modulo": "Entornos"
 	},
 	{
 		"id": "10",
@@ -61,21 +61,21 @@
 	},
 	{
 		"id": "11",
-		"nombre": "Ana",
+		"nombre": "Juan",
 		"tipo": "Profesor",
-		"modulo": "Entornos"
+		"modulo": "Programación"
 	},
 	{
 		"id": "12",
-		"nombre": "Ana",
+		"nombre": "Juan",
 		"tipo": "Profesor",
 		"modulo": "Entornos"
 	},
 	{
 		"id": "13",
-		"nombre": "Juan",
+		"nombre": "Ana",
 		"tipo": "Profesor",
-		"modulo": "Entornos"
+		"modulo": "Programación"
 	},
 	{
 		"id": "14",
@@ -85,9 +85,9 @@
 	},
 	{
 		"id": "15",
-		"nombre": "Ana",
-		"tipo": "Alumno",
-		"edad": "37"
+		"nombre": "Pepe",
+		"tipo": "Profesor",
+		"modulo": "Programación"
 	},
 	{
 		"id": "16",
@@ -97,9 +97,9 @@
 	},
 	{
 		"id": "17",
-		"nombre": "Ana",
-		"tipo": "Profesor",
-		"modulo": "Programación"
+		"nombre": "Juan",
+		"tipo": "Alumno",
+		"edad": "37"
 	},
 	{
 		"id": "18",
@@ -109,14 +109,14 @@
 	},
 	{
 		"id": "19",
-		"nombre": "Pepe",
-		"tipo": "Profesor",
-		"modulo": "Programación"
-	},
-	{
-		"id": "20",
 		"nombre": "Juan",
 		"tipo": "Profesor",
 		"modulo": "Entornos"
+	},
+	{
+		"id": "20",
+		"nombre": "Pepe",
+		"tipo": "Alumno",
+		"edad": "40"
 	}
 ]

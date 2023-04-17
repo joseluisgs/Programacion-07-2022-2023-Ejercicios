@@ -2,6 +2,10 @@ package service.database
 
 import config.AppConfig
 import mu.KotlinLogging
+import org.apache.ibatis.jdbc.ScriptRunner
+import java.io.BufferedReader
+import java.io.FileReader
+import java.io.Reader
 import java.sql.DriverManager
 
 private val logger = KotlinLogging.logger {  }
@@ -12,33 +16,15 @@ object DataBaseManager {
         logger.debug { "DataBaseManager ->\tinit" }
 
         if (AppConfig.APP_DB_RESET){
-            dropTable()
+            logger.debug { "DataBaseManager ->\tinit ->\treset" }
+            executeSQLFile(AppConfig.APP_DB_RESET_PATH)
         }
-        createTable()
+        executeSQLFile(AppConfig.APP_DB_INIT_PATH)
     }
 
-    private fun createTable() {
-        logger.debug { "Creando base de datos si no existe" }
-
-        val sql = """
-            CREATE TABLE IF NOT EXISTS tPersona(
-                nIdPersona INTEGER PRIMARY KEY AUTOINCREMENT, 
-                cNombre TEXT NOT NULL, 
-                cTipo TEXT NOT NULL, 
-                nEdad INTEGER NULL, 
-                cModulo TEXT NULL
-            )
-        """.trimIndent()
-        dataBase.prepareStatement(sql).use { stm ->
-            stm.executeUpdate()
-        }
-    }
-
-    private fun dropTable(){
-        logger.debug { "Borrando tabla tPersona" }
-        val sql = """DROP TABLE IF EXISTS tPersona"""
-        dataBase.prepareStatement(sql).use { stm ->
-            stm.executeUpdate()
-        }
+    private fun executeSQLFile(sqlFile: String ){
+        val sr = ScriptRunner(dataBase)
+        val reader: Reader = BufferedReader(FileReader(sqlFile))
+        sr.runScript(reader)
     }
 }

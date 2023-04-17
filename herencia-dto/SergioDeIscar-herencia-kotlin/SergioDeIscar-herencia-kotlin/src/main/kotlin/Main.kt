@@ -45,5 +45,6 @@ fun main() {
 
 private fun generateFile(personas: List<Persona>, controllers: List<PersonaController>): Boolean {
     controllers.forEach { it.saveAll(personas) }
-    return controllers.all { it.findAll() == personas }
+    // Con distinct ya que no estan en el mismo orden
+    return controllers.all { it.findAll().distinct() == personas.distinct() }
 }
