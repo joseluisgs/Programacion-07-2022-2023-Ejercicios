@@ -11,7 +11,7 @@ import java.sql.Statement
 
 private val logger = KotlinLogging.logger {}
 
-class ProductoRepositoryDataBase: ProductoRepository {
+object ProductoRepositoryDataBase: ProductoRepository {
     override fun getOrderByPrecio(): List<Producto> {
         logger.debug { "ProductoRepositoryMap ->\tgetAllOrderByPrecio" }
         return findAll().sortedBy { it.precio }
@@ -56,7 +56,7 @@ class ProductoRepositoryDataBase: ProductoRepository {
 
     override fun findAll(): Iterable<Producto> {
         logger.debug { "ProductoRepositoryMap ->\tgetAll" }
-        return findBebidas() + findHamburguesas() // Cosas de Kotlin :D
+        return (findBebidas() + findHamburguesas()).sortedBy { it.id } // Cosas de Kotlin :D
     }
 
     private fun findBebidas(): List<Bebida> {
@@ -283,12 +283,89 @@ class ProductoRepositoryDataBase: ProductoRepository {
     }
 
     override fun deleteById(id: Long): Boolean {
-        TODO("Not yet implemented")
+        logger.debug { "ProductoRepositoryMap ->\tdeleteById" }
+        var result: Int
+        val producto = findById(id) ?: return false
+        result = when(producto){
+            is Bebida -> deleteBebida(producto)
+            is Hamburguesa -> deleteHamburguesa(producto)
+            else -> 0
+        }
+
+        if (result == 0) return false
+
+        val sql = """DELETE FROM tProducto WHERE nIdProducto = ?""".trimIndent()
+        DataBaseManager.dataBase.prepareStatement(sql).use { stm ->
+            stm.setLong(1, id)
+            result = stm.executeUpdate()
+        }
+
+        return result == 1
+    }
+
+    private fun deleteHamburguesa(producto: Hamburguesa): Int {
+        deleteIngrediente(producto)
+
+        var result: Int
+        val sql = """DELETE FROM tHamburguesa WHERE nIdHamburguesa = ?""".trimIndent()
+        DataBaseManager.dataBase.prepareStatement(sql).use { stm ->
+            stm.setLong(1, producto.id)
+            result = stm.executeUpdate()
+        }
+
+        return result
+    }
+
+    private fun deleteIngrediente(producto: Hamburguesa) {
+        val deleteIngrediente = """DELETE FROM tIngrediente WHERE nIdIngrediente = ?"""
+        val deleteIntermedia = """DELETE FROM tHamburguesa_Ingrediente WHERE id_hamburguesa = ?"""
+
+        DataBaseManager.dataBase.use {
+            it.prepareStatement(deleteIngrediente).use { stm ->
+                producto.ingredientes.forEach{
+                    stm.setLong(1, it.id)
+                    stm.executeUpdate()
+                }
+            }
+
+            it.prepareStatement(deleteIntermedia).use { stm ->
+                producto.ingredientes.forEach{
+                    stm.setLong(1, it.id)
+                    stm.executeUpdate()
+                }
+            }
+        }
+    }
+
+    private fun deleteBebida(producto: Bebida): Int {
+        var result: Int
+        val sql = """DELETE FROM tBebida WHERE nIdBebida = ?"""
+        DataBaseManager.dataBase.prepareStatement(sql).use {  stm ->
+            stm.setLong(1, producto.id)
+            result = stm.executeUpdate()
+        }
+        return result
     }
 
     override fun delete(element: Producto): Boolean {
         logger.debug { "ProductoRepositoryMap ->\tdelete" }
         return deleteById(element.id)
+    }
+
+    override fun deleteAll() {
+        logger.debug { "ProductoRepositoryMap ->\tdeleteAll" }
+        val tBebida = """DELETE FROM tBebida""".trimIndent()
+        val tHamburguesa_Ingrediente = """DELETE FROM tHamburguesa_Ingrediente""".trimIndent()
+        val tIngrediente = """DELETE FROM tIngrediente""".trimIndent()
+        val tHamburguesa = """DELETE FROM tHamburguesa""".trimIndent()
+        val tProducto = """DELETE FROM tProducto""".trimIndent()
+        DataBaseManager.dataBase.use {
+            it.prepareStatement(tBebida).use { stm -> stm.executeUpdate() }
+            it.prepareStatement(tHamburguesa_Ingrediente).use { stm -> stm.executeUpdate() }
+            it.prepareStatement(tIngrediente).use { stm -> stm.executeUpdate() }
+            it.prepareStatement(tHamburguesa).use { stm -> stm.executeUpdate() }
+            it.prepareStatement(tProducto).use { stm -> stm.executeUpdate() }
+        }
     }
 
     override fun existsById(id: Long): Boolean {

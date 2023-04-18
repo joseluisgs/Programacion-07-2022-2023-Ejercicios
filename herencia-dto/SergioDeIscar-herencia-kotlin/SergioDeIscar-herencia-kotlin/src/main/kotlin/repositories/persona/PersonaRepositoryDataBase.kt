@@ -14,7 +14,7 @@ import java.sql.Statement
 
 private val logger = KotlinLogging.logger {  }
 
-class PersonaRepositoryDataBase(): PersonaExtension {
+object PersonaRepositoryDataBase: PersonaExtension {
     override fun getPorcentajePorTipo(): Map<String, Double> {
         logger.debug { "PersonaRepositoryMap ->\tgetPorcentajePorTipo" }
         val personas = findAll()
@@ -30,7 +30,7 @@ class PersonaRepositoryDataBase(): PersonaExtension {
     override fun findAll(): Iterable<Persona> {
         logger.debug { "PersonaRepositoryMap ->\tgetAll" }
 
-        return findAlumnos() + findProfesores()
+        return (findAlumnos() + findProfesores()).sortedBy { it.id } // Cosas de Kotlin :D
     }
 
     private fun findProfesores(): List<Profesor>{
@@ -232,6 +232,8 @@ class PersonaRepositoryDataBase(): PersonaExtension {
             is Profesor -> deleteProfesor(persona)
             else -> 0
         }
+
+        if (result == 0) return false
 
         val sql = """DELETE FROM tPersona WHERE nIdPersona = ?"""
         DataBaseManager.dataBase.prepareStatement(sql).use { stm ->

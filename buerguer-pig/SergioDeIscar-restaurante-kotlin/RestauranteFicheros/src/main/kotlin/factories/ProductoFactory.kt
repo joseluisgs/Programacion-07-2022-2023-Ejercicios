@@ -1,5 +1,8 @@
 package factories
 
+import models.Bebida
+import models.Hamburguesa
+import models.Ingrediente
 import models.Producto
 
 object ProductoFactory {
@@ -22,4 +25,16 @@ object ProductoFactory {
             BebidaFactory.getRdnBebida()
         }
     }
+
+    fun getProductosDefault() = listOf(
+        Hamburguesa(1, "Grande", listOf(
+            Ingrediente(1, "tomate", 2.2f),
+            Ingrediente(2, "lechuga", 3.2f)
+        )),
+        Bebida(2, "Fanta", 2.0f, 250),
+        Hamburguesa(3, "Pequeña", listOf(
+            Ingrediente(3, "queso", 1.2f)
+        )),
+        Bebida(4, "Coca Cola", 2.0f, 250)
+    )
 }

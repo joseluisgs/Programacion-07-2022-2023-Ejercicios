@@ -11,7 +11,7 @@ fun main() {
 
     val controllers = listOf(
         PersonaController(
-            PersonaRepositoryDataBase()
+            PersonaRepositoryDataBase
         ),
         PersonaController(
             PersonaRepositoryMap(

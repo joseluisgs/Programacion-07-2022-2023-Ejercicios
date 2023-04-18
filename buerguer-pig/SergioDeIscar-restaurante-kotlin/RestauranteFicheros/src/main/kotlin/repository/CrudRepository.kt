@@ -7,5 +7,6 @@ interface CrudRepository<T, ID> {
     fun saveAll(elements: Iterable<T>, storage: Boolean = true)
     fun deleteById(id: ID): Boolean
     fun delete(element: T): Boolean
+    fun deleteAll()
     fun existsById(id: ID): Boolean
 }

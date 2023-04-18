@@ -80,6 +80,9 @@ class ProductoRepositoryMap(
 
     override fun save(element: Producto, storage: Boolean): Producto {
         logger.debug { "ProductoRepositoryMap ->\tsave" }
+        if (element.id < 0){ // Simula el comportamiento de un autoincremental
+            element.id = productos.keys.maxOrNull()?.plus(1) ?: 1
+        }
         productos[element.id] = element
         if (storage) downgrade()
         return element
@@ -103,6 +106,12 @@ class ProductoRepositoryMap(
         return deleteById(element.id)
     }
 
+    override fun deleteAll() {
+        logger.debug { "Repositorio ->\tdeleteAll" }
+        productos.clear()
+        downgrade()
+    }
+
     override fun existsById(id: Long): Boolean {
         logger.debug { "Repositorio ->\texistsById: $id" }
         return findById(id) != null
@@ -112,7 +121,7 @@ class ProductoRepositoryMap(
         logger.info { "Repositorio ->\tupgrade" }
         productos.clear()
         val load = storageService.loadAll()
-        saveAll(load)
+        saveAll(load, false)
         return load
     }
 

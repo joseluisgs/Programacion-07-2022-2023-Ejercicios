@@ -13,7 +13,7 @@ fun main(){
 
     val controllers = listOf(
         ProductoController(
-            ProductoRepositoryDataBase()
+            ProductoRepositoryDataBase
         ),
         ProductoController(
             ProductoRepositoryMap(

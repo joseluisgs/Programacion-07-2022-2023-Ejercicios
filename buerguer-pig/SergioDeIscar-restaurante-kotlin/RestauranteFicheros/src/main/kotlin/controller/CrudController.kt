@@ -9,5 +9,6 @@ interface CrudController<T, ID, ERR> {
     fun saveAll(elements: Iterable<T>, storage: Boolean = true)
     fun deleteById(id: ID): Result<Boolean, ERR>
     fun delete(element: T): Result<Boolean, ERR>
+    fun deleteAll()
     fun existsById(id: ID): Result<Boolean, ERR>
 }

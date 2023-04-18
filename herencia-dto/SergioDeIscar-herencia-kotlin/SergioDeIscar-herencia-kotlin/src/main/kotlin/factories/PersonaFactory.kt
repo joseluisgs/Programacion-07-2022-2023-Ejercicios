@@ -30,4 +30,11 @@ object PersonaFactory {
     private fun getRdnModulo(): String{
         return arrayOf("Programación", "Entornos").random()
     }
+
+    fun getPersonasDefault(): List<Persona> = listOf(
+        Alumno(1, "Pepe", 20),
+        Profesor(2, "Juan", "Programación"),
+        Alumno(3, "Ana", 18),
+        Profesor(4, "Pepe", "Entornos")
+    )
 }

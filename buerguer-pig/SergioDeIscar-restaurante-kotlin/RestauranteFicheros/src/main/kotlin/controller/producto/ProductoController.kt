@@ -56,6 +56,11 @@ class ProductoController(
         }
     }
 
+    override fun deleteAll() {
+        logger.debug { "ProductoController ->\tdeleteAll" }
+        repo.deleteAll()
+    }
+
     override fun existsById(id: Long): Result<Boolean, ProductoError> {
         logger.debug { "ProductoController ->\texistsById" }
         return if (repo.existsById(id)){
