@@ -1,0 +1,177 @@
+<productos>
+   <producto class="java.util.ArrayList">
+      <producto id="1" tipo="Bebida">
+         <nombre>Agua</nombre>
+         <precio>7,07 €</precio>
+         <capacidad>982</capacidad>
+      </producto>
+      <producto id="2" tipo="Bebida">
+         <nombre>Agua</nombre>
+         <precio>3,95 €</precio>
+         <capacidad>1199</capacidad>
+      </producto>
+      <producto id="3" tipo="Hamburguesa">
+         <nombre>Grande</nombre>
+         <precio>8,26 €</precio>
+         <ingredientes class="java.util.ArrayList">
+            <ingrediente id="1" nombre="Cebolla" precio="8,26 €"/>
+         </ingredientes>
+      </producto>
+      <producto id="4" tipo="Hamburguesa">
+         <nombre>Pequeña</nombre>
+         <precio>5,03 €</precio>
+         <ingredientes class="java.util.ArrayList">
+            <ingrediente id="2" nombre="Tomate" precio="5,03 €"/>
+         </ingredientes>
+      </producto>
+      <producto id="5" tipo="Hamburguesa">
+         <nombre>Mediana</nombre>
+         <precio>11,96 €</precio>
+         <ingredientes class="java.util.ArrayList">
+            <ingrediente id="3" nombre="Tomate" precio="3,66 €"/>
+            <ingrediente id="4" nombre="Cebolla" precio="1,45 €"/>
+            <ingrediente id="5" nombre="Cebolla" precio="6,85 €"/>
+         </ingredientes>
+      </producto>
+      <producto id="6" tipo="Bebida">
+         <nombre>Fanta</nombre>
+         <precio>9,02 €</precio>
+         <capacidad>1073</capacidad>
+      </producto>
+      <producto id="7" tipo="Hamburguesa">
+         <nombre>Grande</nombre>
+         <precio>10,91 €</precio>
+         <ingredientes class="java.util.ArrayList">
+            <ingrediente id="6" nombre="Tomate" precio="8,59 €"/>
+            <ingrediente id="7" nombre="Lechuga" precio="2,32 €"/>
+         </ingredientes>
+      </producto>
+      <producto id="8" tipo="Bebida">
+         <nombre>CocaCola</nombre>
+         <precio>12,88 €</precio>
+         <capacidad>611</capacidad>
+      </producto>
+      <producto id="9" tipo="Bebida">
+         <nombre>Agua</nombre>
+         <precio>9,46 €</precio>
+         <capacidad>1026</capacidad>
+      </producto>
+      <producto id="10" tipo="Bebida">
+         <nombre>Agua</nombre>
+         <precio>10,70 €</precio>
+         <capacidad>1115</capacidad>
+      </producto>
+      <producto id="11" tipo="Hamburguesa">
+         <nombre>Mediana</nombre>
+         <precio>8,84 €</precio>
+         <ingredientes class="java.util.ArrayList">
+            <ingrediente id="8" nombre="Cebolla" precio="3,13 €"/>
+            <ingrediente id="9" nombre="Lechuga" precio="1,27 €"/>
+            <ingrediente id="10" nombre="Tomate" precio="4,44 €"/>
+         </ingredientes>
+      </producto>
+      <producto id="12" tipo="Hamburguesa">
+         <nombre>Grande</nombre>
+         <precio>24,58 €</precio>
+         <ingredientes class="java.util.ArrayList">
+            <ingrediente id="11" nombre="Tomate" precio="9,81 €"/>
+            <ingrediente id="12" nombre="Tomate" precio="9,53 €"/>
+            <ingrediente id="13" nombre="Lechuga" precio="5,24 €"/>
+         </ingredientes>
+      </producto>
+      <producto id="13" tipo="Hamburguesa">
+         <nombre>Mediana</nombre>
+         <precio>21,46 €</precio>
+         <ingredientes class="java.util.ArrayList">
+            <ingrediente id="14" nombre="Tomate" precio="4,68 €"/>
+            <ingrediente id="15" nombre="Cebolla" precio="8,58 €"/>
+            <ingrediente id="16" nombre="Cebolla" precio="8,20 €"/>
+         </ingredientes>
+      </producto>
+      <producto id="14" tipo="Hamburguesa">
+         <nombre>Mediana</nombre>
+         <precio>17,86 €</precio>
+         <ingredientes class="java.util.ArrayList">
+            <ingrediente id="17" nombre="Lechuga" precio="8,13 €"/>
+            <ingrediente id="18" nombre="Tomate" precio="6,15 €"/>
+            <ingrediente id="19" nombre="Tomate" precio="3,59 €"/>
+         </ingredientes>
+      </producto>
+      <producto id="15" tipo="Bebida">
+         <nombre>Fanta</nombre>
+         <precio>5,30 €</precio>
+         <capacidad>971</capacidad>
+      </producto>
+      <producto id="16" tipo="Bebida">
+         <nombre>Agua</nombre>
+         <precio>4,07 €</precio>
+         <capacidad>305</capacidad>
+      </producto>
+      <producto id="17" tipo="Hamburguesa">
+         <nombre>Grande</nombre>
+         <precio>19,28 €</precio>
+         <ingredientes class="java.util.ArrayList">
+            <ingrediente id="20" nombre="Tomate" precio="10,84 €"/>
+            <ingrediente id="21" nombre="Lechuga" precio="8,44 €"/>
+         </ingredientes>
+      </producto>
+      <producto id="18" tipo="Hamburguesa">
+         <nombre>Grande</nombre>
+         <precio>9,41 €</precio>
+         <ingredientes class="java.util.ArrayList">
+            <ingrediente id="22" nombre="Tomate" precio="2,26 €"/>
+            <ingrediente id="23" nombre="Lechuga" precio="7,15 €"/>
+         </ingredientes>
+      </producto>
+      <producto id="19" tipo="Bebida">
+         <nombre>CocaCola</nombre>
+         <precio>12,58 €</precio>
+         <capacidad>512</capacidad>
+      </producto>
+      <producto id="20" tipo="Bebida">
+         <nombre>CocaCola</nombre>
+         <precio>6,46 €</precio>
+         <capacidad>444</capacidad>
+      </producto>
+      <producto id="21" tipo="Bebida">
+         <nombre>Agua</nombre>
+         <precio>4,90 €</precio>
+         <capacidad>885</capacidad>
+      </producto>
+      <producto id="22" tipo="Hamburguesa">
+         <nombre>Pequeña</nombre>
+         <precio>25,74 €</precio>
+         <ingredientes class="java.util.ArrayList">
+            <ingrediente id="24" nombre="Cebolla" precio="10,85 €"/>
+            <ingrediente id="25" nombre="Cebolla" precio="10,79 €"/>
+            <ingrediente id="26" nombre="Tomate" precio="4,11 €"/>
+         </ingredientes>
+      </producto>
+      <producto id="23" tipo="Hamburguesa">
+         <nombre>Grande</nombre>
+         <precio>16,64 €</precio>
+         <ingredientes class="java.util.ArrayList">
+            <ingrediente id="27" nombre="Tomate" precio="9,18 €"/>
+            <ingrediente id="28" nombre="Lechuga" precio="7,45 €"/>
+         </ingredientes>
+      </producto>
+      <producto id="24" tipo="Hamburguesa">
+         <nombre>Mediana</nombre>
+         <precio>25,21 €</precio>
+         <ingredientes class="java.util.ArrayList">
+            <ingrediente id="29" nombre="Tomate" precio="10,14 €"/>
+            <ingrediente id="30" nombre="Cebolla" precio="1,10 €"/>
+            <ingrediente id="31" nombre="Lechuga" precio="7,78 €"/>
+            <ingrediente id="32" nombre="Cebolla" precio="4,95 €"/>
+            <ingrediente id="33" nombre="Cebolla" precio="1,24 €"/>
+         </ingredientes>
+      </producto>
+      <producto id="25" tipo="Hamburguesa">
+         <nombre>Grande</nombre>
+         <precio>6,00 €</precio>
+         <ingredientes class="java.util.ArrayList">
+            <ingrediente id="34" nombre="Cebolla" precio="6,00 €"/>
+         </ingredientes>
+      </producto>
+   </producto>
+</productos>

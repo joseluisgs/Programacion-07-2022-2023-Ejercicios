@@ -132,7 +132,7 @@ object ProductoRepositoryDataBase: ProductoRepository {
         return findAll().firstOrNull { it.id == id }
     }
 
-    override fun save(element: Producto, storage: Boolean): Producto {
+    override fun save(element: Producto): Producto {
         logger.debug { "ProductoRepositoryMap ->\tsave" }
         return if(existsById(element.id)) {
             update(element)
@@ -277,9 +277,9 @@ object ProductoRepositoryDataBase: ProductoRepository {
         }
     }
 
-    override fun saveAll(elements: Iterable<Producto>, storage: Boolean) {
+    override fun saveAll(elements: Iterable<Producto>) {
         logger.debug { "ProductoRepositoryMap ->\tsaveAll" }
-        elements.forEach { save(it, storage) }
+        elements.forEach { save(it) }
     }
 
     override fun deleteById(id: Long): Boolean {

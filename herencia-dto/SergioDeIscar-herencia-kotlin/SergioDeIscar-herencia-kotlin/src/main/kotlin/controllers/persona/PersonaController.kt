@@ -4,13 +4,15 @@ import com.github.michaelbull.result.*
 import errors.PersonaError
 import models.Persona
 import mu.KotlinLogging
-import repositories.persona.PersonaExtension
+import repositories.persona.PersonaRepository
+import service.storage.persona.PersonaStorageService
 import validators.validate
 
 private val logger = KotlinLogging.logger {}
 
 class PersonaController(
-    private val repo: PersonaExtension
+    private val repo: PersonaRepository,
+    private val storage: PersonaStorageService
 ): IPersonaController {
     override fun getPorcentajePorTipo(): Map<String, Double> {
         logger.debug { "PersonaController ->\tgetPorcentajePorTipo" }
@@ -29,16 +31,20 @@ class PersonaController(
 
     override fun save(element: Persona, storage: Boolean): Result<Persona, PersonaError> {
         logger.debug { "PersonaController ->\tsave" }
-        return element.validate().onSuccess { repo.save(element, storage) }
+        return element.validate().onSuccess {
+            repo.save(element)
+            if (storage) exportData()
+        }
     }
 
     override fun saveAll(elements: Iterable<Persona>, storage: Boolean) {
         logger.debug { "PersonaController ->\tsaveAll" }
         elements.forEach { it.validate().onFailure {
             logger.error { "PersonaController -> ${it.message}" }
-            return // No se si lanzar una excepción...
+            return
         }}
-        repo.saveAll(elements, storage)
+        repo.saveAll(elements)
+        if (storage) exportData()
     }
 
     override fun deleteById(id: Long): Result<Boolean, PersonaError> {
@@ -59,6 +65,11 @@ class PersonaController(
         }
     }
 
+    override fun deleteAll() {
+        logger.debug { "PersonaController ->\tdeleteAll" }
+        repo.deleteAll()
+    }
+
     override fun existsById(id: Long): Result<Boolean, PersonaError> {
         logger.debug { "PersonaController ->\texistsById" }
         return if (repo.existsById(id)){
@@ -66,5 +77,15 @@ class PersonaController(
         } else{
             Err(PersonaError.PersonaNoEncontradaError())
         }
+    }
+
+    override fun exportData() {
+        logger.debug { "PersonaController ->\texportData" }
+        storage.saveAll(repo.findAll().toList())
+    }
+
+    override fun importData() {
+        logger.debug { "PersonaController ->\timportData" }
+        repo.saveAll(storage.loadAll())
     }
 }

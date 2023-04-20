@@ -11,32 +11,28 @@ fun main() {
 
     val controllers = listOf(
         PersonaController(
-            PersonaRepositoryDataBase
+            PersonaRepositoryDataBase,
+            PersonaFileCsv
         ),
         PersonaController(
-            PersonaRepositoryMap(
-                PersonaFileBinario
-            )
+            PersonaRepositoryMap,
+            PersonaFileBinario
         ),
         PersonaController(
-            PersonaRepositoryMap(
-                PersonaFileCsv
-            )
+            PersonaRepositoryMap,
+            PersonaFileCsv
         ),
         PersonaController(
-            PersonaRepositoryMap(
-                PersonaFileJson
-            )
+            PersonaRepositoryMap,
+            PersonaFileJson
         ),
         PersonaController(
-            PersonaRepositoryMap(
-                PersonaFileSerializable
-            )
+            PersonaRepositoryMap,
+            PersonaFileSerializable
         ),
         PersonaController(
-            PersonaRepositoryMap(
-                PersonaFileXml
-            )
+            PersonaRepositoryMap,
+            PersonaFileXml
         )
     )
 
@@ -45,6 +41,8 @@ fun main() {
 
 private fun generateFile(personas: List<Persona>, controllers: List<PersonaController>): Boolean {
     controllers.forEach { it.saveAll(personas) }
+    controllers.forEach { it.exportData() }
+    controllers.forEach { it.importData() }
     // Con distinct ya que no estan en el mismo orden
     return controllers.all { it.findAll().distinct() == personas.distinct() }
 }

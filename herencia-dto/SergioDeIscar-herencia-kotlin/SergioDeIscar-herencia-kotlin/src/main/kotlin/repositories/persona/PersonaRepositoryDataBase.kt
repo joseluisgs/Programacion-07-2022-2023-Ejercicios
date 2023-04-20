@@ -1,20 +1,15 @@
 package repositories.persona
 
-import config.AppConfig
-import dto.PersonaDto
-import mappers.toClass
-import mappers.toDto
 import models.Alumno
 import models.Persona
 import models.Profesor
 import mu.KotlinLogging
 import service.database.DataBaseManager
-import java.sql.PreparedStatement
 import java.sql.Statement
 
 private val logger = KotlinLogging.logger {  }
 
-object PersonaRepositoryDataBase: PersonaExtension {
+object PersonaRepositoryDataBase: PersonaRepository {
     override fun getPorcentajePorTipo(): Map<String, Double> {
         logger.debug { "PersonaRepositoryMap ->\tgetPorcentajePorTipo" }
         val personas = findAll()
@@ -125,7 +120,7 @@ object PersonaRepositoryDataBase: PersonaExtension {
         return persona
     }
 
-    override fun save(element: Persona, storage: Boolean): Persona {
+    override fun save(element: Persona): Persona {
         logger.debug { "PersonaRepositoryMap ->\tsave" }
         return if (existsById(element.id)){
             update(element)
@@ -217,9 +212,9 @@ object PersonaRepositoryDataBase: PersonaExtension {
         }
     }
 
-    override fun saveAll(elements: Iterable<Persona>, storage: Boolean) {
+    override fun saveAll(elements: Iterable<Persona>) {
         logger.debug { "PersonaRepositoryMap ->\tsaveAll" }
-        elements.forEach{ save(it, storage) }
+        elements.forEach{ save(it) }
     }
 
     override fun deleteById(id: Long): Boolean{
@@ -267,6 +262,18 @@ object PersonaRepositoryDataBase: PersonaExtension {
     override fun delete(element: Persona): Boolean {
         logger.debug { "PersonaRepositoryMap ->\tdelete" }
         return deleteById(element.id)
+    }
+
+    override fun deleteAll() {
+        logger.debug { "PersonaRepositoryMap ->\tdeleteAll" }
+        val tAlumno = """DELETE FROM tAlumno"""
+        val tProfesor = """DELETE FROM tProfesor"""
+        val tPersona = """DELETE FROM tPersona"""
+        DataBaseManager.dataBase.use {
+            it.prepareStatement(tAlumno).use { stm -> stm.executeUpdate() }
+            it.prepareStatement(tProfesor).use { stm -> stm.executeUpdate() }
+            it.prepareStatement(tPersona).use { stm -> stm.executeUpdate() }
+        }
     }
 
     override fun existsById(id: Long): Boolean {

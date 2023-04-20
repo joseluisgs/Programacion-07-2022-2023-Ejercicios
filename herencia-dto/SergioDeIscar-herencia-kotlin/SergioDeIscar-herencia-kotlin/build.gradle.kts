@@ -32,6 +32,9 @@ dependencies {
 
     // MyBatis
     implementation("org.mybatis:mybatis:3.5.11")
+
+    // MockK
+    testImplementation("io.mockk:mockk:1.13.4")
 }
 
 tasks.test {

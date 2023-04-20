@@ -9,6 +9,8 @@ import mappers.toClass
 import mappers.toDto
 import models.Producto
 import mu.KotlinLogging
+import services.storage.puedoEscribir
+import services.storage.puedoLeer
 import java.io.File
 import java.io.IOException
 
@@ -24,8 +26,7 @@ object ProductoFileJson: ProductosStorageService {
     override fun saveAll(elements: List<Producto>): List<Producto> {
         logger.debug { "ProductoFileJson ->\tsaveAll: ${elements.joinToString("\t")}" }
         val file = File(localFile)
-        if(file.exists() && !file.canWrite() ) throw IOException("No se puede escribir en el archivo")
-
+        file.puedoEscribir("JSON")
         val json = jsonAdapter.indent("\t").toJson(elements.map { it.toDto() })
         file.writeText(json)
         return elements
@@ -34,7 +35,7 @@ object ProductoFileJson: ProductosStorageService {
     override fun loadAll(): List<Producto> {
         logger.debug { "ProductoFileJson ->\tloadAll" }
         val file = File(localFile)
-        if(!file.exists()  || !file.canRead() ) throw IOException("No se puede leer el archivo")
+        file.puedoLeer("JSON")
         return jsonAdapter.fromJson(file.readText())?.map { it.toClass() } ?: emptyList()
     }
 }

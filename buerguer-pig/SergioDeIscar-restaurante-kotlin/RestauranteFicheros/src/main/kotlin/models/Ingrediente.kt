@@ -4,7 +4,9 @@ import locate.toLocalMoney
 import java.io.Serializable
 
 class Ingrediente(var id: Long = 0, val nombre: String, val precio: Float): Serializable {
-
+    fun toCsvRow(): String {
+        return "$id;$nombre;$precio"
+    }
     //Copy method like data class
     fun copy(id: Long = this.id, nombre: String = this.nombre, precio: Float = this.precio): Ingrediente {
         this.id = id

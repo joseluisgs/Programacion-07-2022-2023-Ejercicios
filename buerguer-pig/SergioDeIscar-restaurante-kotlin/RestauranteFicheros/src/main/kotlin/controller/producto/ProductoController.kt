@@ -7,12 +7,14 @@ import models.Hamburguesa
 import models.Producto
 import mu.KotlinLogging
 import repository.producto.ProductoRepository
+import services.storage.productos.ProductosStorageService
 import validotors.validate
 
 private val logger = KotlinLogging.logger {}
 
 class ProductoController(
-    private val repo: ProductoRepository
+    private val repo: ProductoRepository,
+    private val storage: ProductosStorageService
 ): IProductoController {
     override fun findAll(): Iterable<Producto> {
         logger.debug { "ProductoController ->\tfindAll" }
@@ -26,7 +28,10 @@ class ProductoController(
 
     override fun save(element: Producto, storage: Boolean): Result<Producto, ProductoError> {
         logger.debug { "ProductoController ->\tsave" }
-        return element.validate().onSuccess { repo.save(element, storage) }
+        return element.validate().onSuccess {
+            repo.save(element)
+            if (storage) exportData()
+        }
     }
 
     override fun saveAll(elements: Iterable<Producto>, storage: Boolean) {
@@ -35,7 +40,8 @@ class ProductoController(
             logger.error { "ProductoController -> ${it.message}" }
             return
         }}
-        repo.saveAll(elements, storage)
+        repo.saveAll(elements)
+        if (storage) exportData()
     }
 
     override fun deleteById(id: Long): Result<Boolean, ProductoError> {
@@ -68,6 +74,16 @@ class ProductoController(
         }else{
             Err(ProductoError.ProductoNoEncontradoError())
         }
+    }
+
+    override fun exportData() {
+        logger.debug { "ProductoController ->\texportData" }
+        storage.saveAll(repo.findAll().toList())
+    }
+
+    override fun importData() {
+        logger.debug { "ProductoController ->\timportData" }
+        repo.saveAll(storage.loadAll())
     }
 
     override fun getOrderByPrecio(): List<Producto> {

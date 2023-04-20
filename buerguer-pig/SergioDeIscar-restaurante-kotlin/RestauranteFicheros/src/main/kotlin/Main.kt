@@ -5,7 +5,9 @@ import models.Producto
 import repository.producto.ProductoRepositoryDataBase
 import repository.producto.ProductoRepositoryMap
 import services.database.DataBaseManager
+import services.storage.productos.ProductoFileCsv
 import services.storage.productos.ProductoFileJson
+import services.storage.productos.ProductoFileXml
 
 @ExperimentalStdlibApi
 fun main(){
@@ -13,12 +15,20 @@ fun main(){
 
     val controllers = listOf(
         ProductoController(
-            ProductoRepositoryDataBase
+            ProductoRepositoryDataBase,
+            ProductoFileCsv
         ),
         ProductoController(
-            ProductoRepositoryMap(
-                ProductoFileJson
-            )
+            ProductoRepositoryMap,
+            ProductoFileJson
+        ),
+        ProductoController(
+            ProductoRepositoryMap,
+            ProductoFileXml
+        ),
+        ProductoController(
+            ProductoRepositoryMap,
+            ProductoFileCsv
         )
     )
 
@@ -28,5 +38,7 @@ fun main(){
 
 private fun generateFile(personas: List<Producto>, controllers: List<ProductoController>): Boolean {
     controllers.forEach { it.saveAll(personas) }
+    controllers.forEach{ it.exportData() }
+    controllers.forEach{ it.importData() }
     return controllers.all { it.findAll() == personas }
 }

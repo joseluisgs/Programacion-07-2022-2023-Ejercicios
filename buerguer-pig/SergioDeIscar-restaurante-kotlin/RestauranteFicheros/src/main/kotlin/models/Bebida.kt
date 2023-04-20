@@ -13,6 +13,10 @@ class Bebida(id: Long = 0, nombre: String, precio: Float, val capacidad: Int): P
         return nombre.hashCode() + precio.hashCode() + capacidad.hashCode()
     }
 
+    override fun toCsvRow(): String {
+        return "$id,$nombre,$precio,Bebida,,${capacidad}\n"
+    }
+
     override fun copy(id: Long, nombre: String, precio: Float): Producto {
         this.id = id
         return Bebida(id, nombre, precio, capacidad)

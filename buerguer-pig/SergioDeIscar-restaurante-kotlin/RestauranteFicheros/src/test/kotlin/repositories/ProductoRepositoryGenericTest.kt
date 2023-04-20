@@ -22,7 +22,6 @@ abstract class ProductoRepositoryGenericTest {
         repository = getRepository()
         repository.deleteAll()
         repository.saveAll(getProductosDefault())
-        println()
     }
 
     @Test
