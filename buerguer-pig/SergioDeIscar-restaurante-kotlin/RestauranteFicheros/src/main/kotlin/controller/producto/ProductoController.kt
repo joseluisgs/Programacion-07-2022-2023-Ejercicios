@@ -2,6 +2,7 @@ package controller.producto
 
 import com.github.michaelbull.result.*
 import errors.ProductoError
+import factories.ProductoFactory
 import models.Bebida
 import models.Hamburguesa
 import models.Producto
@@ -34,14 +35,15 @@ class ProductoController(
         }
     }
 
-    override fun saveAll(elements: Iterable<Producto>, storage: Boolean) {
+    override fun saveAll(elements: Iterable<Producto>, storage: Boolean): Result<Boolean, ProductoError> {
         logger.debug { "ProductoController ->\tsaveAll" }
         elements.forEach{it.validate().onFailure {
             logger.error { "ProductoController -> ${it.message}" }
-            return
+            return Err(it)
         }}
         repo.saveAll(elements)
         if (storage) exportData()
+        return Ok(true)
     }
 
     override fun deleteById(id: Long): Result<Boolean, ProductoError> {

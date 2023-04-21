@@ -2,17 +2,13 @@ package repositories
 
 import config.AppConfig
 import factories.ProductoFactory.getProductosDefault
-import models.Bebida
-import models.Hamburguesa
 import org.apache.ibatis.jdbc.ScriptRunner
 import org.junit.jupiter.api.*
-import repository.producto.ProductoRepository
 import repository.producto.ProductoRepositoryDataBase
 import services.database.DataBaseManager
 import java.io.BufferedReader
 import java.io.FileReader
 import java.io.Reader
-import kotlin.test.assertEquals
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class ProductoRepositoryDataBaseTest: ProductoRepositoryGenericTest() {

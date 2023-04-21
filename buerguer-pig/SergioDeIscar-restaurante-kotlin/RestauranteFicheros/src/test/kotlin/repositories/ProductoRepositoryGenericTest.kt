@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.api.assertAll
 import repository.producto.ProductoRepository
-import java.lang.RuntimeException
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 abstract class ProductoRepositoryGenericTest {
