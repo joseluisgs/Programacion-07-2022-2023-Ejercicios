@@ -37,14 +37,15 @@ class PersonaController(
         }
     }
 
-    override fun saveAll(elements: Iterable<Persona>, storage: Boolean) {
+    override fun saveAll(elements: Iterable<Persona>, storage: Boolean): Result<Boolean, PersonaError> {
         logger.debug { "PersonaController ->\tsaveAll" }
         elements.forEach { it.validate().onFailure {
             logger.error { "PersonaController -> ${it.message}" }
-            return
+            return Err(it)
         }}
         repo.saveAll(elements)
         if (storage) exportData()
+        return Ok(true)
     }
 
     override fun deleteById(id: Long): Result<Boolean, PersonaError> {

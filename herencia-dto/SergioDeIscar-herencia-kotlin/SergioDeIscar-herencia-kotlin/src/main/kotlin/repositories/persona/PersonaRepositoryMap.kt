@@ -35,7 +35,7 @@ object PersonaRepositoryMap: PersonaRepository {
 
     override fun save(element: Persona): Persona {
         logger.debug { "PersonaRepositoryMap ->\tsave" }
-        if (element.id < 0){ // Simula el comportamiento de un autoincremental
+        if (element.id <= 0){ // Simula el comportamiento de un autoincremental
             element.id = personas.keys.maxOrNull()?.plus(1) ?: 1
         }
         personas[element.id] = element

@@ -28,8 +28,9 @@ object PersonaFileSerializable: PersonaStorageService {
         logger.debug { "PersonaFileSerializable ->\tloadAll" }
         val file = File(localFile)
         if (!file.exists() || !file.canRead()) return emptyList()
-        return ObjectInputStream(FileInputStream(file)).use {
+        val paco = ObjectInputStream(FileInputStream(file)).use {
             it.readObject() as MutableList<Persona>
         }.toList()
+        return paco
     }
 }

@@ -67,7 +67,7 @@ object ProductoRepositoryMap: ProductoRepository {
 
     override fun save(element: Producto): Producto {
         logger.debug { "ProductoRepositoryMap ->\tsave" }
-        if (element.id < 0){ // Simula el comportamiento de un autoincremental
+        if (element.id <= 0){ // Simula el comportamiento de un autoincremental
             element.id = productos.keys.maxOrNull()?.plus(1) ?: 1
         }
         productos[element.id] = element

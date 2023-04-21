@@ -20,7 +20,7 @@ object PersonaFileBinario: PersonaStorageService {
         file.outputStream().buffered().use {
             elements.forEach{element ->
                 it.write(
-                    element.toCsvRow().toByteArray()
+                    (element.toCsvRow() + ",").toByteArray()
                 )
             }
         }

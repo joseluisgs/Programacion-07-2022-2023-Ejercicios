@@ -2,6 +2,7 @@ package dto
 
 import org.simpleframework.xml.ElementList
 import org.simpleframework.xml.Root
+import org.simpleframework.xml.Serializer
 
 @Root(name = "personas")
 data class PersonasDto(

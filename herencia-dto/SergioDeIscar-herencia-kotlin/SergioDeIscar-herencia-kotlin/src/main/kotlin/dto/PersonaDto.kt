@@ -27,4 +27,4 @@ data class PersonaDto(
     @field:Element(name = "modulo", required = false)
     @param:Element(name = "modulo", required = false)
     val modulo: String?
-): Serializable
+)

@@ -19,12 +19,7 @@ object PersonaFileXml: PersonaStorageService{
         val file = File(localFile)
         if (file.exists() && !file.canWrite() ) return emptyList()
         val serializer = Persister()
-        serializer.write(
-            PersonasDto(
-                elements.map { it.toDto() }
-            ),
-            file
-        )
+        serializer.write(PersonasDto(elements.map { it.toDto() }), file)
         return elements
     }
 
@@ -32,8 +27,6 @@ object PersonaFileXml: PersonaStorageService{
         logger.debug { "PersonaFileXml ->\tloadAll" }
         val file = File(localFile)
         if(!file.exists() || !file.canRead()) return emptyList()
-        val personas = Persister()
-            .read(PersonasDto::class.java, File(localFile))
-        return personas.personas.map { it.toClass() }
+        return Persister().read(PersonasDto::class.java, file).personas.map { it.toClass() }
     }
 }
