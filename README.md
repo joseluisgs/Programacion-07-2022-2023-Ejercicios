@@ -1,5 +1,5 @@
 # Programacion-07-2022-2023-Ejercicios
-Programación - 08 Ficheros y formatos de intercambio. Ejercicios. 1DAM. Curso 2022-2023
+Programación - 07 Ficheros y formatos de intercambio. Ejercicios. 1DAM. Curso 2022-2023
 
 ![imagen](https://raw.githubusercontent.com/joseluisgs/Programacion-00-2022-2023/master/images/programacion.png)
 
