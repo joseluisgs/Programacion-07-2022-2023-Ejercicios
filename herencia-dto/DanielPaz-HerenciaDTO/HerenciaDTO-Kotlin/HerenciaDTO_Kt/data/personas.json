@@ -1,0 +1,122 @@
+[
+  {
+    "nombre": "Pepe",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "34"
+  },
+  {
+    "nombre": "Claudia",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "31"
+  },
+  {
+    "nombre": "Juana",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "20"
+  },
+  {
+    "nombre": "Daniel",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "24"
+  },
+  {
+    "nombre": "Marta",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "20"
+  },
+  {
+    "nombre": "Laura",
+    "tipo": "Profesor",
+    "modulo": "Entornos",
+    "edad": ""
+  },
+  {
+    "nombre": "Victor",
+    "tipo": "Profesor",
+    "modulo": "Programacion",
+    "edad": ""
+  },
+  {
+    "nombre": "Daniel",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "37"
+  },
+  {
+    "nombre": "Laura",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "40"
+  },
+  {
+    "nombre": "Sergio",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "29"
+  },
+  {
+    "nombre": "Victor",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "26"
+  },
+  {
+    "nombre": "Ramon",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "23"
+  },
+  {
+    "nombre": "Ramon",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "30"
+  },
+  {
+    "nombre": "Victor",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "28"
+  },
+  {
+    "nombre": "Marta",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "36"
+  },
+  {
+    "nombre": "Sergio",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "39"
+  },
+  {
+    "nombre": "Sergio",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "35"
+  },
+  {
+    "nombre": "Claudia",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "34"
+  },
+  {
+    "nombre": "Luis",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "37"
+  },
+  {
+    "nombre": "Juana",
+    "tipo": "Alumno",
+    "modulo": "",
+    "edad": "21"
+  }
+]

@@ -1,0 +1,22 @@
+<personas>
+   <persona nombre="Pepe" tipo="Alumno" modulo="" edad="34"/>
+   <persona nombre="Claudia" tipo="Alumno" modulo="" edad="31"/>
+   <persona nombre="Juana" tipo="Alumno" modulo="" edad="20"/>
+   <persona nombre="Daniel" tipo="Alumno" modulo="" edad="24"/>
+   <persona nombre="Marta" tipo="Alumno" modulo="" edad="20"/>
+   <persona nombre="Laura" tipo="Profesor" modulo="Entornos" edad=""/>
+   <persona nombre="Victor" tipo="Profesor" modulo="Programacion" edad=""/>
+   <persona nombre="Daniel" tipo="Alumno" modulo="" edad="37"/>
+   <persona nombre="Laura" tipo="Alumno" modulo="" edad="40"/>
+   <persona nombre="Sergio" tipo="Alumno" modulo="" edad="29"/>
+   <persona nombre="Victor" tipo="Alumno" modulo="" edad="26"/>
+   <persona nombre="Ramon" tipo="Alumno" modulo="" edad="23"/>
+   <persona nombre="Ramon" tipo="Alumno" modulo="" edad="30"/>
+   <persona nombre="Victor" tipo="Alumno" modulo="" edad="28"/>
+   <persona nombre="Marta" tipo="Alumno" modulo="" edad="36"/>
+   <persona nombre="Sergio" tipo="Alumno" modulo="" edad="39"/>
+   <persona nombre="Sergio" tipo="Alumno" modulo="" edad="35"/>
+   <persona nombre="Claudia" tipo="Alumno" modulo="" edad="34"/>
+   <persona nombre="Luis" tipo="Alumno" modulo="" edad="37"/>
+   <persona nombre="Juana" tipo="Alumno" modulo="" edad="21"/>
+</personas>
